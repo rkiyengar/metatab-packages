@@ -1,0 +1,64 @@
+"Declare","metatab-latest",,,,,,,,,
+"Title","Healthy Comminities Indicators",,,,,,,,,
+"Identifier","db745872-05d8-4a7b-b0cc-4775d68887b3",,,,,,,,,
+"Name","db745872-05d8-4a7b-b0cc-4775d68887b3",,,,,,,,,
+"Description","A Collection of all of the HCI indicator and documentation files",,,,,,,,,
+"Version",1,,,,,,,,,
+"Spatial",,,,,,,,,,
+"Time",20170101,,,,,,,,,
+"Spatialgrain",,,,,,,,,,
+,,,,,,,,,,
+"Section","Resources","Schema","Space","Time","Name","StartLine","HeaderLines","Encoding","Documentation","Description"
+"Note","/data/example.csv",,,,,,,,,
+"Downloadpage","https://www.cdph.ca.gov/programs/Pages/HealthyCommunityIndicators.aspx",,,,,,,,,
+"Datafile","/programs/Documents/ed_attain_ge_hs_output04-14-13.zip","ed_attainment",,,,,,,"/programs/Documents/Educ_attain_HS_Narrative_Examples4-28-13.pdf","High School or Greater Educational Attainment in the Population Aged 25 Years and Older    "
+"Datafile","/programs/Documents/Food_afford_cdp_co_region_ca4-14-13.xls","food_afforability",,,,,,,"/programs/Documents/Food_Affordability_Narrative_Examples4-14-13rev7-16-14.pdf","Food Affordability: average cost of a market basket of nutritious food items relative to income "
+"Datafile","/programs/Documents/gini_place_county_region_st3-26-14.xlsx","gini",,,,,,,"/programs/Documents/Gini_Narrative_Examples5-2-14.pdf","Income Inequality: Household income relative to the number of households "
+"Datafile","/programs/Documents/HCI_AbuseNeglectChildren_741_CT_PL_CO_RE_CA-24-4-15.xlsx","abuse_neglect",,,,,,,"/programs/Documents/HCI_AbuseNeglectChildren_741-NarrativeExamples-3-13-15.pdf","Children reported with neglect or physical or sexual abuse"
+"Datafile","/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO_RE_ST-A-N-7-30-14.zip","ri_housing_burden","ballance",,,,,,"/programs/Documents/HCI_HousingCostBurden_CHASandACS_106_Narrative7-11-14.pdf","Housing Cost Burden: Percent of households incurring housing cost burdens"
+"Datafile","/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-O-S-7-30-14.zip","ri_housing_burden","orange_sutter",,,,,,"/programs/Documents/HCI_HousingCostBurden_CHASandACS_106_Narrative7-11-14.pdf","Housing Cost Burden: Percent of households incurring housing cost burdens"
+"Datafile","/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-T-Y-7-30-14.zip","ri_housing_burden","tehama_yuba",,,,,,"/programs/Documents/HCI_HousingCostBurden_CHASandACS_106_Narrative7-11-14.pdf","Housing Cost Burden: Percent of households incurring housing cost burdens"
+"Datafile","/programs/Documents/HCI_AlcoholOutletsQ_774_CA_RE_CO_CD_PL_CT-A-N-5-16-14.zip","alcohol_licenses","ballance",,,,,,"/programs/Documents/HCI_Alcohol_Outlets_774_Narrative_and_examples-7-15-14.pdf"," Proximity to Alcohol Outlets: Percent of the population within ? mile of alcohol outlets"
+"Datafile","/programs/Documents/HCI_AlcoholOutletsQ_774_CO_CD_PL_CT-O-Y-5-16-14.zip","alcohol_licenses","orange_yuba",,,,,,"/programs/Documents/HCI_Alcohol_Outlets_774_Narrative_and_examples-7-15-14.pdf"," Proximity to Alcohol Outlets: Percent of the population within ? mile of alcohol outlets"
+"Datafile","/programs/Documents/HCI_CHAS_IncomeCrowding_PL_CO_RE_ST.xls","income_crowding",,,,,,,"/programs/Documents/HCI_Housing_Crowding_137_CHASandACS_2006-2010_Narrative7-24-14.pdf","Household Crowding: Percent of household overcrowding and severe overcrowding"
+"Datafile","/programs/Documents/HCI_Crime_752_PL_CO_RE_CA_2000-2013_21OCT15.xlsx","crime",,,,,,,"/programs/Documents/HCI_Crime_752-Narrative_Examples-10-30-15.pdf","Number of Violent Crimes per 1,000 population  "
+"Datafile","/programs/Documents/HCI_DrinkingWater_CA_RE_CO_CD_PL_CT-A-N-6-19-14.zip","drink_water","ballance",,,,,,"/programs/Documents/HCI_DrinkingWater_426_Narrative_and_examples-7-15-14.pdf","Unsafe Drinking Water: Percent of the population served by Community Water Systems not meeting Safe Drinking Water Act  regulations"
+"Datafile","/programs/Documents/HCI_DrinkingWater_CA_RE_CO_CD_PL_CT-O-Y-6-19-14.zip","drink_water","orange_yuba",,,,,,"/programs/Documents/HCI_DrinkingWater_426_Narrative_and_examples-7-15-14.pdf","Unsafe Drinking Water: Percent of the population served by Community Water Systems not meeting Safe Drinking Water Act  regulations"
+"Datafile","/programs/Documents/HCI_Fitnessgram_627_CA_RE_CO_SD_2001_2007_05NOV15.zip","fitness",,2007,,,,,"/programs/Documents/HCI_Fitnessgram_627_Narrative_10-8-15.pdf","Percent of children scoring 6 of 6 on FITNESSGRAM(R)"
+"Datafile","/programs/Documents/HCI_Fitnessgram_627_CA_RE_CO_SD_2008_2013_05NOV15.zip","fitness",,2013,,,,,"/programs/Documents/HCI_Fitnessgram_627_Narrative_10-8-15.pdf","Percent of children scoring 6 of 6 on FITNESSGRAM(R)"
+"Datafile","/programs/Documents/HCI_HouseholdType_746_CARECOCDPLCT_Alameda-Monterey_24APR15.zip","household_type","ballance",,,,,,"/programs/Documents/HCI_Households_746-Narrative-03-19-15.pdf","Household Type: household by type of family and head of household"
+"Datafile","/programs/Documents/HCI_HouseholdType_746_CT_Napa-Yuba_24APR15.zip","household_type","napa_yuba",,,,,,"/programs/Documents/HCI_Households_746-Narrative-03-19-15.pdf","Household Type: household by type of family and head of household"
+"Datafile","/programs/Documents/HCI_JobHouseRatio_PL-MS-CO-768-4-24-15.xlsx","job_house_ratio",,,,,,,"/programs/Documents/HCI_JobHouseRatio_768-NarrativeExamples-4-3-15.pdf","Jobs to Housing Ratio"
+"Datafile","/programs/Documents/HCI_JobsMatch_PL-MS-CO_769_4-24-15.xlsx","job_match",,,,,,,"/programs/Documents/HCI_JobsMatch_769-NarrativeExamples-4-9-15.pdf","Jobs to Employed Residents Ratio"
+"Datafile","/programs/Documents/HCI_Licensed_Daycare_Centers_760_CA_RE_CO_CD_PL_CT_110215.xlsx","daycare",,,,,,,"/programs/Documents/HCI_Licensed%20Daycare%20Center_760_Narrative_11-13-15.pdf","Number of licensed daycare center slots per 1,000 children aged 0-5 years"
+"Datafile","/programs/Documents/HCI_Living_Wage_770_PL_CO_RE_CA_9-29-13.xls","living_wage",,,,,,,"/programs/Documents/HCI_Living_Wage_770_Narrative_and_examples_9-30-13.pdf","Living Wage (single mother with children and married couple with children) "
+"Datafile","/programs/Documents/HCI_MilesByOccurrence_39_CA_CO_PL_RE_10-3-13.xls","transport_miles",,,,,,,"/programs/Documents/HCI_MilesByOccurrence_39_Narrative_and_examples_10-3-13.pdf","Miles per capita by car, public transit, and walk/bicycle "
+"Datafile","/programs/Documents/HCI_NeighborhoodChange_772_CARECOCDPLCT_Alameda-Lake_24APR15.zip","neighborhood_change","ballance",,,,,,"/programs/Documents/HCI_NeighborhoodChange_772_NarrativeAndExamples-4-3-15.pdf"," Neighborhood Change: 10-year change in number of households by income and race-ethnicity. State, Counties, Regions, County Divisions, Census tracts (Alameda-Lake)"
+"Datafile","/programs/Documents/HCI_NeighborhoodChange_772_CT_Lassen-Sacramento_24APR15.zip","neighborhood_change","lassen_sac",,,,,,"/programs/Documents/HCI_NeighborhoodChange_772_NarrativeAndExamples-4-3-15.pdf"," Neighborhood Change: 10-year change in number of households by income and race-ethnicity. Census tracts (Lassen-Sacramento)"
+"Datafile","/programs/Documents/HCI_NeighborhoodChange_772_CT_SanBenito-Yuba_24APR15.zip","neighborhood_change","sanbenito",,,,,,"/programs/Documents/HCI_NeighborhoodChange_772_NarrativeAndExamples-4-3-15.pdf"," Neighborhood Change: 10-year change in number of households by income and race-ethnicity. Census tracts (San Benito-Yuba)"
+"Datafile","/programs/Documents/HCI_PovertyRate_754_CT_PL_CO_RE_CA_1-22-14.zip","poverty_rate",,,,,,,"/programs/Documents/HCI_PovertyRate_754_Narrative_Examples11-5-13rev3-12-14.pdf","Poverty Rate: Overall, Concentrated, and Child (under 18 years of age)"
+"Datafile","/programs/Documents/HCI_RegisteredVoters_653_CA_CO_RE_PL_CT_5-1-14.zip","registered_voters",,,,,,,"/programs/Documents/HCI_RegisteredVoters_653_Narrative_and_examples_6-2-14.pdf","Voter Registration/Participation: Percent of the eligible population registered to vote and the percent who voted in statewide elections"
+"Datafile","/programs/Documents/HCI_RetailFoodEnvironment_75_CA_CO_RE_PL_CT_11-15-13.xls","retail_food",,,,,,,"/programs/Documents/HCI_RetailFoodEnvironment_75_Narrative_and_examples_11-8-13.pdf","Access to healthy foods: retail food environment index  "
+"Datafile","/programs/Documents/HCI_RoadTrafficInjuries_753_CT_PL_CO_12-17-13_O-Y.zip","traffic_injuries","orange_yuba",,,,,,"/programs/Documents/HCI_RoadTrafficInjuries_753_Narrative%20_and_examples_10-27-13.pdf","Severe and fatal road traffic injuries (rate per mile traveled) (rev.12/17/13)"
+"Datafile","/programs/Documents/HCI_RoadTrafficInjuries_753_CT_PL_CO_RE_R4_CA-12-17-13_A-N.zip","traffic_injuries","ballance",,,,,,"/programs/Documents/HCI_RoadTrafficInjuries_753_Narrative%20_and_examples_10-27-13.pdf","Severe and fatal road traffic injuries (rate per mile traveled) (rev.12/17/13)"
+"Datafile","/programs/Documents/HCI_Smoking_755_06NOV15.xlsx","smoking",,,,,,,"/programs/Documents/HCI_Smoking_755_Narrative_11-12-15.pdf","Prevalence of smoking in adults and youth  "
+"Datafile","/programs/Documents/HCI_Transportation2Work_42_CT_PL_CO_RE_ST_12-12-13-revised.zip","communiting",,,,,,,"/programs/Documents/HCI_Transportation_to_work_42_Narrative_and_examples_10-2-13.pdf","Percent of residents mode of transportation to work"
+"Datafile","/programs/Documents/HCI_Unemployment_290_CA_RE_CO_CD_PL_CT-5-22-14.zip","unemployment",,,,,,,"/programs/Documents/HCI_Unemployment_290_Narrative_and_examples-7-14-14.pdf","Unemployment Rate"
+"Datafile","/programs/Documents/HCI_Walk_Bicycle_778_PL_CO_RE_CA-3-26-14.xlsx","walk_bicycyle",,,,,,,"/programs/Documents/HCI_Walk_Bicycle_778_Narrative_and_examples_3-26-14.pdf","Percent of residents by time walking and bicycling"
+"Datafile","/programs/Documents/RailFerryBus10_MTC_Output_11-15-13.xls","rail_ferry_bus","bay_area",,,,,,"/programs/Documents/HCI_RailFerryBus_51_Narrative_and_examples_11-26-13SoCal_MTC_Sac.pdf"," Public Transit Access: Percent of population residing within ½ mile of a major transit stop"
+"Datafile","/programs/Documents/RailFerryBus10_SACOG_Output-11-26-13.xls","rail_ferry_bus","so_cal",,,,,,"/programs/Documents/HCI_RailFerryBus_51_Narrative_and_examples_11-26-13SoCal_MTC_Sac.pdf"," Public Transit Access: Percent of population residing within ½ mile of a major transit stop"
+"Datafile","/programs/Documents/RailFerryBus10_SANDAG_Output8-29-13.xls","rail_ferry_bus","san_diego",,,,,,"/programs/Documents/HCI_RailFerryBus_51_Narrative_and_examples_11-26-13SoCal_MTC_Sac.pdf"," Public Transit Access: Percent of population residing within ½ mile of a major transit stop"
+"Datafile","/programs/Documents/RailFerryBus10_SCAG_Output9-5-13.xls","rail_ferry_bus","scaramento",,,,,,"/programs/Documents/HCI_RailFerryBus_51_Narrative_and_examples_11-26-13SoCal_MTC_Sac.pdf"," Public Transit Access: Percent of population residing within ½ mile of a major transit stop"
+"Datafile","/programs/Documents/ozone_zcta_place_co_region_ca4-14-13.xls","ozone",,,,,,,"/programs/Documents/Ozone_Narrative_Examples4-14-13.pdf","Annual Average Number of Unhealthy Days of Ozone Air Pollution "
+"Datafile","/programs/Documents/ParkBeachOpen10_output4-12-13.zip","openspace",,,,,,,"/programs/Documents/ParkBeachOpen_Narrative_Examples4-12-13.pdf","Access to Parks: Percent of residents within ½ mile of a park, beach, or open space"
+"Datafile","/programs/Documents/PM25_zcta_place_co_region_ca4-14-13.xls","particulates",,,,,,,"/programs/Documents/PM25Narrative_Examples2-27-14.pdf","Average Ambient PM2.5 Concentration"
+,,,,,,,,,,
+"Shapefile","/programs/Documents/HCIShapeFiles.zip","shapefiles",,,,,,,"/Documents/CDPH_Healthy_Community_Indicators1pager5-16-12.pdf",
+"Section","Contacts",,,,"email",,,,,
+"Creator","Creator Name",,,,"Creator Email",,,,,
+,,,,,,,,,,
+"Section","Documentation",,,,"Title","Description",,,,
+"Note",,,,,,,,,,
+,,,,,,,,,,
+"Section","Notes",,,,,,,,,
+"Note",,,,,,,,,,
