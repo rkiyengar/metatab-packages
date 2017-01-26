@@ -1,0 +1,43 @@
+Declare,metatab-latest
+Name,job_match
+Description,Jobs to Employed Residents Ratio
+Identifier,83cd730e-c677-4d16-b5e6-d0047ec0ec7c
+Version,1
+
+Section,Resources,Name,Schema,Space,Time,Description
+Datafile,https://www.cdph.ca.gov/programs/Documents/HCI_JobsMatch_PL-MS-CO_769_4-24-15.xlsx#JobsEmployedRes,data-job_match,job_match,,,Jobs to Employed Residents Ratio
+
+Section,Documentation,Name,Schema,Space,Time,Title,Description
+Datadictionary,https://www.cdph.ca.gov/programs/Documents/HCI_JobsMatch_PL-MS-CO_769_4-24-15.xlsx#DataDictionary,dd-job_match,job_match,,,,Jobs to Employed Residents Ratio
+Documentation,https://www.cdph.ca.gov/programs/Documents/HCI_JobsMatch_PL-MS-CO_769_4-24-15.xlsx#DataFilteringInstructions,doc-job_match,job_match,,,,Jobs to Employed Residents Ratio
+
+Section,Schema,DataType,AltName,Description,Widthformat,Coding
+Table,job_match,,,,,
+Column,ind_id,number,,Indicator ID,3.0,769.0
+Column,ind_definition,text,,Definition of indicator in plain language,255.0,Free text
+Column,race_eth_code,,,numeric code for a race/ethnicity group,1.0,1=American Indian or Alaska Native; 2=Asian; 3=Black or African American; 4=Hispanic or Latino; 5=Native Hawaiian or Other Pacific Islander (NHOPI); 6=White;7= Multiple; 8=Other;9=Total
+Column,race_eth_name,text,,Name of race/ethnic group,9.0,AIAN; Asian; AfricanAm; Latino; NHOPI; White; Multiple; Other; Total
+Column,reportyear,text,,Year that the indicator was reported,9.0,2011.0
+Column,geotype,text,,Type of geographic unit,2.0,PL;Place; CO;County; MS; Metropolitan or Micropolitan Statistical Area
+Column,geotypevalue,number,,Value of geographic unit,single prec.,"FIPS ID; place code, CT code, zip code, region id"
+Column,geoname,text,,Name of geographic unit,37.0,"place, county, statistical area"
+Column,county_name,text,,Name of county that geotype is in,25.0,
+Column,county_fips,text,,FIPS code of county that geotype is in,5.0,2-digit census state code (06) plus 3-digit census county code
+Column,msa_name,text,,Metro or micropolitan statistical area name,26.0,
+Column,msa_code,text,,Metro or micropolitan statistical area name code,5.0,
+Column,strata_name_code,number,,Numeric code for the strata,3.0,
+Column,strata_name,text,,Strata name,13.0,Type of industry sector
+Column,strata_level_name_code,number,,Numeric code for the level of the strata,3.0,
+Column,strata_level_name,text,,Levels of the strata,30.0,"(1) Agriculture, Forestry, Fishing and Hunting; (2) Mining, Quarrying, and Oil and Gas Extraction; (3) Utilities; (4) Construction; (5) Manufacturing; (6) Wholesale Trade; (7) Retail Trade; (8) Transportation and Warehousing; (9) Information
+Finance and Insurance; (10) Real Estate and Rental and Leasing; (11) Professional, Scientific, and Technical Services; (12) Management of Companies and Enterprises; (13) Administrative and Support and Waste Management and Remediation Services; (14) Educational Services,
+Health Care, and Social Assistance; (15) Arts, Entertainment, and Recreation; (16) Accommodation and Food Services; (17) Other Services (except Public Administration); and (18) Public Administration."
+Column,jobs,integer,,Number of jobs,integer,
+Column,employed_res,integer,,Number of employed residents,integer,
+Column,ratio,number,,Jobs to employed residents ratio,double prec.,
+Column,ll_95ci,number,,Lower limit of 95% confidence interval,double prec.,Not available (NA)
+Column,ul_95ci,number,,Lower limit of 95% confidence interval,double prec.,Not available (NA)
+Column,ratio_se,number,,Standard error of the ratio,double prec.,Not available (NA)
+Column,ratio_rse,number,,Relative standard error (se/value) expressed as a percent,double prec.,Not available (NA)
+Column,ratio_decile,integer,,"California decile for the ratio, available for places (geotype=PL).  Deciles are for each strata level separately",integer,"CA_decile' groups California places into 10 groups (or deciles) each, for total population. Equal values or 'ties' are assigned the mean decile rank. For example, in a database of 100 records where 70 records equal 0, 0 values span from the 1st to 7th deciles (70% of all data records)."
+Column,MS_RR,number,,"Relative risk, ratio of place ratio to metro or micropolitan statistical area",double prec.,
+Column,version,datetime,,Date/time stamp of version of data,,mm/DD/CCYY hh:mm:ss

@@ -1,0 +1,47 @@
+Declare,metatab-latest
+Name,fitness
+Description,Percent of children scoring 6 of 6 on FITNESSGRAM(R)
+Identifier,512582bf-aa74-49e6-835f-5717559d8f85
+Version,1
+
+Section,Resources,Name,Schema,Space,Time,Description
+Datafile,https://www.cdph.ca.gov/programs/Documents/HCI_Fitnessgram_627_CA_RE_CO_SD_2001_2007_05NOV15.zip#HCI_Fitnessgram_627_CA_RE_CO_SD_2001_2007_05NOV15.xlsx;Fitnessgram,data-fitness-2007,fitness,,2007,Percent of children scoring 6 of 6 on FITNESSGRAM(R)
+Datafile,https://www.cdph.ca.gov/programs/Documents/HCI_Fitnessgram_627_CA_RE_CO_SD_2008_2013_05NOV15.zip#HCI_Fitnessgram_627_CA_RE_CO_SD_2008_2013_05NOV15.xlsx;Fitnessgram,data-fitness-2013,fitness,,2013,Percent of children scoring 6 of 6 on FITNESSGRAM(R)
+Suplimentarydata,https://www.cdph.ca.gov/programs/Documents/HCI_Fitnessgram_627_CA_RE_CO_SD_2001_2007_05NOV15.zip#HCI_Fitnessgram_627_CA_RE_CO_SD_2001_2007_05NOV15.xlsx;MPO_CountyList,supdata-fitness-2007,fitness,,2007,Percent of children scoring 6 of 6 on FITNESSGRAM(R)
+Suplimentarydata,https://www.cdph.ca.gov/programs/Documents/HCI_Fitnessgram_627_CA_RE_CO_SD_2008_2013_05NOV15.zip#HCI_Fitnessgram_627_CA_RE_CO_SD_2008_2013_05NOV15.xlsx;MPO_CountyList,supdata-fitness-2013,fitness,,2013,Percent of children scoring 6 of 6 on FITNESSGRAM(R)
+
+Section,Documentation,Name,Schema,Space,Time,Title,Description
+Datadictionary,https://www.cdph.ca.gov/programs/Documents/HCI_Fitnessgram_627_CA_RE_CO_SD_2001_2007_05NOV15.zip#HCI_Fitnessgram_627_CA_RE_CO_SD_2001_2007_05NOV15.xlsx;DataDictionary,dd-fitness-2007,fitness,,2007,,Percent of children scoring 6 of 6 on FITNESSGRAM(R)
+Datadictionary,https://www.cdph.ca.gov/programs/Documents/HCI_Fitnessgram_627_CA_RE_CO_SD_2008_2013_05NOV15.zip#HCI_Fitnessgram_627_CA_RE_CO_SD_2008_2013_05NOV15.xlsx;DataDictionary,dd-fitness-2013,fitness,,2013,,Percent of children scoring 6 of 6 on FITNESSGRAM(R)
+Documentation,https://www.cdph.ca.gov/programs/Documents/HCI_Fitnessgram_627_CA_RE_CO_SD_2001_2007_05NOV15.zip#HCI_Fitnessgram_627_CA_RE_CO_SD_2001_2007_05NOV15.xlsx;DataFilteringInstructions,doc-fitness-2007,fitness,,2007,,Percent of children scoring 6 of 6 on FITNESSGRAM(R)
+Documentation,https://www.cdph.ca.gov/programs/Documents/HCI_Fitnessgram_627_CA_RE_CO_SD_2008_2013_05NOV15.zip#HCI_Fitnessgram_627_CA_RE_CO_SD_2008_2013_05NOV15.xlsx;DataFilteringInstructions,doc-fitness-2013,fitness,,2013,,Percent of children scoring 6 of 6 on FITNESSGRAM(R)
+
+Section,Schema,DataType,AltName,Description,Widthformat,Coding
+Table,fitness,,,,,
+Column,ind_id,number,,Indicator ID,3.0,627.0
+Column,ind_definition,text,,Definition of indicator in plain language,255.0,Free text
+Column,reportyear,text,,Year that the indicator was reported,9.0,"2001-2002, 2002-2003, 2003-2004, 2004-2005, 2005-2006, 2006-2007, 2007-2008"
+Column,race_eth_code,,,numeric code for a race/ethnicity group,1.0,0=Not available (NA); 1=American Indian or Alaska Native; 2=Asian; 3=Black or African American; 4=Hispanic or Latino; 5=Native Hawaiian or Other Pacific Islander (NHOPI); 6=White;7= Multiple; 9=Total
+Column,race_eth_name,text,,Name of race/ethnic group,10.0,NA; AIAN; Asian; AfricanAm; Latino; NHOPI; White; Multiple; Total
+Column,geotype,text,,Type of geographic unit,2.0,SD=School district; RE=Region; CO=County; CA=State
+Column,geotypevalue,number,,Value of geographic unit,single prec.,"The geotypevalue for school districts (SD) is the 7-digit National Center for Educational Statistics (NCES) school district identification number.  The California Department of Education district code appears under the column ""dcode"" (see below)."
+Column,geoname,text,,Name of geographic unit,50.0,
+Column,county_name,text,,Name of county that geotype is in,25.0,
+Column,county_fips,text,,FIPS code of county that geotype is in,5.0,2-digit census state code (06) plus 3-digit census county code
+Column,region_name,text,,MPO-based region name,25.0,See MPO_County List Tab
+Column,region_code,text,,MPO-based region code,2.0,See MPO_County List Tab
+Column,strata_name_code,number,,Numeric code for the strata; type of school,2.0,"1=All schools, 2=Non-Charter, 3=Charter"
+Column,strata_name,text,,Strata name; type of school,25.0,"All schools, Non-Charter, Charter.  The All Schools total includes Charter plus Non-Charter schools.  The Non-Charter counts will correspond to the data presented in the Department of Education DataQuest ""Meeting Healthy Fitness Zone Summary of Results"" data query (http://data1.cde.ca.gov/dataquest/dataquest.asp).  Not all districts have charter schools, in that case the All Schools values will be the same as the Non-Charter values."
+Column,strata_level_name_code,number,,Numeric code for the level of the strata; school grade,2.0,"1=Grade 5, 2=Grade 7, 3=Grade 9"
+Column,strata_level_name,text,,Levels of the strata; school grade,25.0,"School grades: Grade 5, Grade 7, Grade 9"
+Column,numerator,integer,,Number of children scoring 6/6 on the FITNESSGRAM®,integer,
+Column,denominator,integer,,Total number of children tested,integer,
+Column,percent,number,,Percent of children scoring 6/6 on the FITNESSGRAM®,double prec.,
+Column,ll_95ci,number,,Lower limit of 95% confidence interval of the percent,double prec.,"Lower limit of 95% confidence interval.  The 95% confidence limits depict the range within which the percentage would probably occur in 95 of 100 sets of data (if data similar to the present set were independently acquired on 100 separate occasions). In five of those 100 data sets, the percentage would fall outside the limits."
+Column,ul_95ci,number,,Upper limit of 95% confidence interval of the percent,double prec.,Upper limit of 95% confidence interval.
+Column,se,number,,Standard error of the percent,double prec.,The standard error (SE) of the mean is a measure of the precision of the sample mean.  The standard error falls as the sample size increases. (Reference: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1255808/)
+Column,rse,number,,Relative standard error (se/percent) expressed as a percent,double prec.,"The relative standard error (RSE) provides the rational basis for determining which rates may be considered “unreliable.” Conforming to National Center for Health Statistics (NCHS) standards, rates that are calculated from fewer than 20 data elements, the equivalent of an RSE of 23 percent or more, are considered unreliable (http://www.cdph.ca.gov/programs/ohir/Documents/OHIRProfiles2014.pdf).  For this project we consider estimates with RSE ≥ 30% as unreliable."
+Column,CA_decile,number,,Decile groups for school districts,double prec.,"'ca_decile' groups places into 10 groups (or deciles) according to the distribution of values of the percent. Highest percent values are included in the first decile.  Equal values or 'ties' are assigned the mean decile rank. For example, in a database of 100 records where 70 records equal 0, 0 values span from the 1st to 7th deciles (70% of all data records). As a result, all 0 values will be assigned to the 4th decile: the mean between the 1st and 7th deciles.  The deciles are only calculated for the school districts."
+Column,CA_RR,number,,Relative risk,double prec.,Ratio of local percentage to regional percentage. This indicates how many times the local percentage is higher or lower than the state percentage (Reference: http://health.mo.gov/training/epi/RateRatio-b.html). Values higher than 1 indicate local percentages are higher than regional percentage.
+Column,dcode,integer,,California Department of Education school district code,integer,
+Column,version,datetime,,Date/time stamp of version of data,,mm/DD/CCYY hh:mm:ss

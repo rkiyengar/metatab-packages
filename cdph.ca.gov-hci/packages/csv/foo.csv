@@ -1,0 +1,21 @@
+Declare,metatab-latest
+Title,
+Identifier,96a15f9e-c035-4b50-8678-4c98d48d6214
+Name,96a15f9e-c035-4b50-8678-4c98d48d6214
+Description,
+Version,1
+Spatial,
+Time,
+Spatialgrain,
+
+Section,Resources,Name,StartLine,HeaderLines,Encoding,Description
+Note,/data/example.csv,,,,,
+
+Section,Contacts,email,,,,
+Creator,Creator Name,Creator Email,,,,
+
+Section,Documentation,Title,Description,,,
+Note,,,,,,
+
+Section,Notes,,,,,
+Note,,,,,,

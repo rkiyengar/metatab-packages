@@ -1,0 +1,43 @@
+Declare,metatab-latest
+Name,alcohol_licenses
+Description,Proximity to Alcohol Outlets: Percent of the population within ? mile of alcohol outlets
+Identifier,a1ed0814-3abc-43aa-b570-a47d276c4acb
+Version,1
+
+Section,Resources,Name,Schema,Space,Time,Description
+Datafile,https://www.cdph.ca.gov/programs/Documents/HCI_AlcoholOutletsQ_774_CA_RE_CO_CD_PL_CT-A-N-5-16-14.zip#HCI_AlcoholOutletsQ_774_CA_RE_CO_CD_PL_CT-A-N-5-16-14.xlsx;alcohol outlet,data-alcohol_licenses-ballance,alcohol_licenses,ballance,,Proximity to Alcohol Outlets: Percent of the population within ? mile of alcohol outlets
+Datafile,https://www.cdph.ca.gov/programs/Documents/HCI_AlcoholOutletsQ_774_CO_CD_PL_CT-O-Y-5-16-14.zip#HCI_AlcoholOutletsQ_774_CO_CD_PL_CT-O-Y-5-16-14.xlsx;alcohol outlet,data-alcohol_licenses-orange_yuba,alcohol_licenses,orange_yuba,,Proximity to Alcohol Outlets: Percent of the population within ? mile of alcohol outlets
+Suplimentarydata,https://www.cdph.ca.gov/programs/Documents/HCI_AlcoholOutletsQ_774_CA_RE_CO_CD_PL_CT-A-N-5-16-14.zip#HCI_AlcoholOutletsQ_774_CA_RE_CO_CD_PL_CT-A-N-5-16-14.xlsx;MPO_County_CMSA_list,supdata-alcohol_licenses-ballance,alcohol_licenses,ballance,,Proximity to Alcohol Outlets: Percent of the population within ? mile of alcohol outlets
+Suplimentarydata,https://www.cdph.ca.gov/programs/Documents/HCI_AlcoholOutletsQ_774_CO_CD_PL_CT-O-Y-5-16-14.zip#HCI_AlcoholOutletsQ_774_CO_CD_PL_CT-O-Y-5-16-14.xlsx;MPO_County_CMSA_list,supdata-alcohol_licenses-orange_yuba,alcohol_licenses,orange_yuba,,Proximity to Alcohol Outlets: Percent of the population within ? mile of alcohol outlets
+
+Section,Documentation,Name,Schema,Space,Time,Title,Description
+Datadictionary,https://www.cdph.ca.gov/programs/Documents/HCI_AlcoholOutletsQ_774_CA_RE_CO_CD_PL_CT-A-N-5-16-14.zip#HCI_AlcoholOutletsQ_774_CA_RE_CO_CD_PL_CT-A-N-5-16-14.xlsx;DataDictionary,dd-alcohol_licenses-ballance,alcohol_licenses,ballance,,,Proximity to Alcohol Outlets: Percent of the population within ? mile of alcohol outlets
+Datadictionary,https://www.cdph.ca.gov/programs/Documents/HCI_AlcoholOutletsQ_774_CO_CD_PL_CT-O-Y-5-16-14.zip#HCI_AlcoholOutletsQ_774_CO_CD_PL_CT-O-Y-5-16-14.xlsx;DataDictionary,dd-alcohol_licenses-orange_yuba,alcohol_licenses,orange_yuba,,,Proximity to Alcohol Outlets: Percent of the population within ? mile of alcohol outlets
+Documentation,https://www.cdph.ca.gov/programs/Documents/HCI_AlcoholOutletsQ_774_CA_RE_CO_CD_PL_CT-A-N-5-16-14.zip#HCI_AlcoholOutletsQ_774_CA_RE_CO_CD_PL_CT-A-N-5-16-14.xlsx;DataFilteringInstructions,doc-alcohol_licenses-ballance,alcohol_licenses,ballance,,,Proximity to Alcohol Outlets: Percent of the population within ? mile of alcohol outlets
+Documentation,https://www.cdph.ca.gov/programs/Documents/HCI_AlcoholOutletsQ_774_CO_CD_PL_CT-O-Y-5-16-14.zip#HCI_AlcoholOutletsQ_774_CO_CD_PL_CT-O-Y-5-16-14.xlsx;DataFilteringInstructions,doc-alcohol_licenses-orange_yuba,alcohol_licenses,orange_yuba,,,Proximity to Alcohol Outlets: Percent of the population within ? mile of alcohol outlets
+
+Section,Schema,DataType,AltName,Description,Widthformat,Coding
+Table,alcohol_licenses,,,,,
+Column,ind_id,number,,Indicator ID,3.0,556.0
+Column,ind_definition,text,,Definition of indicator in plain language,255.0,Free text
+Column,reportyear,text,,Year that the indicator was reported,9.0,"2006-2007, 2007-2008, 2008-2009, 2009-2010, 2010-2011, 2011-2012, 2014"
+Column,race_eth_code,number,,numeric code for a race/ethnicity group,1.0,1=American Indian or Alaska Native; 2=Asian; 3=Black or African American; 4=Hispanic or Latino; 5=Native Hawaiian or Other Pacific Islander (NHOPI); 6=White;7= Multiple; 8=Other;9=Total
+Column,race_eth_name,text,,Name of race/ethnic group,9.0,AIAN; Asian; AfricanAm; Latino; NHOPI; White; Multiple; Other; Total
+Column,geotype,text,,Type of geographic unit,2.0,CT; Cenus Tract; PL;Place; CD; County Division; CO;County; RE; Region CA;State
+Column,geotypevalue,number,,Value of geographic unit,single prec.,"FIPS ID; place code, CT code, zip code, region id, CD id"
+Column,geoname,text,,Name of geographic unit,37.0,"place, division, county, region name"
+Column,county_name,text,,Name of county that geotype is in,25.0,
+Column,county_fips,text,,FIPS code of county that geotype is in,5.0,2-digit census state code (06) plus 3-digit census county code
+Column,region_name,text,,MPO-based region name; see MPO_County list tab,26.0,
+Column,region_code,text,,MPO-based region code; see MPO_County list tab,2.0,01=Bay Area; 02=Butte; 03=Central/Southeast Sierra; 04=Monterey Bay; 05=North Coast; 06=Northeast Sierra; 07=Northern Sacramento Valley; 08=Sacramento Area; 09=San Diego; 10=San Joaquin Valley; 11=San Luis Obispo; 12=Santa Barbara; 13=Shasta; 14=Southern California
+Column,license_type,text,,"On_sale, Off_sale, Total_licenses",8.0,"On sale (California Alcohol and Beverage Control types 40, 41, 42, 47, and 48), off sale (California Alcohol and Beverage Control types types 20 and 21), or total licenses (only on sale + off sale considered here) in an alcohol outlet"
+Column,numerator,integer,,Number of people within 1/4 mile of an alcohol outlet,integer,
+Column,denominator,number,,Number of people in geographic area,double prec.,
+Column,percent,number,,numerator / denominator *100,double prec.,
+Column,ll_95ci,number,,Lower limit of 95% confidence interval,double prec.,
+Column,ul_95ci,number,,Lower limit of 95% confidence interval,double prec.,
+Column,se,number,,Standard error,double prec.,
+Column,rse,number,,Relative standard error,double prec.,
+Column,ca_decile,integer,,California decile,integer,"CA_decile' groups California places into 10 groups (or deciles) each, for total population. Equal values or 'ties' are assigned the mean decile rank. For example, in a database of 100 records where 70 records equal 0, 0 values span from the 1st to 7th deciles (70% of all data records)."
+Column,ca_rr,number,,Rate ratio to California rate,double prec.,
+Column,version,datetime,,Date/time stamp of version of data,,mm/DD/CCYY hh:mm:ss
