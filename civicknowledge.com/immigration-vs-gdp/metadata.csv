@@ -1,5 +1,5 @@
 "Declare","metatab-latest",,,,
-"Title",,,,,
+"Title","Analysis linking together Population, Migration and GDP for OECD countries. ",,,,
 "Identifier","c8c8d0c6-e8a7-4922-b59a-0c07049b224b",,,,
 "Name","immigration-vs-gdp",,,,
 "Description",,,,,
@@ -12,6 +12,7 @@
 "Datafile","data/MIG_09022017222715973.csv","migration","OECD International Migration Database. Seperate inflow and outflow countries.","https://stats.oecd.org/Index.aspx?DataSetCode=MIG","utf8"
 "Datafile","data/PDB_LV_09022017223920900.csv","country_gdp","Level of GDP per capita and productivity. UDS Constant dollars, PPP for 2010","http://stats.oecd.org/index.aspx?DataSetCode=PDB_LV","utf8"
 "Datafile","data/WPP2015_DB02_Populations_Annual.zip#WPP2015_DB02_Populations_Annual.csv","total_pop","Total population (by sex and both sexes combined), average annual rate of population change, and population density by major area, region and country, for estimates and all 8 projection variants or scenarios, annually for 1950-2100.","https://esa.un.org/unpd/wpp/Download/Standard/ASCII/","latin1"
+"Datafile","data/gdp-pop-migration.csv",,,"ipy:notebooks/Immigration Vs GDP.ipynb","utf8"
 ,,,,,
 "Section","Contacts","email",,,
 "Origin","OECD",,,,
