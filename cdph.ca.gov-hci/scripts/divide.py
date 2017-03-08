@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-""" Divide the combined package into sepectate tables"""
+""" Divide the combined package into seperate tables"""
 
 import sys
 
-from metapack import Package, CsvPackage
+from metatab import Package, CsvPackage
 from collections import defaultdict
 
 
@@ -37,24 +37,32 @@ name_map = {
 }
 
 
-for r in list(p.resources):
+for r in list(p.resources()):
 
-    for c in (r.term.find_first('StartLine'), r.term.find_first('HeaderLines'), r.term.find_first('Encoding')):
+    for c in (r.find_first('StartLine'), r.find_first('HeaderLines'), r.find_first('Encoding')):
         if c is not None:
-            r.term.remove_child(c)
+            r.remove_child(c)
 
-    r.name = name_map.get(r.term.record_term_lc,'')+r.name
 
-    if r.term.term_is('Datafile') or r.term.term_is('Suplimentarydata'):
-        packs[r.schema].sections.resources.add_term(r.term)
-    else:
-        packs[r.schema].sections.documentation.add_term(r.term)
+    packs[r.schema].sections.resources.add_term(r)
+  
 
+for r in list(p.resources(term=['Root.Datadictionary','Root.Documentation'], section='Documentation')):
+    
+    packs[r.schema].sections.documentation.add_term(r)
+    
 
 for name, package in packs.items():
 
-    r = next(package.resources)
-    package.sections.root.new_term('Name', name)
+    try:
+        r = next(package.resources())
+    except KeyError as e:
+        warn(name, e)
+        continue
+    n = package.sections.root.new_term('Name', name)
+    n.new_child('Dataset',name)
+    n.new_child('Version',1)
+    n.new_child('Origin','cdph.ca.gov')
     package.sections.root.new_term('Description', r.description)
     package.sections.resources.args.remove('StartLine')
     package.sections.resources.args.remove('HeaderLines')
