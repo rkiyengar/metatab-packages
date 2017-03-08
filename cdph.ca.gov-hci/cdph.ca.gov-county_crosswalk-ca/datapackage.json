@@ -1,0 +1,61 @@
+{
+    "description": "Crosswalks from California County FIPS codes to MPO regions and CSMAs",
+    "title": "County Crosswalks",
+    "resources": [
+        {
+            "path": "data/county_crosswalk.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "type": "integer",
+                        "name": "county_fips"
+                    },
+                    {
+                        "type": "string",
+                        "name": "cmsa_name"
+                    },
+                    {
+                        "type": "string",
+                        "name": "county"
+                    },
+                    {
+                        "type": "string",
+                        "name": "mpo_region"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "mpo_region_code"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "chis_region_code"
+                    },
+                    {
+                        "type": "string",
+                        "name": "chis_region_name"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "chis_county_code"
+                    },
+                    {
+                        "type": "string",
+                        "name": "chis_county"
+                    }
+                ]
+            },
+            "name": "county_crosswalk"
+        }
+    ],
+    "identifier": "ec7083d4-02bc-4d22-af51-2bc99194c0a2",
+    "declare": "metatab-latest",
+    "name": {
+        "space": "CA",
+        "origin": "cdph.ca.gov",
+        "grain": null,
+        "version": "1",
+        "@value": "cdph.ca.gov-county_crosswalk-ca-1",
+        "time": null,
+        "dataset": "county_crosswalk"
+    }
+}
