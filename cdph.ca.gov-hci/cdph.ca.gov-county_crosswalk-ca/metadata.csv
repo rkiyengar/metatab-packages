@@ -2,13 +2,13 @@ Declare,metatab-latest
 Title,County Crosswalks
 Description,Crosswalks from California County FIPS codes to MPO regions and CSMAs
 Identifier,ec7083d4-02bc-4d22-af51-2bc99194c0a2
-Name,cdph.ca.gov-county_crosswalk-ca-2
-Name.Space,CA
-Name.Origin,cdph.ca.gov
+Name,cdph.ca.gov-county_crosswalk-ca-3
+Name.Version,3
 Name.Grain,
-Name.Time,
 Name.Dataset,county_crosswalk
-Name.Version,2
+Name.Space,CA
+Name.Time,
+Name.Origin,cdph.ca.gov
 
 Section,Resources,Name,Description,
 Datafile,data/county_crosswalk.csv,county_crosswalk,"Crosswalk of California counties, FIPS codes, MPO regions, and CHIS county groups.",
@@ -16,8 +16,8 @@ Datafile,data/county_crosswalk.csv,county_crosswalk,"Crosswalk of California cou
 Section,Documentation,Title,Description,
 Note,"The data file is synthesized from data included in most of the HCI Excel files, found in worksheets named “MPO_County_List,” “MPO_County_LIst” or something similar.",,,
 Note,"The following documentation cites the two original cources for the data. Additional column come from CHIS, but the original data files don't include a citation for the CHIS data.",,,
-Documentation,docs/standards-for-defining-metropolitan-and-micropolitan-statistical-areas.pdf,Standards for Defining Metropolitan and Micropolitan Statistical Areas,"OMB’s Standards for Defining Metropolitan and Micropolitan Statistical Areas. MPO Region to County Crosswalk (Halter G, Hitchcock A, Kelly T, Mortenson M. 2010 California Regional Progress Report: One State, Many Regions, Our Future: Tracking Progress Toward Sustainability. IR. Sacramento, CA: Applied Development Economics Inc., Collaborative Economics Inc., Information Center for the Environment at UC-Davis, CALTRANS: Division of Transportation Planning; 2010. http://dot.ca.gov/hq/tpp/offices/orip/Collaborative%20Planning/Files/CARegionalProgress_2-1-2011.pdf. Accessed on 7/5/12.) Regional Progress Report: One State, Many Regions, Our Future: Tracking Progress Toward Sustainability. IR. Sacramento, CA: Applied Development Economics Inc., Collaborative Economics Inc., Information Center for the Environment at UC-Davis, CALTRANS: Division of Transportation Planning; 2010. f. Accessed on 7/5/12.)",
-Documentation,docs/california-regional-progress-report-one-state-many-regions-our-future.pdf,"California Regional Progress Report: One State, Many Regions, Our Future","Source document for the county-region file. Office of Management and Budget. Standards for Defining Metropolitan and Micropolitan Statistical Areas. Federal Register 2000; Vol 65 (No.249). December 27, 2000.",
+Documentation,https://www.census.gov/population/metro/files/00-32997.pdf,Standards for Defining Metropolitan and Micropolitan Statistical Areas,"OMB’s Standards for Defining Metropolitan and Micropolitan Statistical Areas. MPO Region to County Crosswalk (Halter G, Hitchcock A, Kelly T, Mortenson M. 2010 California Regional Progress Report: One State, Many Regions, Our Future: Tracking Progress Toward Sustainability. IR. Sacramento, CA: Applied Development Economics Inc., Collaborative Economics Inc., Information Center for the Environment at UC-Davis, CALTRANS: Division of Transportation Planning; 2010. http://dot.ca.gov/hq/tpp/offices/orip/Collaborative%20Planning/Files/CARegionalProgress_2-1-2011.pdf. Accessed on 7/5/12.) Regional Progress Report: One State, Many Regions, Our Future: Tracking Progress Toward Sustainability. IR. Sacramento, CA: Applied Development Economics Inc., Collaborative Economics Inc., Information Center for the Environment at UC-Davis, CALTRANS: Division of Transportation Planning; 2010. f. Accessed on 7/5/12.)",
+Documentation,http://dot.ca.gov/hq/tpp/offices/orip/Collaborative%20Planning/Files/CARegionalProgress_2-1-2011.pdf,"California Regional Progress Report: One State, Many Regions, Our Future","Source document for the county-region file. Office of Management and Budget. Standards for Defining Metropolitan and Micropolitan Statistical Areas. Federal Register 2000; Vol 65 (No.249). December 27, 2000.",
 
 Section,Contacts,Email,Organization,Url
 Origin,,,California Department of Transportation,http://dot.ca.gov/
@@ -27,12 +27,12 @@ Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowle
 
 Section,Schema,DataType,Description,
 Table,county_crosswalk,,,
-Table.Column,county_fips,integer,,
-Table.Column,cmsa_name,text,,
-Table.Column,county,text,,
-Table.Column,mpo_region,text,,
-Table.Column,mpo_region_code,integer,,
-Table.Column,chis_region_code,integer,,
-Table.Column,chis_region_name,text,,
-Table.Column,chis_county_code,integer,,
-Table.Column,chis_county,text,,
+Table.Column,county_fips,integer,"County FIPS code, use to reference the county in US Census data.",
+Table.Column,cmsa_name,text,Name of the Consolidated Metropolitan Statistical Area (CMSA) that encloses the county.,
+Table.Column,county,text,County name.,
+Table.Column,mpo_region,text,"Name of the planning region, as defined by the local Municipal Planning Organization (MPO).",
+Table.Column,mpo_region_code,integer,Code for the MPO region.,
+Table.Column,chis_region_code,integer,Region defined by the California Health Interview Survey (CHIS).,
+Table.Column,chis_region_name,text,Name of the CHIS region.,
+Table.Column,chis_county_code,integer,"Code used in CHIS for counties, and clusters of counties.",
+Table.Column,chis_county,text,Name of the CHIS county or county cluster.,
