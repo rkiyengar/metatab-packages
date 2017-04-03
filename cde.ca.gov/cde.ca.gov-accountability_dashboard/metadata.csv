@@ -1,0 +1,587 @@
+Declare,metatab-latest
+Title,California Accountability Model & School Dashboard
+Description,Datasets for the California school dashboard at https://www.caschooldashboard.org
+Identifier,9574d599-9a64-4266-80e7-89769342c498
+Name,cde.ca.gov-accountability_dashboard-2
+Name.Time,
+Name.Origin,cde.ca.gov
+Name.Grain,
+Name.Space,
+Name.Version,2
+Name.Dataset,accountability-dashboard
+Modified,2017-04-03T23:07:32
+Issued,2017-04-03T23:07:32
+Distribution,http://s3.amazonaws.com/library.metatab.org/cde.ca.gov-accountability_dashboard-2.zip
+Distribution,http://data.sandiegodata.org/dataset/cde-ca-gov-accountability_dashboard-2
+Distribution,http://s3.amazonaws.com/library.metatab.org/cde.ca.gov-accountability_dashboard-2/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/cde.ca.gov-accountability_dashboard-2.csv
+Ckanid,d564f872-64da-40e2-a606-7bd2c95ba126
+Group,education
+
+Section,Resources,Name,format,Encoding,Description
+Datafile,http://www3.cde.ca.gov/researchfiles/cadashboard/eladownload2017s.txt,ela38,tsv,,"English Language Arts, Grades 3-8"
+Datafile,http://www3.cde.ca.gov/researchfiles/cadashboard/ela11download2017s.txt,ela11,tsv,,"English Language Arts, Grade 11"
+Datafile,http://www3.cde.ca.gov/researchfiles/cadashboard/mathdownload2017s.txt,math38,tsv,,"Math, Grades 3-8"
+Datafile,http://www3.cde.ca.gov/researchfiles/cadashboard/math11download2017s.txt,math11,tsv,,"Math, Grade 11"
+Datafile,http://www3.cde.ca.gov/researchfiles/cadashboard/ccidownload2017s.txt,collegecareer,tsv,,College / Career Indicators
+Datafile,http://www3.cde.ca.gov/researchfiles/cadashboard/graddownload2017s.txt,gradrate,tsv,,Graduation Rate
+Datafile,http://www3.cde.ca.gov/researchfiles/cadashboard/suspdownload2017s.txt,susprate,tsv,,Suspension Rate
+Datafile,http://www3.cde.ca.gov/researchfiles/cadashboard/elpidownload2017s.txt,elaprog,tsv,,English Language Arts Progress Indicators
+Datafile,ftp://ftp.cde.ca.gov/demo/schlname/pubschls.txt,pubschools,tsv,latin1,List of all public schools and districts
+
+Section,Documentation,Title,Description,,
+Homepage,# URL to webpage for the data program,California Accountability Model & School Dashboard,,,
+Webpage,https://www.caschooldashboard.org,California School Dashboard,The California School Dashboard website.,,
+
+Section,Contacts,Email,Organization,Url,
+Origin,,,California Department of Education,http://www.cde.ca.gov/,
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://www.civicknowledge.com,
+
+Section,Schema,AltName,DataType,Description,Coding
+Table,ela38,,,,
+Table.Column,cds,,integer,CDS Code,14-character string
+Table.Column,rtype,,text,Record Type,"S= School Record
+L=LEA/District Record"
+Table.Column,studentgroup,,text,Student Group,"ALL=All Students
+AA=Black/African American
+AI=American Indian or Alaska Native
+AS=Asian
+FI=Filipino
+HI=Hispanic
+PI=Pacific Islander
+WH=White
+MR=Multiple Races/Two or More
+EL=English Learner
+ELO=English Learners Only
+RFP=RFEPs Only
+SED=Socioeconomically Disadvantaged
+SWD=Students with Disabilities"
+Table.Column,currdenom,,integer,Current year number of valid students,Integer
+Table.Column,priordenom,,integer,CURRENT STATUS - Average distance from level 3,Decimal
+Table.Column,currstatus,,text,Prior year number of valid students,Integer
+Table.Column,priorstatus,,text,PRIOR STATUS - Average distance from level 3,Decimal
+Table.Column,change,,text,CHANGE - Difference between current status and prior status,Decimal
+Table.Column,statuslevel,,integer,Status Level,"1=Very Low
+2=Low
+3=Medium
+4=High
+5=Very High
+0=No Data"
+Table.Column,changelevel,,integer,Change Level,"1=Decreased Significantly
+2=Decreased
+3=Maintained
+4=Increased
+5=Increased Significantly
+0=No Data"
+Table.Column,color,,integer,Color,"1=Red
+2=Orange
+3=Yellow
+4=Green
+5=Blue
+0=No Color"
+Table.Column,box,,integer,"If a color was assigned, this value represents the specific 5x5 grid location","10=Very High, Declined Significantly
+20=Very High, Declined
+30=Very High, Mantained
+40=Very High, Increased
+50=Very High, Increased Significantly
+60=High, Declined Significantly
+70=High, Declined
+80=High, Mantained
+90=High, Increased
+100=High, Increased Significantly
+110=Medium, Declined Significantly
+120=Medium, Declined
+130=Medium, Mantained
+140=Medium, Increased
+150=Medium, Increased Significantly
+160=Low, Declined Significantly
+170=Low, Declined
+180=Low, Mantained
+190=Low, Increased
+200=Low, Increased Significantly
+210=Very Low, Declined Significantly
+220=Very Low, Declined
+230=Very Low, Mantained
+240=Very Low, Increased
+250=Very Low, Increased Significantly
+0=No Color"
+Table,ela11,,,,
+Table.Column,cds,,integer,CDS Code,14-character string
+Table.Column,rtype,,text,Record Type,"S=School Record
+L=LEA/District Record"
+Table.Column,studentgroup,,text,Student Group,"ALL=All Students
+AA=Black/African American
+AI=American Indian or Alaska Native
+AS=Asian
+FI=Filipino
+HI=Hispanic
+PI=Pacific Islander
+WH=White
+MR=Multiple Races/Two or More
+EL=English Learner
+ELO=English Learners Only
+RFP=RFEPs Only
+SED=Socioeconomically Disadvantaged
+SWD=Students with Disabilities"
+Table.Column,currdenom,,integer,Current year number of valid students,Integer
+Table.Column,currstatus,,text,CURRENT STATUS - Average distance from level 3,Decimal
+Table.Column,priordenom,,integer,Prior year number of valid students,Integer
+Table.Column,priorstatus,,text,PRIOR STATUS - Average distance from level 3,Decimal
+Table.Column,change,,text,CHANGE - Difference between current status and prior status,Decimal
+Table,math38,,,,
+Table.Column,cds,,integer,CDS Code,14-character string
+Table.Column,rtype,,text,Record Type,"S=School Record
+L=LEA/District Record"
+Table.Column,studentgroup,,text,Student Group,"ALL=All Students
+AA=Black/African American
+AI=American Indian or Alaska Native
+AS=Asian
+FI=Filipino
+HI=Hispanic
+PI=Pacific Islander
+WH=White
+MR=Multiple Races/Two or More
+EL=English Learner
+ELO=English Learners Only
+RFP=RFEPs Only
+SED=Socioeconomically Disadvantaged
+SWD=Students with Disabilities"
+Table.Column,currdenom,,integer,Current year number of valid students,Integer
+Table.Column,priordenom,,integer,CURRENT STATUS - Average distance from level 3,Decimal
+Table.Column,currstatus,,text,Prior year number of valid students,Integer
+Table.Column,priorstatus,,text,PRIOR STATUS - Average distance from level 3,Decimal
+Table.Column,change,,text,CHANGE - Difference between current status and prior status,Decimal
+Table.Column,statuslevel,,integer,Status Level,"1=Very Low
+2=Low
+3=Medium
+4=High
+5=Very High
+0=No Data"
+Table.Column,changelevel,,integer,Change Level,"1=Decreased Significantly
+2=Decreased
+3=Maintained
+4=Increased
+5=Increased Significantly
+0=No Data"
+Table.Column,color,,integer,Color,"1=Red
+2=Orange
+3=Yellow
+4=Green
+5=Blue
+0=No Color"
+Table.Column,box,,integer,"If a color was assigned, this value represents the specific 5x5 grid location","10=Very High, Declined Significantly
+20=Very High, Declined
+30=Very High, Mantained
+40=Very High, Increased
+50=Very High, Increased Significantly
+60=High, Declined Significantly
+70=High, Declined
+80=High, Mantained
+90=High, Increased
+100=High, Increased Significantly
+110=Medium, Declined Significantly
+120=Medium, Declined
+130=Medium, Mantained
+140=Medium, Increased
+150=Medium, Increased Significantly
+160=Low, Declined Significantly
+170=Low, Declined
+180=Low, Mantained
+190=Low, Increased
+200=Low, Increased Significantly
+210=Very Low, Declined Significantly
+220=Very Low, Declined
+230=Very Low, Mantained
+240=Very Low, Increased
+250=Very Low, Increased Significantly
+0=No Color"
+Table,math11,,,,
+Table.Column,cds,,integer,CDS Code,14-character string
+Table.Column,rtype,,text,Record Type,"S=School Record
+L=LEA/District Record"
+Table.Column,studentgroup,,text,Student Group,"ALL=All Students
+AA=Black/African American
+AI=American Indian or Alaska Native
+AS=Asian
+FI=Filipino
+HI=Hispanic
+PI=Pacific Islander
+WH=White
+MR=Multiple Races/Two or More
+EL=English Learner
+ELO=English Learners Only
+RFP=RFEPs Only
+SED=Socioeconomically Disadvantaged
+SWD=Students with Disabilities"
+Table.Column,currdenom,,integer,Current year number of valid students,Integer
+Table.Column,currstatus,,text,CURRENT STATUS - Average distance from level 3,Decimal
+Table.Column,priordenom,,integer,Prior year number of valid students,Integer
+Table.Column,priorstatus,,text,PRIOR STATUS - Average distance from level 3,Decimal
+Table.Column,change,,text,CHANGE - Difference between current status and prior status,Decimal
+Table,collegecareer,,,,
+Table.Column,cds,,integer,County-District-School Code,14-character string
+Table.Column,rtype,,text,Record Type,"S=School Record
+L=LEA/District Record"
+Table.Column,studentgroup,,text,Student Group,"ALL=All Students
+AA=Black/African American
+AI=American Indian or Alaska Native
+AS=Asian
+FI=Filipino
+HI=Hispanic
+PI=Pacific Islander
+WH=White
+MR=Multiple Races/Two or More
+EL=English Learner
+SED=Socioeconomically Disadvantaged
+SWD=Students with Disabilities"
+Table.Column,num_cohort,,integer,Number of students in the 2013-14 Four-Year Grad Cohort,Integer
+Table.Column,num_prep,,text,Number of students in the 2013-14 Four-Year Grad Cohort who earned PREPARED on the CCI,Integer
+Table.Column,num_aprep,,text,Number of students in the 2013-14 Four-Year Grad Cohort who earned APPROACHING PREPARED on the CCI,Integer
+Table.Column,num_nprep,,text,Number of students in the 2013-14 Four-Year Grad Cohort who earned NOT PREPARED on the CCI,Integer
+Table.Column,pct_prep,,text,Percent of students in field:NUM_COHORT who earned PREPARED on the CCI,Percent
+Table.Column,pct_aprep,,text,Percent of students in field:NUM_COHORT who earned APPROACHING PREPARED on the CCI,Percent
+Table.Column,pct_nprep,,text,Percent of students in field:NUM_COHORT who earned NOT PREPARED on the CCI,Percent
+Table,gradrate,,,,
+Table.Column,cds,,integer,CDS Code,14-character string
+Table.Column,rtype,,text,Record Type,"S=School Record
+L=LEA/District Record"
+Table.Column,studentgroup,,text,Student Group,"ALL=All Students
+AA=Black/African American
+AI=American Indian or Alaska Native
+AS=Asian
+FI=Filipino
+HI=Hispanic
+PI=Pacific Islander
+WH=White
+MR=Multiple Races/Two or More
+EL=English Learner
+SED=Socioeconomically Disadvantaged
+SWD=Students with Disabilities"
+Table.Column,currnumer,,text,Number of 2014-15 cohort graduates,Integer
+Table.Column,currdenom,,integer,Total number of 2014-15 cohort students,Integer
+Table.Column,currstatus,,text,CURRENT STATUS - 2014-15 Graduation Rate,Percent
+Table.Column,priornumer,,text,Number of students who graduated in prior 3 years,Integer
+Table.Column,priordenom,,integer,Total number of students in prior 3 years,Integer
+Table.Column,priorstatus,,text,PRIOR STATUS - 3-year graduation rate average,Percent
+Table.Column,change,,text,CHANGE - Difference between 2014-15 graduation rate and prior 3-year average,Percent
+Table.Column,prioryear1_numer,,text,Number of 2013-14 cohort graduates,Integer
+Table.Column,prioryear1_denom,,integer,Total number of 2013-14 cohort students,Integer
+Table.Column,prioryear1_status,,text,2013-14 Graduation Rate,Percent
+Table.Column,prioryear2_numer,,text,Number of 2012-13 cohort graduates,Integer
+Table.Column,prioryear2_denom,,integer,Total number of 2012-13 cohort students,Integer
+Table.Column,prioryear2_status,,text,2012-13 Graduation Rate,Percent
+Table.Column,prioryear3_numer,,text,Number of 2011-12 cohort graduates,Integer
+Table.Column,prioryear3_denom,,integer,Total number of 2011-12 cohort students,Integer
+Table.Column,prioryear3_status,,text,2011-12 Graduation Rate,Percent
+Table.Column,statuslevel,,integer,Status level,"1=Very Low
+2=Low
+3=Medium
+4=High
+5=Very High
+0=No Data"
+Table.Column,changelevel,,integer,Change level,"1=Decreased Significantly
+2=Decreased
+3=Maintained
+4=Increased
+5=Increased Significantly
+0=No Data"
+Table.Column,color,,integer,Color,"1=Red
+2=Orange
+3=Yellow
+4=Green
+5=Blue
+0=No Color"
+Table.Column,box,,integer,"If a color was assigned, this value represents the specific 5x5 grid location","20=Very High, Declined
+30=Very High, Mantained
+40=Very High, Increased
+50=Very High, Increased Significantly
+60=High, Declined Significantly
+70=High, Declined
+80=High, Mantained
+90=High, Increased
+100=High, Increased Significantly
+110=Medium, Declined Significantly
+120=Medium, Declined
+130=Medium, Mantained
+140=Medium, Increased
+150=Medium, Increased Significantly
+160=Low, Declined Significantly
+170=Low, Declined
+180=Low, Mantained
+190=Low, Increased
+200=Low, Increased Significantly
+210=Very Low, Declined Significantly
+220=Very Low, Declined
+230=Very Low, Mantained
+240=Very Low, Increased
+250=Very Low, Increased Significantly
+0=No Color"
+Table,susprate,,,,
+Table.Column,cds,,integer,CDS Code,14-character string
+Table.Column,rtype,,text,Record Type,"S=School Record
+L=LEA/District Record"
+Table.Column,type,,text,School or District Type,"ES=Elementary School
+MS=Middle School
+HS=High School
+ED=Elementary District
+HD=High School District
+UD=Unified District"
+Table.Column,studentgroup,,text,Student Group,"ALL=All Students
+AA=Black/African American
+AI=American Indian or Alaska Native
+AS=Asian
+FI=Filipino
+HI=Hispanic
+PI=Pacific Islander
+WH=White
+MR=Multiple Races/Two or More
+EL=English Learner
+SED=Socioeconomically Disadvantaged
+SWD=Students with Disabilities"
+Table.Column,currnumer,,text,Number of Students Suspended in 2014-15,Integer
+Table.Column,currdenom,,text,Cummulative Number of Students Enrolled in 2014-15,Integer
+Table.Column,currstatus,,text,CURRENT STATUS - 2014-15 Suspension Rate,Percent
+Table.Column,priornumer,,text,Number of Students Suspended in 2013-14,Integer
+Table.Column,priordenom,,text,Cummulative Number of Students Enrolled in 2013-14,Integer
+Table.Column,priorstatus,,number,PRIOR STATUS - 2013-14 Suspension Rate (rounded),Percent
+Table.Column,change,,text,CHANGE - Difference between 2014-15 Suspension Rate and 2013-14 Suspension Rate,Percent
+Table.Column,statuslevel,,integer,Status level,"1=Very High
+2=High
+3=Medium
+4=Low
+5=Very Low
+0=No Data"
+Table.Column,changelevel,,integer,Change level,"1=Increased Significantly
+2=Increased
+3=Maintained
+4=Decreased
+5=Decreased Significantly
+0=No Data"
+Table.Column,color,,integer,Color,"1=Red
+2=Orange
+3=Yellow
+4=Green
+5=Blue
+0=No Color"
+Table.Column,box,,integer,"If a color was assigned, this value represents the specific 5x5 grid location","10=Very Low, Increased Significantly
+20=Very Low, Increased
+30=Very Low, Mantained
+40=Very Low, Declined
+50=Very Low, Declined Significantly
+60=Low, Increased Significantly
+70=Low, Increased
+80=Low, Mantained
+90=Low, Declined
+100=Low, Declined Significantly
+110=Medium, Increased Significantly
+120=Medium, Increased
+130=Medium, Mantained
+140=Medium, Declined
+150=Medium, Declined Significantly
+160=High, Increased Significantly
+170=High, Increased
+180=High, Mantained
+190=High, Declined
+200=High, Declined Significantly
+210=Very High, Increased Significantly
+220=Very High, Increased
+230=Very High, Mantained
+240=Very High, Declined
+250=Very High, Declined Significantly
+0=No Color"
+Table.Column,certifyflag,,text,"Non-certified data flag.
+Districts and schools that did not certify their suspension (or discipline) data in the California Longitudinal Pupil Achievement Data System (CALPADS) in the current year or prior year automatically are assigned an orange performance level (box 180) if their earned color was orginally blue, green, or yellow.","Y or Blank
+Y=Did not certify suspension data"
+Table,elaprog,,,,
+Table.Column,cds,,integer,CDS Code,14-character string
+Table.Column,rtype,,text,Record Type,"S=School Record
+L=LEA/District Record"
+Table.Column,currtesters,,integer,Number of annual CELDT testers in 2014-15 with a prior CELDT score,Integer
+Table.Column,currrfeps,,integer,"Number of EL students who reclassified between July 1, 2013 and June 30, 2014",Integer
+Table.Column,currnumer,,text,"Number of ELs who moved up at least one performance level in CELDT from 2014 to 2015 or who maintained Early Advanced/Advanced Proficient plus ELs who were reclassified between July 1, 2013 to June 30, 2014",Integer
+Table.Column,currdenom,,integer,Current year number of testers and RFEP students,Integer
+Table.Column,currstatus,,text,"CURRENT STATUS
+Percent of ELs who moved up at least one performance level in CELDT from 2014 to 2015 or who maintained Early Advanced/Advanced Proficient plus ELs who were reclassified between July 1, 2013 to June 30, 2014",Percent
+Table.Column,priortesters,,integer,Number of annual CELDT testers in 2013-14 with a prior CELDT score,Integer
+Table.Column,priorrfeps,,integer,"Number of EL students who reclassified between July 1, 2012 and June 30, 2013",Integer
+Table.Column,priornumer,,text,"Number of ELs who moved up at least one performance level in CELDT from 2013 to 2014 or who maintained Early Advanced/Advanced Proficient plus ELs who were reclassified between July 1, 2012 to June 30, 2013",Integer
+Table.Column,priordenom,,integer,Prior year number of testers and RFEP students,Integer
+Table.Column,priorstatus,,text,"PRIOR STATUS
+Percent of ELs who moved up at least one performance level in CELDT from 2013 to 2014 or who maintained Early Advanced/Advanced Proficient plus ELs who were reclassified between July 1, 2012 to June 30, 2013",Percent
+Table.Column,change,,text,"CHANGE
+Difference between current status and prior status",Percent
+Table.Column,statuslevel,,integer,Status level,"1=Very Low
+2=Low
+3=Medium
+4=High
+5=Very High
+0=No Data"
+Table.Column,changelevel,,integer,Change level,"1=Decreased Significantly
+2=Decreased
+3=Maintained
+4=Increased
+5= Increased Significantly
+0=No Data"
+Table.Column,color,,integer,Color,"1=Red
+2=Orange
+3=Yellow
+4=Green
+5=Blue
+0=No Color"
+Table.Column,box,,integer,"If a color was assigned, this value represents the specific 5x5 grid location","10=Very High, Declined Significantly
+20=Very High, Declined
+30=Very High, Mantained
+40=Very High, Increased
+50=Very High, Increased Significantly
+60=High, Declined Significantly
+70=High, Declined
+80=High, Mantained
+90=High, Increased
+100=High, Increased Significantly
+110=Medium, Declined Significantly
+120=Medium, Declined
+130=Medium, Mantained
+140=Medium, Increased
+150=Medium, Increased Significantly
+160=Low, Declined Significantly
+170=Low, Declined
+180=Low, Mantained
+190=Low, Increased
+200=Low, Increased Significantly
+210=Very Low, Declined Significantly
+220=Very Low, Declined
+230=Very Low, Mantained
+240=Very Low, Increased
+250=Very Low, Increased Significantly
+0=No Color"
+Table.Column,flag50pct,,text,"Tested less than 50% of EL population flag.
+Districts and schools that did not test at least 50 percent of their English learner population on the California English Language Development Test (CELDT) in grades 3 through 8 and 11 are assigned an orange performance level (box 180). The 50 percent determination is based on the number of English learners (i.e., does not include reclassified students) who took the 2015 Smarter Balanced Summative Assessments in mathematics in grades 3 through 8 and 11.","Y or blank
+Y=School did not test at least 50% of their EL population"
+Table,pubschools,,,,
+Table.Column,CDSCode,cdscode,text,"This 14-digit code is the official, unique identification of a school within California. The first two digits identify the county, the next five digits identify the school district, and the last seven digits identify the school.
+Please note that a CDS code ending in '0000000' indicates a district record not a school.",
+Table.Column,NCESDist,ncesdist,text,"This field represents the 7-digit National Center for Educational Statistics (NCES) school district identification number. The first 2 digits identify the state and the last 5 digits identify the school district. Combined, they make a unique 7-digit ID for each school district.",
+Table.Column,NCESSchool,ncesschool,text,This field represents the 5-digit NCES school identification number. The NCESSchool combined with the NCESDist form a unique 12-digit ID for each school.,
+Table.Column,StatusType,statustype,text,"This field identifies the status of the district. Definitions of the valid status types are listed below:
+Active: The district is in operation and providing instructional services.
+Closed: The district is not in operation and no longer providing instructional services.
+Merged: The district has combined with another district or districts.
+Pending: The district has not opened for operation and instructional services yet, but plans to open within the next 9–12 months.",
+Table.Column,County,county,text,County name.,
+Table.Column,District,district,text,District or Administrative Authority name.,
+Table.Column,School,school,text,School name.,
+Table.Column,Street,street,text,"The unabbreviated street (physical) address of this school, district, or administrative authority. Note: Some entities (primarily closed or retired schools) may not have data in this field.",
+Table.Column,StreetAbr,streetabr,text,"The abbreviated street address of the school, district, or administrative authority’s physical location. Note: Some records (primarily records of closed or retired schools) may not have data in this field.",
+Table.Column,City,city,text,"The city where the school, district, or administrative authority is physically located. Note: Some records (primarily records of closed or retired schools) may not have data in this field.",
+Table.Column,Zip,zip,text,"The zip code associated with the street address of the school, district, or administrative authority’s physical location. Note: Some records (primarily records of closed or retired schools) may not have data in this field.",
+Table.Column,State,state,text,"The state in which the school, district, or administrative authority is located.",
+Table.Column,MailStreet,mailstreet,text,"The unabbreviated mailing address of the school, district, or administrative authority (i.e., P.O. Box). Note: 1) Some entities (primarily closed or retired schools) may not have data in this field; 2) Many active entities have not provided a mailing street address. For your convenience we have filled the unpopulated MailStreet cells with Street data.",
+Table.Column,MailStrAbr,mailstrabr,text,"The abbreviated mailing street address of the school, district, or administrative authority (i.e., P.O. Box).Note: Many active entities have not provided a mailing street address. For your convenience we have filled the unpopulated MailStrAbr cells with StreetAbr data.",
+Table.Column,MailCity,mailcity,text,"The city associated with the mailing address of the school, district, or administrative authority. Note: Many entities have not provided a mailing address city. For your convenience we have filled the unpopulated MailCity cells with City data.",
+Table.Column,MailZip,mailzip,text,"The zip code associated with the mailing address of the school, district, or administrative authority. Note: Many entities have not provided a mailing address zip code. For your convenience we have filled the unpopulated MailZip cells with Zip data.",
+Table.Column,MailState,mailstate,text,The state within the mailing address. For your convenience we have filled the unpopulated MailState cells with State data.,
+Table.Column,Phone,phone,text,"The area code and phone number of the school, district, or administrative authority.",
+Table.Column,Ext,ext,text,"The phone number extension of the school, district, or administrative authority.",
+Table.Column,Website,website,text,"The website address of the school, district, or administrative authority.",
+Table.Column,OpenDate,opendate,text,The date the school opened. A blank cell indicates the record is for a district or county office.,
+Table.Column,ClosedDate,closeddate,text,The date the school closed. An empty cell indicates that the entity is not closed.,
+Table.Column,Charter,charter,text,"This field identifies a charter school. The field is coded as follows:
+Y = The school is a charter
+N = The school is not a charter",
+Table.Column,CharterNum,charternum,text,"The charter school number.
+A 4-digit number assigned to a charter school. A blank value indicates the school is not a charter school.",
+Table.Column,FundingType,fundingtype,text,"Indicates the charter school funding type. Values are as follows:
+Not in CS funding model
+Locally funded
+Directly funded
+Blank",
+Table.Column,DOC,doc,text,"The District Ownership Code (DOC) is the numeric code used to identify the category of the Administrative Authority.
+00 – County Office of Education
+02 – State Board of Education
+03 – Statewide Benefit Charter
+31 – State Special Schools
+34 – Non-school Location*
+52 – Elementary School District
+54 – Unified School District
+56 – High School District
+98 – Regional Occupational Center/Program (ROC/P)
+*Only the California Education Authority has been included in the non-school location category.",
+Table.Column,DOCType,doctype,text,"The District Ownership Code Type is the text description of the DOC category.
+(See text values in DOC field description above)",
+Table.Column,SOC,soc,text,"The School Ownership Code is a numeric code used to identify the type of school.
+08 – Preschool
+09 – Special Education Schools (Public)
+10 – County Community
+11 – Youth Authority Facilities (CEA)
+13 – Opportunity Schools
+14 – Juvenile Court Schools
+15 – Other County or District Programs
+31 – State Special Schools
+60 – Elementary School (Public)
+61 – Elementary School in 1 School District (Public)
+62 – Intermediate/Middle Schools (Public)
+63 – Alternative Schools of Choice
+64 – Junior High Schools (Public)
+65 – K-12 Schools (Public)
+66 – High Schools (Public)
+67 – High Schools in 1 School District (Public)
+68 – Continuation High Schools
+69 – District Community Day Schools
+70 – Adult Education Centers
+98 – Regional Occupational Center/Program (ROC/P)",
+Table.Column,SOCType,soctype,text,"The School Ownership Code Type is the text description of the type of school.
+(See text values in SOC field description above)",
+Table.Column,EdOpsCode,edopscode,text,"The Education Option Code is a short text description of the type of education offered.
+ALTSOC – Alternative School of Choice
+COMM – County Community School
+COMMDAY – Community Day School
+CON – Continuation School
+JUV – Juvenile Court School
+OPP – Opportunity School
+YTH – Youth Authority School
+SSS – State Special School
+SPEC – Special Education School
+TRAD – Tradtional
+ROP – Regional Occupational Program
+HOMHOS – Home and Hospital
+SPECON – District Consortia Special Education School",
+Table.Column,EdOpsName,edopsname,text,"The Educational Option Name is the long text description of the type of education being offered.
+(See text values in EdOPsCode field description above)",
+Table.Column,EILCode,eilcode,text,"The Educational Instruction Level Code is a short text description of the institution's type relative to the grade range served.
+A – Adult
+ELEM – Elementary
+ELEMHIGH – Elementray-High Combination
+HS – High School
+INTMIDJR – Intermediate/Middle/Junior High
+PS – Preschool
+UG – Ungraded",
+Table.Column,EILName,eilname,text,"The Educational Instruction Level Name is the long text description of the institution’s type relative to the grade range served.
+(See text values in EILCode field description above)",
+Table.Column,GSoffered,gsoffered,text,"The grade span offered is the lowest grade and the highest grade offered or supported by the school, district, or administrative authority. This field might differ from the grade span served as reported in the most recent certified California Longitudinal Pupil Achievement (CALPADS) Fall 1 data collection.
+For example XYZ School might display the following data:
+GSoffered = P–Adult
+GSserved = K–12",
+Table.Column,GSserved,gsserved,text,"This field represents the grade span served. It is the lowest grade and the highest grade of student enrollment as reported in the most recent certified CALPADS Fall 1 data collection. Only K–12 enrollment is reported through CALPADS. This field may differ from the grade span offered.
+Note: Special programs at independent study, alternative education, and special education schools will often exceed the typical grade span for schools of that type (i.e., a high school might serve grades three through twelve).",
+Table.Column,Virtual,virtual,text,"This field identifies the type of virtual instruction offered by the school. Virtual instruction is instruction in which students and teachers are separated by time and/or location, and interaction occurs via computers and/or telecommunications technologies. The field is coded as follows:
+F = Exclusively Virtual – The school has no physical building where students meet with each other or with teachers, all instruction is virtual.
+V = Primarily Virtual – The school focuses on a systematic program of virtual instruction but includes some physical meetings among students or with teachers.
+C = Primarily Classroom – The school offers virtual courses but virtual instruction is not the primary means of instruction.
+N = Not Virtual – The school does not offer any virtual instruction.
+Blank = The type of virtual instruction offered by the school is not known, or the record is for a district or county office. Data are only available at the school level, however not all schools in this file are required to provide this information.",
+Table.Column,Magnet,magnet,text,"This field identifies whether a school is a magnet school and/or provides a magnet program. Additional information on magnet schools may be obtained from the CDE Magnets Web page. The field is coded as follows:
+Y = Magnet - The school is a magnet school and/or offers a magnet program.
+N = Not Magnet - The school is not a magnet school and/or does not offer a magnet program.
+Note: Preschools and adult education centers do not contain a magnet school indicator.",
+Table.Column,Latitude,latitude,text,"The angular distance (expressed in degrees) between the location of the school, district, or administrative authority and the equator measured north to south.",
+Table.Column,Longitude,longitude,text,"The angular distance (expressed in degrees) between the location of the school, district, or administrative authority and the prime meridian (Greenwich, England) measured from west to east.",
+Table.Column,AdmFName1,admfname1,text,"The superintendent’s or principal’s first name. Only active and pending districts and schools will display administrator information, if applicable.",
+Table.Column,AdmLName1,admlname1,text,"The superintendent’s or principal’s last name. Only active and pending districts and schools will display administrator information, if applicable.",
+Table.Column,AdmEmail1,admemail1,text,"The superintendent’s or principal’s e-mail address. Only active and pending districts and schools will display administrator information, if applicable.",
+Table.Column,AdmFName2,admfname2,text,"The second principal’s first name (optional). Only active and pending school records will display principal information, if applicable.",
+Table.Column,AdmLName2,admlname2,text,"The second principal’s last name (optional). Only active and pending school records will display principal information, if applicable.",
+Table.Column,AdmEmail2,admemail2,text,"The second principal’s e-mail address (optional). Only active and pending school records will display principal information, if applicable.",
+Table.Column,AdmFName3,admfname3,text,"The third principal’s first name (optional). Only active and pending school records will display principal information, if applicable.",
+Table.Column,AdmLName3,admlname3,text,"The third principal’s last name (optional). Only active and pending school records will display principal information, if applicable.",
+Table.Column,AdmEmail3,admemail3,text,"The third principal’s e-mail address (optional). Only active and pending school records will display principal information, if applicable.",
+Table.Column,LastUpdate,lastupdate,date,The date the record was last updated.,
