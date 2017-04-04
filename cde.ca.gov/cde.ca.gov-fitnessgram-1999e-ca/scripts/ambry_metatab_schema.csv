@@ -1,0 +1,110 @@
+Section,Schema,ValueType,Datatype,size,parent,description,transform
+,,,,,,,
+Table,entities_2011e,,,,,,
+Table.Column,id,id,int,,,"PFT Entities, 2010 to 2014",
+Table.Column,year,d/int,int,4,,Year of release,^source.time
+Table.Column,ccode,d/int,int,2,,"County code, defined byt the Secretary of state, not FIPS ",
+Table.Column,county_fips,d/geo/fips/county?,d/geo/fips/county?,,,County FIPS code,"bundle.county_map.get(int(row.ccode),{}).get('fips_code', None)"
+Table.Column,county_gvid,d/geo/gvid?,d/geo/gvint?,,,County gvid,"bundle.county_map.get(int(row.ccode),{}).get('gvid', None)"
+Table.Column,county_geoid,d/geo/geoid?,d/geo/geoint?,,,County geoid,||row.county_gvid.acs|!ignore
+Table.Column,dcode,d/int,int,5,,dcode,
+Table.Column,chrtnum,d/str,str,4,,chrtnum,
+Table.Column,scode,d/int,int,7,,scode,
+Table.Column,cdscode,d/str,str,14,,cdscode,
+Table.Column,county,d/label,str,22,ccode,County name,
+Table.Column,district,d/label,str,74,dcode,District,
+Table.Column,school,d/label,str,106,scode,School,
+,,,,,,,
+Table,entities_1999e2010,,,,,,
+Table.Column,id,int,int,,,PFT Entities 1999 to 2010,
+Table.Column,year,int,int,4,,Year of release,^source.time
+Table.Column,ccode,int,int,2,,"County code, defined byt the Secretary of state, not FIPS ",
+Table.Column,county_fips,d/geo/fips/county?,d/geo/fips/county?,,,County FIPS code,"bundle.county_map.get(int(row.ccode),{}).get('fips_code', None)"
+Table.Column,county_gvid,d/geo/gvid?,d/geo/gvint?,,,County gvid,"bundle.county_map.get(int(row.ccode),{}).get('gvid', None)"
+Table.Column,county_geoid,d/geo/geoid?,d/geo/geoint?,,,County geoid,||row.county_gvid.acs|!ignore
+Table.Column,dcode,int,int,5,,District Code ,
+Table.Column,charternum,str,str,4,,charternum,
+Table.Column,scode,int,int,7,,Scode,
+Table.Column,cds_code,long,str,14,,cds_code,
+Table.Column,county,str,str,30,,County,
+Table.Column,district,str,str,60,,District,
+Table.Column,school,str,str,60,,school,
+,,,,,,,
+Table,physfit_2011e,,,,,,
+Table.Column,id,id,int,,,"Physical Fitness Research, 2010 to 2014",
+Table.Column,year,d/int,int,4,,Year of release,^source.time
+Table.Column,level_number,d/int,int,1,,1 = school 2 = district 3 = county 4 = state,
+Table.Column,report_number,d/int,int,2,,"Codes for  demographic category of values in report: gender, race, ethnicity, etc. See source documentation for codes.",
+Table.Column,table_number,d/int,int,1,,Table_Number,
+Table.Column,line_number,d/int,int,1,,Line Number in Table ,
+Table.Column,co,d/int,int,2,,"County code, defined by the Secretary of state, not FIPS ",
+Table.Column,county_fips,d/geo/fips/county?,d/geo/fips/county?,,,County FIPS code,"^bundle.county_map.get(int(row.co),{}).get('fips_code', None)"
+Table.Column,county_gvid,d/geo/gvid?,d/geo/gvint?,,,County gvid,"^bundle.county_map.get(int(row.co),{}).get('gvid', None)"
+Table.Column,county_geoid,d/geo/geoid?,d/geo/geoint?,,,County geoid,||row.county_gvid.acs|!ignore
+Table.Column,dist,d/int,int,5,,District Code ,
+Table.Column,schl,d/int,int,7,,School Code ,
+Table.Column,cdscode,d/label,str,,,CDS Code,^make_cds
+Table.Column,line_text,d/str,str,35,,Line Text ,
+Table.Column,nostud5,d/int,int,6,,Number of Grade 5 ,
+Table.Column,nohfz5,d/int?,int,6,,Number of Grade 5 ,^star_is_not_a_number
+Table.Column,perc5a,d/float?,float,,,Percent of Grade 5  students in Healthy Fitness Zone,^star_is_not_a_number
+Table.Column,perc5b,d/float?,float,,,Percent of Grade 5 Students in Needs Improvement,^star_is_not_a_number
+Table.Column,perc5c,d/float?,float,,,Percent of Grade 5 Students in Needs Improvement â High Risk,^star_is_not_a_number
+Table.Column,nostud7,d/int,int,6,,Number of Grade 7 Students Tested,
+Table.Column,nohfz7,d/int?,int,6,,Number of Grade 7  Students in Healthy  Fitness Zone,^star_is_not_a_number
+Table.Column,perc7a,d/float?,float,,,Percent of Grade 7 students in Healthy Fitness Zone,^star_is_not_a_number
+Table.Column,perc7b,d/float?,float,,,Percent of Grade 7 Students in Needs  Improvement,^star_is_not_a_number
+Table.Column,perc7c,d/float?,float,,,Percent of Grade 7 Students in Needs Improvement â High Risk,^star_is_not_a_number
+Table.Column,nostud9,d/int?,int,6,,Number of Grade 9 Students Tested,
+Table.Column,nohfz9,d/int?,int,6,,Number of Grade 9 Students in Healthy Fitness Zone,^star_is_not_a_number
+Table.Column,perc9a,d/float?,float,,,Percent of Grade 9 students in Healthy Fitness Zone,^star_is_not_a_number
+Table.Column,perc9b,d/float?,float,,,Percent of Grade 9 Students in Needs Improvement,^star_is_not_a_number
+Table.Column,perc9c,d/float?,float,,,Percent of Grade 9 Students in Needs Improvement â High Risk,^star_is_not_a_number
+Table.Column,chrtnum,d/str,str,4,,ChrtNum,
+Table.Column,id_src,d/int?,int,7,,ID,
+,,,,,,,
+Table,physfit_1999e2010,,,,,,
+Table.Column,id,int,int,,,"Physical Fitness Research, 1999 to 2010",
+Table.Column,year,int,int,4,,Year of release,
+Table.Column,level,int,int,1,,Level,^source.time
+Table.Column,subgrp,int,int,2,,SubGrp,
+Table.Column,rpttype,int,int,1,,RptType,
+Table.Column,line_num,int,int,2,,line_num,
+Table.Column,ccode,int,int,2,,"County code, defined byt the Secretary of state, not FIPS ",
+Table.Column,county_fips,d/geo/fips/county?,d/geo/fips/county?,,,County FIPS code,"bundle.county_map.get(int(row.ccode),{}).get('fips_code', None)"
+Table.Column,county_gvid,d/geo/gvid?,d/geo/gvint?,,,County gvid,"bundle.county_map.get(int(row.ccode),{}).get('gvid', None)"
+Table.Column,county_geoid,d/geo/geoid?,d/geo/geoint?,,,County geoid,||row.county_gvid.acs|!ignore
+Table.Column,dcode,int,int,5,,Dcode,
+Table.Column,charternum,str,str,4,,charternum,
+Table.Column,scode,int,int,7,,Scode,
+Table.Column,cds_code,long,str,14,,cds_code,
+Table.Column,gr05_stu,int,int,6,,Gr05_Stu,^star_is_not_a_number
+Table.Column,gr5pctin,float,float,,,Gr5PctIn,^star_is_not_a_number
+Table.Column,gr5pctnotin,float,float,,,Gr5PctNotIn,^star_is_not_a_number
+Table.Column,gr07_stu,int,int,6,,Gr07_Stu,^star_is_not_a_number
+Table.Column,gr7pctin,float,float,,,Gr7PctIn,^star_is_not_a_number
+Table.Column,gr7pctnotin,float,float,,,Gr7PctNotIn,^star_is_not_a_number
+Table.Column,gr09_stu,int,int,6,,Gr09_Stu,^star_is_not_a_number
+Table.Column,gr9pctin,float,float,,,Gr9PctIn,^star_is_not_a_number
+Table.Column,gr9pctnotin,float,float,,,Gr9PctNotIn,^star_is_not_a_number
+,,,,,,,
+Table,subgroups_2011e,,,,,,
+Table.Column,id,int,int,,,PFT Subgroups 2010 to 2014,
+Table.Column,year,int,int,4,,Year of release,^source.time
+Table.Column,level_number,int,int,1,,Level_Number,
+Table.Column,report_number,int,int,2,,Report_Number,
+Table.Column,table_number,int,int,1,,Table_Number,
+Table.Column,line_number,int,int,1,,Line_Number,
+Table.Column,line_text,str,str,35,,Line_Text,
+Table.Column,table_type,str,str,28,,Table_Type,
+Table.Column,subgroup,str,str,47,,Subgroup,
+,,,,,,,
+Table,subgroups_1999e2010,,,,,,
+Table.Column,id,int,int,,,PFT Subgroups 1999 to 2010,
+Table.Column,year,int,int,4,,Year of release,^source.time
+Table.Column,subgrp,int,int,2,,SubGrp,
+Table.Column,rpttype,int,int,1,,RptType,
+Table.Column,linenum,int,int,2,,LineNum,
+Table.Column,reporttype,str,str,28,,ReportType,
+Table.Column,subgroup,str,str,30,,SubGroup,
+Table.Column,line_text,str,str,30,,line_text,

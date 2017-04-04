@@ -3,19 +3,20 @@ Title,California Accountability Model & School Dashboard
 Description,Datasets for the California school dashboard at https://www.caschooldashboard.org
 Identifier,9574d599-9a64-4266-80e7-89769342c498
 Name,cde.ca.gov-accountability_dashboard-2
-Name.Time,
+Name.Version,2
 Name.Origin,cde.ca.gov
 Name.Grain,
-Name.Space,
-Name.Version,2
 Name.Dataset,accountability-dashboard
-Modified,2017-04-03T23:07:32
-Issued,2017-04-03T23:07:32
+Name.Space,
+Name.Time,
+Modified,2017-04-04T01:11:14
+Issued,2017-04-04T01:11:14
 Distribution,http://s3.amazonaws.com/library.metatab.org/cde.ca.gov-accountability_dashboard-2.zip
 Distribution,http://data.sandiegodata.org/dataset/cde-ca-gov-accountability_dashboard-2
 Distribution,http://s3.amazonaws.com/library.metatab.org/cde.ca.gov-accountability_dashboard-2/metadata.csv
 Distribution,http://s3.amazonaws.com/library.metatab.org/cde.ca.gov-accountability_dashboard-2.csv
 Ckanid,d564f872-64da-40e2-a606-7bd2c95ba126
+Distribution,http://localhost:32768/dataset/cde-ca-gov-accountability_dashboard-2
 Group,education
 
 Section,Resources,Name,format,Encoding,Description
@@ -30,7 +31,7 @@ Datafile,http://www3.cde.ca.gov/researchfiles/cadashboard/elpidownload2017s.txt,
 Datafile,ftp://ftp.cde.ca.gov/demo/schlname/pubschls.txt,pubschools,tsv,latin1,List of all public schools and districts
 
 Section,Documentation,Title,Description,,
-Homepage,# URL to webpage for the data program,California Accountability Model & School Dashboard,,,
+Homepage,http://www.cde.ca.gov/ta/ac/cm/,California Accountability Model & School Dashboard,"Program page for the dashboard, datasets and reports.",,
 Webpage,https://www.caschooldashboard.org,California School Dashboard,The California School Dashboard website.,,
 
 Section,Contacts,Email,Organization,Url,
