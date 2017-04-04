@@ -1,13 +1,15 @@
 Declare,metatab-latest
 Title,A Fairly Simple Dtata Package
-Identifier,96cd659b-94ad-46ae-9c18-4018caa64355
 Description,"An example data package, from the Metatab tutorial at https://github.com/CivicKnowledge/metatab-py/blob/master/README.rst"
+Identifier,96cd659b-94ad-46ae-9c18-4018caa64355
 Name,simple_example-2017-us-1
-Name.Space,US
 Name.Version,1
-Name.Spatialgrain,
 Name.Dataset,simple-example
+Name.Spatialgrain,
+Name.Space,US
 Name.Time,2017
+Modified,2017-04-04T00:22:06
+Issued,2017-04-04T00:22:06
 Distribution,http://s3.amazonaws.com/library.metatab.org/simple_example-2017-us-1.xlsx
 Distribution,http://s3.amazonaws.com/library.metatab.org/simple_example-2017-us-1.zip
 Distribution,http://s3.amazonaws.com/library.metatab.org/simple_example-2017-us-1/metadata.csv

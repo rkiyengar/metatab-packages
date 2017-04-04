@@ -1,2 +1,2 @@
-*.xlsx
-*.zip
+_packages
+.DS_Store
