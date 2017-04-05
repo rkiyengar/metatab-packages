@@ -52,3 +52,4 @@ Table.Column,Origin (English),text,origin_english,,,
 Table.Column,Name (English),text,name_english,,,
 Table.Column,Origin (Native),string,origin_native,,,
 Table.Column,Name (Native),string,name_native,,,
+
