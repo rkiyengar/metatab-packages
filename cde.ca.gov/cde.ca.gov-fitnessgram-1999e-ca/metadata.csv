@@ -1,171 +1,233 @@
-Declare,metatab-latest
-Title,California Physical Fitness Test  Research Data
-Description,"These research files contain results from the Physical Fitness Test (PFT) program. Each file contains the same information presented in the Reports section of this site and is provided to allow for more complex analyses and customized reporting of the data. The data files, including file layout, entities, and subgroup files, are comma-delimited text files provided in a zip format."
-Identifier,48bb7772-1641-4e71-83bd-13f8ecca5255
-Name,cde.ca.gov-fitnessgram-1999e-ca-3
-Name.Grain,
-Name.Origin,cde.ca.gov
-Name.Dataset,fitnessgram
-Name.Version,3
-Name.Space,CA
-Name.Time,1999e
-Version,1
-
-Section,Documentation,Title,Description,,,,,,,
-Homepage,http://www.cde.ca.gov/ta/tg/pf/,Physical Fitness Testing (PFT),Home page for the PFT program,,,,,,,
-Downloadpage,http://www.cde.ca.gov/ta/tg/pf/pftresearch.asp,PFT Statewide Research Files,Download page with links to research file archives,,,,,,,
-Webpage,http://www.cde.ca.gov/ta/tg/pf/resources.asp,Additional Resources,"Additional resources for the Physical Fitness Test, including links to the Cooper Institute, San Joaquin County Office of Education, and Human Kinetics.",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip#PFT+File+Layouts.pdf,File Layout 2001,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip#PFT+File+Layouts.pdf,File Layout 2002,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip#PFT+File+Layouts.pdf,File Layout 2003,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip#PFT+File+Layouts.pdf,File Layout 2004,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip#PFT+File+Layouts.pdf,File Layout 2005,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip#PFT+File+Layouts.pdf,File Layout 2006,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip#PFT+File+Layouts.pdf,File Layout 2007,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip#PFT+File+Layouts.pdf,File Layout 2008,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip#PFT+File+Layouts.pdf,File Layout 2009,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip#PFT+File+Layouts.pdf,File Layout 2010,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip#PFT+Research+File+Layouts+2011.pdf,File Layout 2011,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip#PFT+Research+File+Layouts+2012.pdf,File Layout 2012,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip#PFT+Research+File+Layouts+2013.pdf,File Layout 2013,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip#PFT+Research+File+Layouts+2014.pdf,File Layout 2014,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles15.zip#PFT+Research+File+Layouts+2015.pdf,File Layout 2015,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles16.zip#PFT+Research+File+Layouts+2016.pdf,File Layout 2016,"Text form data dictionary, including common code values",,,,,,,
-Documentation,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip#PFT+File+Layouts.pdf,File Layout 1999,"Text form data dictionary, including common code values",,,,,,,
-
-Section,Contacts,email,organization,web,tel,,,,,
-Creator,High School and Physical Fitness Assessment Office,pft@cde.ca.gov,California Department of Education,http://www.cde.ca.gov/index.asp,916-445-9449,,,,,
-Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com,,,,,,
-
-Section,Resources,Name,StartLine,Endline,HeaderLines,format,Encoding,Time,Schema,Description
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip#Entities.*,entities99,1,6262,0,csv,latin1,1999,entities_1999e2010,1999 PFT Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip#Entities.*,entities01,1,7798,0,csv,latin1,2001,entities_1999e2010,2001 PFT Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip#Entities.*,entities02,1,8202,0,csv,latin1,2002,entities_1999e2010,2002 PFT Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip#Entities.*,entities03,1,9365,0,csv,latin1,2003,entities_1999e2010,2003 PFT Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip#Entities.*,entities04,1,9035,0,csv,latin1,2004,entities_1999e2010,2004 PFT Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip#Entities.*,entities05,1,9262,0,csv,latin1,2005,entities_1999e2010,2005 PFT Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip#Entities.*,entities06,1,9564,0,csv,latin1,2006,entities_1999e2010,2006 PFT Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip#Entities.*,entities07,1,9970,0,csv,latin1,2007,entities_1999e2010,2007 PFT Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip#Entities.*,entities08,1,9922,0,csv,latin1,2008,entities_1999e2010,2008 PFT Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip#Entities.*,entities09,1,10245,0,csv,latin1,2009,entities_1999e2010,2009 PFT Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip#Entities.*,entities10,1,10071,0,csv,latin1,2010,entities_1999e2010,2010 PFT Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip#Entities.*,entities11,1,13714,0,csv,latin1,2011,entities_2011e,2011 PFT Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip#Entities.*,entities12,1,10323,0,tsv,latin1,2012,entities_2011e,2011-12 Physical Fitness Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip#Entities.*,entities13,1,10503,0,tsv,latin1,2013,entities_2011e,2012-13 Physical Fitness Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip#Entities.*,entities14,1,10589,0,tsv,latin1,2014,entities_2011e,2013-14 Physical Fitness Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles15.zip#2014_15_Entities.txt,entities15,1,,0,csv,latin1,2015,entities_2011e,2014-15 Physical Fitness Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles16.zip#2015_16_Entities.txt,entities16,1,,0,csv,latin1,2016,entities_2011e,2015-16 Physical Fitness Entities
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip#PhysFit.*,physfit99,1,947828,0,csv,,1999,physfit_1999e2010,1999 PFT Fitness Results
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip#PhysFit.*,physfit01,1,1297291,0,csv,,2001,physfit_1999e2010,2001 PFT Fitness Results
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip#PhysFit.*,physfit02,1,1365185,0,csv,,2002,physfit_1999e2010,2002 PFT Fitness Results
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip#PhysFit.*,physfit03,1,1322308,0,csv,,2003,physfit_1999e2010,2003 PFT Fitness Results
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip#PhysFit.*,physfit04,1,1364286,0,csv,,2004,physfit_1999e2010,2004 PFT Fitness Results
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip#PhysFit.*,physfit05,1,1398110,0,csv,,2005,physfit_1999e2010,2005 PFT Fitness Results
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip#PhysFit.*,physfit06,1,1577273,0,csv,,2006,physfit_1999e2010,2006 PFT Fitness Results
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip#PhysFit.*,physfit07,1,1602597,0,csv,,2007,physfit_1999e2010,2007 PFT Fitness Results
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip#PhysFit.*,physfit08,1,1821179,0,csv,,2008,physfit_1999e2010,2008 PFT Fitness Results
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip#PhysFit.*,physfit09,1,1854179,0,csv,,2009,physfit_1999e2010,2009 PFT Fitness Results
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip#PhysFit.*,physfit10,1,3623041,0,csv,,2010,physfit_1999e2010,2010 PFT Fitness Results
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip#PhysFit.*,physfit11,1,2743960,0,csv,,2011,physfit_2011e,2011 PFT Fitness Results
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip#.*ResearchFile.*,physfit12,1,2175833,0,tsv,,2012,physfit_2011e,2011-12 Physical Fitness Research
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip#.*ResearchFile.*,physfit13,1,2214024,0,tsv,,2013,physfit_2011e,2012-13 Physical Fitness Research
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip#.*ResearchFile.*,physfit14,1,2233436,0,csv,,2014,physfit_2011e,2013-14 Physical Fitness Research
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles15.zip#2014_15_ResearchFile.txt,physfit15,1,,0,csv,,2015,physfit_2011e,2014-15 Physical Fitness Research
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles16.zip#2015_16_ResearchFile.txt,physfit16,1,,0,csv,,2016,physfit_2011e,2015-16 Physical Fitness Research
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip#SubGroups.*,subgroup99,1,152,0,csv,,1999,subgroups_1999e2010,1999 PFT Subgroup
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip#SubGroups.*,subgroup01,1,166,0,csv,,2001,subgroups_1999e2010,2001 PFT Subgroup
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip#SubGroups.*,subgroup02,1,166,0,csv,,2002,subgroups_1999e2010,2002 PFT Subgroup
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip#SubGroups.*,subgroup03,1,152,0,csv,,2003,subgroups_1999e2010,2003 PFT Subgroup
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip#SubGroups.*,subgroup04,1,152,0,csv,,2004,subgroups_1999e2010,2004 PFT Subgroup
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip#SubGroups.*,subgroup05,1,152,0,csv,,2005,subgroups_1999e2010,2005 PFT Subgroup
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip#SubGroups.*,subgroup06,1,331,0,csv,,2006,subgroups_1999e2010,2006 PFT Subgroup
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip#SubGroups.*,subgroup07,1,331,0,csv,,2007,subgroups_1999e2010,2007 PFT Subgroup
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip#SubGroups.*,subgroup08,1,361,0,csv,,2008,subgroups_1999e2010,2008 PFT Subgroup
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip#SubGroups.*,subgroup09,1,361,0,csv,,2009,subgroups_1999e2010,2009 PFT Subgroup
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip#Subgroups.*,subgroup10,1,361,0,csv,,2010,subgroups_1999e2010,2010 PFT Subgroup
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip#Subgroups.*,subgroup11,1,1069,0,csv,,2011,subgroups_2011e,2011 PFT Subgroup
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip#Subgroups.*,subgroup12,1,845,0,tsv,,2012,subgroups_2011e,2011-12 Physical Fitness Subgroups
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip#Subgroups.*,subgroup13,1,845,0,tsv,,2013,subgroups_2011e,2012-13 Physical Fitness Subgroups
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip#Subgroups.*,subgroup14,1,845,0,csv,,2014,subgroups_2011e,2013-14 Physical Fitness Subgroups
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles15.zip#2014_15_Subgroups.txt,subgroup15,1,,0,csv,,2015,subgroups_2011e,2014-15 Physical Fitness Subgroups
-Datafile,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles16.zip#2015_16_Subgroups.txt,subgroup16,1,,0,csv,,2016,subgroups_2011e,2015-16 Physical Fitness Subgroups
-
-Section,Schema,DataType,ValueType,Transform,Description,,,,,
-Table,entities_2011e,,,,,,,,,
-Table.Column,ccode,int,d/int,,"County code, defined byt the Secretary of state, not FIPS",,,,,
-Table.Column,dcode,int,d/int,,dcode,,,,,
-Table.Column,chrtnum,str,d/str,,chrtnum,,,,,
-Table.Column,scode,int,d/int,,scode,,,,,
-Table.Column,cdscode,str,d/str,,cdscode,,,,,
-Table.Column,county,str,d/label,,County name,,,,,
-Table.Column,district,str,d/label,,District,,,,,
-Table.Column,school,str,d/label,,School,,,,,
-Table,subgroups_2011e,,,,,,,,,
-Table.Column,level_number,int,int,,Level_Number,,,,,
-Table.Column,report_number,int,int,,Report_Number,,,,,
-Table.Column,table_number,int,int,,Table_Number,,,,,
-Table.Column,line_number,int,int,,Line_Number,,,,,
-Table.Column,line_text,str,str,,Line_Text,,,,,
-Table.Column,table_type,str,str,,Table_Type,,,,,
-Table.Column,subgroup,str,str,,Subgroup,,,,,
-Table,entities_1999e2010,,,,,,,,,
-Table.Column,ccode,int,int,,"County code, defined byt the Secretary of state, not FIPS",,,,,
-Table.Column,dcode,int,int,,District Code,,,,,
-Table.Column,charternum,str,str,,charternum,,,,,
-Table.Column,scode,int,int,,Scode,,,,,
-Table.Column,cds_code,str,long,,cds_code,,,,,
-Table.Column,county,str,str,,County,,,,,
-Table.Column,district,str,str,,District,,,,,
-Table.Column,school,str,str,,school,,,,,
-Table,subgroups_1999e2010,,,,,,,,,
-Table.Column,subgrp,int,int,,SubGrp,,,,,
-Table.Column,rpttype,int,int,,RptType,,,,,
-Table.Column,linenum,int,int,,LineNum,,,,,
-Table.Column,reporttype,str,str,,ReportType,,,,,
-Table.Column,subgroup,str,str,,SubGroup,,,,,
-Table.Column,line_text,str,str,,line_text,,,,,
-Table,physfit_1999e2010,,,,,,,,,
-Table.Column,level,int,int,,Level,,,,,
-Table.Column,subgrp,int,int,,SubGrp,,,,,
-Table.Column,rpttype,int,int,,RptType,,,,,
-Table.Column,line_num,int,int,,line_num,,,,,
-Table.Column,ccode,int,int,,"County code, defined byt the Secretary of state, not FIPS",,,,,
-Table.Column,dcode,int,int,,Dcode,,,,,
-Table.Column,charternum,str,str,,charternum,,,,,
-Table.Column,scode,int,int,,Scode,,,,,
-Table.Column,cds_code,str,long,,cds_code,,,,,
-Table.Column,gr05_stu,int,int,^star_is_not_a_number,Gr05_Stu,,,,,
-Table.Column,gr5pctin,float,float,^star_is_not_a_number,Gr5PctIn,,,,,
-Table.Column,gr5pctnotin,float,float,^star_is_not_a_number,Gr5PctNotIn,,,,,
-Table.Column,gr07_stu,int,int,^star_is_not_a_number,Gr07_Stu,,,,,
-Table.Column,gr7pctin,float,float,^star_is_not_a_number,Gr7PctIn,,,,,
-Table.Column,gr7pctnotin,float,float,^star_is_not_a_number,Gr7PctNotIn,,,,,
-Table.Column,gr09_stu,int,int,^star_is_not_a_number,Gr09_Stu,,,,,
-Table.Column,gr9pctin,float,float,^star_is_not_a_number,Gr9PctIn,,,,,
-Table.Column,gr9pctnotin,float,float,^star_is_not_a_number,Gr9PctNotIn,,,,,
-Table,physfit_2011e,,,,,,,,,
-Table.Column,id,int,id,,"Physical Fitness Research, 2010 to 2014",,,,,
-Table.Column,level_number,int,d/int,,1 = school 2 = district 3 = county 4 = state,,,,,
-Table.Column,report_number,int,d/int,,"Codes for  demographic category of values in report: gender, race, ethnicity, etc. See source documentation for codes.",,,,,
-Table.Column,table_number,int,d/int,,Table_Number,,,,,
-Table.Column,line_number,int,d/int,,Line Number in Table,,,,,
-Table.Column,co,int,d/int,,"County code, defined by the Secretary of state, not FIPS",,,,,
-Table.Column,dist,int,d/int,,District Code,,,,,
-Table.Column,schl,int,d/int,,School Code,,,,,
-Table.Column,line_text,str,d/str,,Line Text,,,,,
-Table.Column,nostud5,int,d/int,,Number of Grade 5,,,,,
-Table.Column,nohfz5,int,d/int?,^star_is_not_a_number,Number of Grade 5,,,,,
-Table.Column,perc5a,float,d/float?,^star_is_not_a_number,Percent of Grade 5  students in Healthy Fitness Zone,,,,,
-Table.Column,perc5b,float,d/float?,^star_is_not_a_number,Percent of Grade 5 Students in Needs Improvement,,,,,
-Table.Column,perc5c,float,d/float?,^star_is_not_a_number,Percent of Grade 5 Students in Needs Improvement – High Risk,,,,,
-Table.Column,nostud7,int,d/int,,Number of Grade 7 Students Tested,,,,,
-Table.Column,nohfz7,int,d/int?,^star_is_not_a_number,Number of Grade 7  Students in Healthy  Fitness Zone,,,,,
-Table.Column,perc7a,float,d/float?,^star_is_not_a_number,Percent of Grade 7 students in Healthy Fitness Zone,,,,,
-Table.Column,perc7b,float,d/float?,^star_is_not_a_number,Percent of Grade 7 Students in Needs  Improvement,,,,,
-Table.Column,perc7c,float,d/float?,^star_is_not_a_number,Percent of Grade 7 Students in Needs Improvement – High Risk,,,,,
-Table.Column,nostud9,int,d/int?,,Number of Grade 9 Students Tested,,,,,
-Table.Column,nohfz9,int,d/int?,^star_is_not_a_number,Number of Grade 9 Students in Healthy Fitness Zone,,,,,
-Table.Column,perc9a,float,d/float?,^star_is_not_a_number,Percent of Grade 9 students in Healthy Fitness Zone,,,,,
-Table.Column,perc9b,float,d/float?,^star_is_not_a_number,Percent of Grade 9 Students in Needs Improvement,,,,,
-Table.Column,perc9c,float,d/float?,^star_is_not_a_number,Percent of Grade 9 Students in Needs Improvement – High Risk,,,,,
-Table.Column,chrtnum,str,d/str,,ChrtNum,,,,,
+"Declare","metatab-latest",,,,,,,
+"Title","California Physical Fitness Test  Research Data",,,,,,,
+"Description","These research files contain results from the Physical Fitness Test (PFT) program. Each file contains the same information presented in the Reports section of this site and is provided to allow for more complex analyses and customized reporting of the data. The data files, including file layout, entities, and subgroup files, are comma-delimited text files provided in a zip format.",,,,,,,
+"Identifier","48bb7772-1641-4e71-83bd-13f8ecca5255",,,,,,,
+"Name","cde.ca.gov-fitnessgram-1999e-ca-3",,,,,,,
+"Group","health",,,,,,,
+"Group","education",,,,,,,
+"Tag","healthy-food-access",,,,,,,
+"Name.Grain",,,,,,,,
+"Name.Origin","cde.ca.gov",,,,,,,
+"Name.Dataset","fitnessgram",,,,,,,
+"Name.Version",3,,,,,,,
+"Name.Space","CA",,,,,,,
+"Name.Time","1999e",,,,,,,
+"Version",1,,,,,,,
+,,,,,,,,
+"Section","Documentation","Title","Description",,,,,
+"Homepage","http://www.cde.ca.gov/ta/tg/pf/","Physical Fitness Testing (PFT)","Home page for the PFT program",,,,,
+"Downloadpage","http://www.cde.ca.gov/ta/tg/pf/pftresearch.asp","PFT Statewide Research Files","Download page with links to research file archives",,,,,
+"Webpage","http://www.cde.ca.gov/ta/tg/pf/resources.asp","Additional Resources","Additional resources for the Physical Fitness Test, including links to the Cooper Institute, San Joaquin County Office of Education, and Human Kinetics.",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip#PFT+File+Layouts.pdf","File Layout 2001","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip#PFT+File+Layouts.pdf","File Layout 2002","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip#PFT+File+Layouts.pdf","File Layout 2003","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip#PFT+File+Layouts.pdf","File Layout 2004","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip#PFT+File+Layouts.pdf","File Layout 2005","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip#PFT+File+Layouts.pdf","File Layout 2006","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip#PFT+File+Layouts.pdf","File Layout 2007","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip#PFT+File+Layouts.pdf","File Layout 2008","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip#PFT+File+Layouts.pdf","File Layout 2009","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip#PFT+File+Layouts.pdf","File Layout 2010","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip#PFT+Research+File+Layouts+2011.pdf","File Layout 2011","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip#PFT+Research+File+Layouts+2012.pdf","File Layout 2012","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip#PFT+Research+File+Layouts+2013.pdf","File Layout 2013","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip#PFT+Research+File+Layouts+2014.pdf","File Layout 2014","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles15.zip#PFT+Research+File+Layouts+2015.pdf","File Layout 2015","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles16.zip#PFT+Research+File+Layouts+2016.pdf","File Layout 2016","Text form data dictionary, including common code values",,,,,
+"Documentation","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip#PFT+File+Layouts.pdf","File Layout 1999","Text form data dictionary, including common code values",,,,,
+,,,,,,,,
+"Section","Contacts","email","organization","web","tel",,,
+"Creator","High School and Physical Fitness Assessment Office","pft@cde.ca.gov","California Department of Education","http://www.cde.ca.gov/index.asp","916-445-9449",,,
+"Wrangler","Eric Busboom","eric@civicknowledge.com","Civic Knowledge","http://civicknowledge.com",,,,
+,,,,,,,,
+"Section","Resources","Name","Endline","format","Encoding","Time","Schema","Description"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip#Entities.*","entities99",6262,"csv","latin1",1999,"entities_1999e2002","1999 PFT Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip#Entities.*","entities01",7798,"csv","latin1",2001,"entities_1999e2002","2001 PFT Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip#Entities.*","entities02",8202,"csv","latin1",2002,"entities_1999e2002","2002 PFT Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip#Entities.*","entities03",9365,"csv","latin1",2003,"entities_2002e2010","2003 PFT Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip#Entities.*","entities04",9035,"csv","latin1",2004,"entities_2002e2010","2004 PFT Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip#Entities.*","entities05",9262,"csv","latin1",2005,"entities_2002e2010","2005 PFT Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip#Entities.*","entities06",9564,"csv","latin1",2006,"entities_2002e2010","2006 PFT Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip#Entities.*","entities07",9970,"csv","latin1",2007,"entities_2002e2010","2007 PFT Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip#Entities.*","entities08",9922,"csv","latin1",2008,"entities_2002e2010","2008 PFT Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip#Entities.*","entities09",10245,"csv","latin1",2009,"entities_2002e2010","2009 PFT Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip#Entities.*","entities10",10071,"csv","latin1",2010,"entities_2002e2010","2010 PFT Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip#Entities.*","entities11",13714,"csv","latin1",2011,"entities_2011e","2011 PFT Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip#Entities.*","entities12",10323,"tsv","latin1",2012,"entities_2011e","2011-12 Physical Fitness Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip#Entities.*","entities13",10503,"tsv","latin1",2013,"entities_2011e","2012-13 Physical Fitness Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip#Entities.*","entities14",10589,"tsv","latin1",2014,"entities_2011e","2013-14 Physical Fitness Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles15.zip#2014_15_Entities.txt","entities15",,"csv","latin1",2015,"entities_2011e","2014-15 Physical Fitness Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles16.zip#2015_16_Entities.txt","entities16",,"csv","latin1",2016,"entities_2011e","2015-16 Physical Fitness Entities"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip#PhysFit.*","physfit99",947828,"csv",,1999,"physfit_1999e2002","1999 PFT Fitness Results"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip#PhysFit.*","physfit01",1297291,"csv",,2001,"physfit_1999e2002","2001 PFT Fitness Results"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip#PhysFit.*","physfit02",1365185,"csv",,2002,"physfit_1999e2002","2002 PFT Fitness Results"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip#PhysFit.*","physfit03",1322308,"csv",,2003,"physfit_2002e2010","2003 PFT Fitness Results"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip#PhysFit.*","physfit04",1364286,"csv",,2004,"physfit_2002e2010","2004 PFT Fitness Results"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip#PhysFit.*","physfit05",1398110,"csv",,2005,"physfit_2002e2010","2005 PFT Fitness Results"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip#PhysFit.*","physfit06",1577273,"csv",,2006,"physfit_2002e2010","2006 PFT Fitness Results"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip#PhysFit.*","physfit07",1602597,"csv",,2007,"physfit_2002e2010","2007 PFT Fitness Results"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip#PhysFit.*","physfit08",1821179,"csv",,2008,"physfit_2002e2010","2008 PFT Fitness Results"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip#PhysFit.*","physfit09",1854179,"csv",,2009,"physfit_2002e2010","2009 PFT Fitness Results"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip#PhysFit.*","physfit10",3623041,"csv",,2010,"physfit_2002e2010","2010 PFT Fitness Results"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip#PhysFit.*","physfit11",2743960,"csv",,2011,"physfit_2011","2011 PFT Fitness Results"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip#.*ResearchFile.*","physfit12",2175833,"tsv",,2012,"physfit_2012e","2011-12 Physical Fitness Research"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip#.*ResearchFile.*","physfit13",2214024,"tsv",,2013,"physfit_2012e","2012-13 Physical Fitness Research"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip#.*ResearchFile.*","physfit14",2233436,"csv",,2014,"physfit_2012e","2013-14 Physical Fitness Research"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles15.zip#2014_15_ResearchFile.txt","physfit15",,"csv",,2015,"physfit_2012e","2014-15 Physical Fitness Research"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles16.zip#2015_16_ResearchFile.txt","physfit16",,"csv",,2016,"physfit_2012e","2015-16 Physical Fitness Research"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip#SubGroups.*","subgroup99",152,"csv",,1999,"subgroups_1999e2010","1999 PFT Subgroup"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip#SubGroups.*","subgroup01",166,"csv",,2001,"subgroups_1999e2010","2001 PFT Subgroup"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip#SubGroups.*","subgroup02",166,"csv",,2002,"subgroups_1999e2010","2002 PFT Subgroup"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip#SubGroups.*","subgroup03",152,"csv",,2003,"subgroups_1999e2010","2003 PFT Subgroup"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip#SubGroups.*","subgroup04",152,"csv",,2004,"subgroups_1999e2010","2004 PFT Subgroup"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip#SubGroups.*","subgroup05",152,"csv",,2005,"subgroups_1999e2010","2005 PFT Subgroup"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip#SubGroups.*","subgroup06",331,"csv",,2006,"subgroups_1999e2010","2006 PFT Subgroup"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip#SubGroups.*","subgroup07",331,"csv",,2007,"subgroups_1999e2010","2007 PFT Subgroup"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip#SubGroups.*","subgroup08",361,"csv",,2008,"subgroups_1999e2010","2008 PFT Subgroup"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip#SubGroups.*","subgroup09",361,"csv",,2009,"subgroups_1999e2010","2009 PFT Subgroup"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip#Subgroups.*","subgroup10",361,"csv",,2010,"subgroups_1999e2010","2010 PFT Subgroup"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip#Subgroups.*","subgroup11",1069,"csv",,2011,"subgroups_2011e","2011 PFT Subgroup"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip#Subgroups.*","subgroup12",845,"tsv",,2012,"subgroups_2011e","2011-12 Physical Fitness Subgroups"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip#Subgroups.*","subgroup13",845,"tsv",,2013,"subgroups_2011e","2012-13 Physical Fitness Subgroups"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip#Subgroups.*","subgroup14",845,"csv",,2014,"subgroups_2011e","2013-14 Physical Fitness Subgroups"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles15.zip#2014_15_Subgroups.txt","subgroup15",,"csv",,2015,"subgroups_2011e","2014-15 Physical Fitness Subgroups"
+"Datafile","http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles16.zip#2015_16_Subgroups.txt","subgroup16",,"csv",,2016,"subgroups_2011e","2015-16 Physical Fitness Subgroups"
+,,,,,,,,
+"Section","Schema","DataType","ValueType","Transform","Description",,,
+"Table","entities_1999e2002",,,,,,,
+"Table.Column","ccode","int","int",,"County code, defined byt the Secretary of state, not FIPS",,,
+"Table.Column","dcode","int","int",,"District Code",,,
+"Table.Column","scode","int","int",,"Scode",,,
+"Table.Column","cds_code","str","long",,"cds_code",,,
+"Table.Column","county","str","str",,"County",,,
+"Table.Column","district","str","str",,"District",,,
+"Table.Column","school","str","str",,"school",,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+"Table","entities_2002e2010",,,,,,,
+"Table.Column","ccode","int","int",,"County code, defined byt the Secretary of state, not FIPS",,,
+"Table.Column","dcode","int","int",,"District Code",,,
+"Table.Column","charternum","str","str",,"charternum",,,
+"Table.Column","scode","int","int",,"Scode",,,
+"Table.Column","cds_code","str","long",,"cds_code",,,
+"Table.Column","county","str","str",,"County",,,
+"Table.Column","district","str","str",,"District",,,
+"Table.Column","school","str","str",,"school",,,
+,,,,,,,,
+,,,,,,,,
+"Table","entities_2011e",,,,,,,
+"Table.Column","ccode","int","d/int",,"County code, defined byt the Secretary of state, not FIPS",,,
+"Table.Column","dcode","int","d/int",,"dcode",,,
+"Table.Column","chrtnum","str","d/str",,"chrtnum",,,
+"Table.Column","scode","int","d/int",,"scode",,,
+"Table.Column","cdscode","str","d/str",,"cdscode",,,
+"Table.Column","county","str","d/label",,"County name",,,
+"Table.Column","district","str","d/label",,"District",,,
+"Table.Column","school","str","d/label",,"School",,,
+"Table","subgroups_2011e",,,,,,,
+"Table.Column","level_number","int","int",,"Level_Number",,,
+"Table.Column","report_number","int","int",,"Report_Number",,,
+"Table.Column","table_number","int","int",,"Table_Number",,,
+"Table.Column","line_number","int","int",,"Line_Number",,,
+"Table.Column","line_text","str","str",,"Line_Text",,,
+"Table.Column","table_type","str","str",,"Table_Type",,,
+"Table.Column","subgroup","str","str",,"Subgroup",,,
+"Table","subgroups_1999e2010",,,,,,,
+"Table.Column","subgrp","int","int",,"SubGrp",,,
+"Table.Column","rpttype","int","int",,"RptType",,,
+"Table.Column","linenum","int","int",,"LineNum",,,
+"Table.Column","reporttype","str","str",,"ReportType",,,
+"Table.Column","subgroup","str","str",,"SubGroup",,,
+"Table.Column","line_text","str","str",,"line_text",,,
+"Table","physfit_1999e2002",,,,,,,
+"Table.Column","level","int","int",,"Level",,,
+"Table.Column","subgrp","int","int",,"SubGrp",,,
+"Table.Column","rpttype","int","int",,"RptType",,,
+"Table.Column","line_num","int","int",,"line_num",,,
+"Table.Column","ccode","int","int",,"County code, defined byt the Secretary of state, not FIPS",,,
+"Table.Column","dcode","int","int",,"Dcode",,,
+"Table.Column","scode","int","int",,"Scode",,,
+"Table.Column","cds_code","str","long",,"cds_code",,,
+"Table.Column","gr05_stu","int","int","^star_is_not_a_number","Gr05_Stu",,,
+"Table.Column","gr5pctin","float","float","^star_is_not_a_number","Gr5PctIn",,,
+"Table.Column","gr5pctnotin","float","float","^star_is_not_a_number","Gr5PctNotIn",,,
+"Table.Column","gr07_stu","int","int","^star_is_not_a_number","Gr07_Stu",,,
+"Table.Column","gr7pctin","float","float","^star_is_not_a_number","Gr7PctIn",,,
+"Table.Column","gr7pctnotin","float","float","^star_is_not_a_number","Gr7PctNotIn",,,
+"Table.Column","gr09_stu","int","int","^star_is_not_a_number","Gr09_Stu",,,
+"Table.Column","gr9pctin","float","float","^star_is_not_a_number","Gr9PctIn",,,
+"Table.Column","gr9pctnotin","float","float","^star_is_not_a_number","Gr9PctNotIn",,,
+,,,,,,,,
+"Table","physfit_2002e2010",,,,,,,
+"Table.Column","level","int","int",,"Level",,,
+"Table.Column","subgrp","int","int",,"SubGrp",,,
+"Table.Column","rpttype","int","int",,"RptType",,,
+"Table.Column","line_num","int","int",,"line_num",,,
+"Table.Column","ccode","int","int",,"County code, defined byt the Secretary of state, not FIPS",,,
+"Table.Column","dcode","int","int",,"Dcode",,,
+"Table.Column","charternum","str","str",,"charternum",,,
+"Table.Column","scode","int","int",,"Scode",,,
+"Table.Column","cds_code","str","long",,"cds_code",,,
+"Table.Column","gr05_stu","int","int","^star_is_not_a_number","Gr05_Stu",,,
+"Table.Column","gr5pctin","float","float","^star_is_not_a_number","Gr5PctIn",,,
+"Table.Column","gr5pctnotin","float","float","^star_is_not_a_number","Gr5PctNotIn",,,
+"Table.Column","gr07_stu","int","int","^star_is_not_a_number","Gr07_Stu",,,
+"Table.Column","gr7pctin","float","float","^star_is_not_a_number","Gr7PctIn",,,
+"Table.Column","gr7pctnotin","float","float","^star_is_not_a_number","Gr7PctNotIn",,,
+"Table.Column","gr09_stu","int","int","^star_is_not_a_number","Gr09_Stu",,,
+"Table.Column","gr9pctin","float","float","^star_is_not_a_number","Gr9PctIn",,,
+"Table.Column","gr9pctnotin","float","float","^star_is_not_a_number","Gr9PctNotIn",,,
+,,,,,,,,
+"Table","physfit_2011",,,,,,,
+"Table.Column","id","int","id",,"Physical Fitness Research, 2010 to 2014",,,
+"Table.Column","level_number","int","d/int",,"1 = school 2 = district 3 = county 4 = state",,,
+"Table.Column","report_number","int","d/int",,"Codes for  demographic category of values in report: gender, race, ethnicity, etc. See source documentation for codes.",,,
+"Table.Column","table_number","int","d/int",,"Table_Number",,,
+"Table.Column","line_number","int","d/int",,"Line Number in Table",,,
+"Table.Column","co","int","d/int",,"County code, defined by the Secretary of state, not FIPS",,,
+"Table.Column","dist","int","d/int",,"District Code",,,
+"Table.Column","schl","int","d/int",,"School Code",,,
+"Table.Column","line_text","str","d/str",,"Line Text",,,
+"Table.Column","nostud5","int","d/int",,"Number of Grade 5",,,
+"Table.Column","nohfz5","int","d/int?","^star_is_not_a_number","Number of Grade 5",,,
+"Table.Column","perc5a","float","d/float?","^star_is_not_a_number","Percent of Grade 5  students in Healthy Fitness Zone",,,
+"Table.Column","perc5b","float","d/float?","^star_is_not_a_number","Percent of Grade 5 Students in Needs Improvement",,,
+"Table.Column","perc5c","float","d/float?","^star_is_not_a_number","Percent of Grade 5 Students in Needs Improvement – High Risk",,,
+"Table.Column","nostud7","int","d/int",,"Number of Grade 7 Students Tested",,,
+"Table.Column","nohfz7","int","d/int?","^star_is_not_a_number","Number of Grade 7  Students in Healthy  Fitness Zone",,,
+"Table.Column","perc7a","float","d/float?","^star_is_not_a_number","Percent of Grade 7 students in Healthy Fitness Zone",,,
+"Table.Column","perc7b","float","d/float?","^star_is_not_a_number","Percent of Grade 7 Students in Needs  Improvement",,,
+"Table.Column","perc7c","float","d/float?","^star_is_not_a_number","Percent of Grade 7 Students in Needs Improvement – High Risk",,,
+"Table.Column","nostud9","int","d/int?",,"Number of Grade 9 Students Tested",,,
+"Table.Column","nohfz9","int","d/int?","^star_is_not_a_number","Number of Grade 9 Students in Healthy Fitness Zone",,,
+"Table.Column","perc9a","float","d/float?","^star_is_not_a_number","Percent of Grade 9 students in Healthy Fitness Zone",,,
+"Table.Column","perc9b","float","d/float?","^star_is_not_a_number","Percent of Grade 9 Students in Needs Improvement",,,
+"Table.Column","perc9c","float","d/float?","^star_is_not_a_number","Percent of Grade 9 Students in Needs Improvement – High Risk",,,
+"Table.Column","chrtnum","str","d/str",,"ChrtNum",,,
+,,,,,,,,
+"Table","physfit_2012e",,,,,,,
+"Table.Column","level_number","int","d/int",,"1 = school 2 = district 3 = county 4 = state",,,
+"Table.Column","report_number","int","d/int",,"Codes for  demographic category of values in report: gender, race, ethnicity, etc. See source documentation for codes.",,,
+"Table.Column","table_number","int","d/int",,"Table_Number",,,
+"Table.Column","line_number","int","d/int",,"Line Number in Table",,,
+"Table.Column","co","int","d/int",,"County code, defined by the Secretary of state, not FIPS",,,
+"Table.Column","dist","int","d/int",,"District Code",,,
+"Table.Column","schl","int","d/int",,"School Code",,,
+"Table.Column","line_text","str","d/str",,"Line Text",,,
+"Table.Column","nostud5","int","d/int",,"Number of Grade 5",,,
+"Table.Column","nohfz5","int","d/int?","^star_is_not_a_number","Number of Grade 5",,,
+"Table.Column","perc5a","float","d/float?","^star_is_not_a_number","Percent of Grade 5  students in Healthy Fitness Zone",,,
+"Table.Column","perc5b","float","d/float?","^star_is_not_a_number","Percent of Grade 5 Students in Needs Improvement",,,
+"Table.Column","perc5c","float","d/float?","^star_is_not_a_number","Percent of Grade 5 Students in Needs Improvement – High Risk",,,
+"Table.Column","nostud7","int","d/int",,"Number of Grade 7 Students Tested",,,
+"Table.Column","nohfz7","int","d/int?","^star_is_not_a_number","Number of Grade 7  Students in Healthy  Fitness Zone",,,
+"Table.Column","perc7a","float","d/float?","^star_is_not_a_number","Percent of Grade 7 students in Healthy Fitness Zone",,,
+"Table.Column","perc7b","float","d/float?","^star_is_not_a_number","Percent of Grade 7 Students in Needs  Improvement",,,
+"Table.Column","perc7c","float","d/float?","^star_is_not_a_number","Percent of Grade 7 Students in Needs Improvement – High Risk",,,
+"Table.Column","nostud9","int","d/int?",,"Number of Grade 9 Students Tested",,,
+"Table.Column","nohfz9","int","d/int?","^star_is_not_a_number","Number of Grade 9 Students in Healthy Fitness Zone",,,
+"Table.Column","perc9a","float","d/float?","^star_is_not_a_number","Percent of Grade 9 students in Healthy Fitness Zone",,,
+"Table.Column","perc9b","float","d/float?","^star_is_not_a_number","Percent of Grade 9 Students in Needs Improvement",,,
+"Table.Column","perc9c","float","d/float?","^star_is_not_a_number","Percent of Grade 9 Students in Needs Improvement – High Risk",,,
+"Table.Column","chrtnum","str","d/str",,"ChrtNum",,,
