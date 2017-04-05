@@ -2,18 +2,22 @@ Declare,metatab-latest
 Title,A Fairly Simple Dtata Package
 Description,"An example data package, from the Metatab tutorial at https://github.com/CivicKnowledge/metatab-py/blob/master/README.rst"
 Identifier,96cd659b-94ad-46ae-9c18-4018caa64355
-Name,simple_example-2017-us-1
-Name.Version,1
+Name,example.com-simple_example-2017-us-1
 Name.Dataset,simple-example
-Name.Spatialgrain,
+Name.Version,1
 Name.Space,US
 Name.Time,2017
-Modified,2017-04-04T00:22:06
-Issued,2017-04-04T00:22:06
+Name.Origin,example.com
+Modified,2017-04-05T01:33:32
+Issued,2017-04-05T01:33:32
 Distribution,http://s3.amazonaws.com/library.metatab.org/simple_example-2017-us-1.xlsx
 Distribution,http://s3.amazonaws.com/library.metatab.org/simple_example-2017-us-1.zip
 Distribution,http://s3.amazonaws.com/library.metatab.org/simple_example-2017-us-1/metadata.csv
 Distribution,http://s3.amazonaws.com/library.metatab.org/simple_example-2017-us-1.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/example.com-simple_example-2017-us-1.xlsx
+Distribution,http://s3.amazonaws.com/library.metatab.org/example.com-simple_example-2017-us-1.zip
+Distribution,http://s3.amazonaws.com/library.metatab.org/example.com-simple_example-2017-us-1/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/example.com-simple_example-2017-us-1.csv
 
 Section,Resources,Name,StartLine,HeaderLines,Encoding,Description
 Datafile,http://public.source.civicknowledge.com/example.com/sources/test_data.zip#test_data%2Fcsv%2Frandom-names.csv,random-names,1,0,ascii,Names and a random number
