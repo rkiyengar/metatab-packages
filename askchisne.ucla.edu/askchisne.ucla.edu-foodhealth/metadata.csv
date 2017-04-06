@@ -1,0 +1,69 @@
+"Declare","metatab-latest",,,,,
+"Title","AskCHIS NE Food Security and Obesity",,,,,
+"Description","AskCHIS NE Series for food insecurity and obesity",,,,,
+"Identifier","1cdb3260-7546-4cb4-89b1-3a3a8b461dce",,,,,
+"Name","askchisne.ucla.edu-foodhealth-2014-3",,,,,
+"Name.Time",2014,,,,,
+"Name.Dataset","foodhealth",,,,,
+"Name.Space",,,,,,
+"Name.Origin","askchisne.ucla.edu",,,,,
+"Name.Version",3,,,,,
+"Name.Grain",,,,,,
+"Distribution","http://s3.amazonaws.com/library.metatab.org/askchisne.ucla.edu-foodhealth-2014-3.xlsx",,,,,
+"Distribution","http://s3.amazonaws.com/library.metatab.org/askchisne.ucla.edu-foodhealth-2014-3.zip",,,,,
+"Distribution","http://s3.amazonaws.com/library.metatab.org/askchisne.ucla.edu-foodhealth-2014-3/metadata.csv",,,,,
+,,,,,,
+"Section","Resources","Name","VarName","GeoType","schema","Description"
+"Datafile","program:scripts/metadata.py","varaibles",,,,"Metadata for all available variables."
+"Datafile","program:scripts/dumpvar.py","obesea-zcta","OBESEA","zcta","estimate","Obese (BMI >  30) (18+)"
+"Datafile","program:scripts/dumpvar.py","obesea-counties","OBESEA","counties","estimate","Obese (BMI > 30) (18+)"
+"Datafile","program:scripts/dumpvar.py","obeseaf-zcta","OBESEAF","zcta","estimate","Obese (BMI &ge; 30) - female (18+)"
+"Datafile","program:scripts/dumpvar.py","obeseaf-counties","OBESEAF","counties","estimate","Obese (BMI &ge; 30) - female (18+)"
+"Datafile","program:scripts/dumpvar.py","obesealt-zcta","OBESEALT","zcta","estimate","Obese (BMI &ge; 30)  - Latino (18+)"
+"Datafile","program:scripts/dumpvar.py","obesealt-counties","OBESEALT","counties","estimate","Obese (BMI &ge; 30)  - Latino (18+)"
+"Datafile","program:scripts/dumpvar.py","obeseam-zcta","OBESEAM","zcta","estimate","Obese (BMI &ge; 30) - male (18+)"
+"Datafile","program:scripts/dumpvar.py","obeseam-counties","OBESEAM","counties","estimate","Obese (BMI &ge; 30) - male (18+)"
+"Datafile","program:scripts/dumpvar.py","obeseanhaa-zcta","OBESEANHAA","zcta","estimate","Obese (BMI &ge; 30) - non-Hispanic Black (18+)"
+"Datafile","program:scripts/dumpvar.py","obeseanhaa-counties","OBESEANHAA","counties","estimate","Obese (BMI &ge; 30) - non-Hispanic Black (18+)"
+"Datafile","program:scripts/dumpvar.py","obeseanhas-zcta","OBESEANHAS","zcta","estimate","Obese (BMI &ge; 30) - non-Hispanic Asian (18+)"
+"Datafile","program:scripts/dumpvar.py","obeseanhas-counties","OBESEANHAS","counties","estimate","Obese (BMI &ge; 30) - non-Hispanic Asian (18+)"
+"Datafile","program:scripts/dumpvar.py","obeseanhw-zcta","OBESEANHW","zcta","estimate","Obese (BMI &ge; 30) - non-Hispanic White (18+)"
+"Datafile","program:scripts/dumpvar.py","obeseanhw-counties","OBESEANHW","counties","estimate","Obese (BMI &ge; 30) - non-Hispanic White (18+)"
+"Datafile","program:scripts/dumpvar.py","fslevalla-zcta","FSLEVALLA","zcta","estimate","Low-income food insecurity (18+)"
+"Datafile","program:scripts/dumpvar.py","fslevalla-counties","FSLEVALLA","counties","estimate","Low-income food insecurity (18+)"
+,,,,,,
+"Section","Documentation","Title","Description",,,
+"Homepage","http://askchisne.ucla.edu/","AskCHIS NE Home Page","AskCHIS Neighborhood Edition (AskCHIS NE) provides health estimates for California's diverse population at the local level (zip codes and cities).",,,
+"Note","Origninal population values of  'Pop. < 500' are replaced with nulls",,,,,
+"Note","Permissable geotypes are: cities, assembly, congress, senate, zcta, state, counties",,,,,
+,,,,,,
+"Section","Contacts","Email","Organization","Url",,
+"Origin","UCLA Center for Health Policy Research.","healthpolicy@ucla.edu",,"http://healthpolicy.ucla.edu/Pages/home.aspx",,
+"Wrangler","Eric Busboom","eric@civicknowledge.com","Civic Knowledge","http://civicknowledge.com",,
+,,,,,,
+"Section","Schema","DataType","AltName","Description",,
+"Table","varaibles",,,,,
+"Table.Column","dataSetId","integer","datasetid",,,
+"Table.Column","year","integer",,,,
+"Table.Column","name","text",,,,
+"Table.Column","sourceVariable","text","sourcevariable",,,
+"Table.Column","pooling","text",,,,
+"Table.Column","unit","text",,,,
+"Table.Column","geoVariableMetadataId","text","geovariablemetadataid",,,
+"Table.Column","visibility","text",,,,
+"Table.Column","label","text",,,,
+"Table.Column","ageGroup","text","agegroup",,,
+"Table.Column","responseLabel","text","responselabel",,,
+"Table.Column","topic","text",,,,
+"Table.Column","description","text",,,,
+"Table","estimate",,,,,
+"Table.Column","geoid","text",,,,
+"Table.Column","geoname","text",,,,
+"Table.Column","population","integer",,,,
+"Table.Column","estimate","number",,,,
+"Table.Column","std_err","number",,,,
+"Table.Column","ci_l95","number",,,,
+"Table.Column","ci_u95","number",,,,
+"Table.Column","cv","number",,,,
+"Table.Column","mse","number",,,,
+"Table.Column","supression","text",,,,
