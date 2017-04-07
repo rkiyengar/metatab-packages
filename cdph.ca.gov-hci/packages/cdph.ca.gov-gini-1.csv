@@ -1,0 +1,48 @@
+Declare,metatab-latest
+Description,Income Inequality: Household income relative to the number of households
+Identifier,1a6bc9e8-32bd-4795-a205-154df48924d3
+Name,cdph.ca.gov-gini-1
+Name.Dataset,gini
+Name.Origin,cdph.ca.gov
+Name.Version,1
+Modified,2017-04-07T05:36:28
+Issued,2017-04-07T05:36:28
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-gini-1.xlsx
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-gini-1.zip
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-gini-1/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-gini-1.csv
+
+Section,Resources,Name,Schema,Space,Time,Description
+Datafile,http://www.cdph.ca.gov/programs/Documents/gini_place_county_region_st3-26-14.xlsx#gini_place_county,gini,gini,,,Income Inequality: Household income relative to the number of households
+
+Section,Documentation,Title,Schema,Description
+Datadictionary,http://www.cdph.ca.gov/programs/Documents/gini_place_county_region_st3-26-14.xlsx#DataDictionary,gini-dd,gini,Income Inequality: Household income relative to the number of households
+Documentation,http://www.cdph.ca.gov/programs/Documents/gini_place_county_region_st3-26-14.xlsx#DataFilteringInstructions,gini-filtering,gini,Income Inequality: Household income relative to the number of households
+Documentation,http://www.cdph.ca.gov/programs/Documents/Gini_Narrative_Examples5-2-14.pdf,gini,gini,Income Inequality: Household income relative to the number of households
+
+Section,Schema,DataType,Description,Widthformat,Coding
+Table,gini,,,,
+Table.Column,ind_id,number,Indicator ID,3,556
+Table.Column,ind_definition,text,Definition of indicator in plain language,255,Free text
+Table.Column,reportyear,text,Year that the indicator was reported,9,"2005-2007, 2008-2010, 2006-2010"
+Table.Column,race_eth_code,integer,numeric code for a race/ethnicity group,3,9=Total
+Table.Column,race_eth_name,text,Name of race/ethnic group,9,Total
+Table.Column,geotype,text,Type of geographic unit,2,PL;Place; CO;County; RE; Region ST;State
+Table.Column,geotypevalue,number,Value of geographic unit,single prec.,"FIPS ID; place code, CT code, zip code, region id"
+Table.Column,geoname,text,Name of geographic unit,37,"place, county, region name"
+Table.Column,county_name,text,Name of county that geotype is in,25,
+Table.Column,county_fips,text,FIPS code of county that geotype is in,5,2-digit census state code (06) plus 3-digit census county code
+Table.Column,region_name,text,MPO-based region name; see MPO_County list tab,26,
+Table.Column,region_code,text,MPO-based region code; see MPO_County list tab,2,01=Bay Area; 02=Butte; 03=Central/Southeast Sierra; 04=Monterey Bay; 05=North Coast; 06=Northeast Sierra; 07=Northern Sacramento Valley; 08=Sacramento Area; 09=San Diego; 10=San Joaquin Valley; 11=San Luis Obispo; 12=Santa Barbara; 13=Shasta; 14=Southern California
+Table.Column,numerator,number,Not Applicable for this indicator,double prec.,NA
+Table.Column,households,number,number of households in index,double prec.,
+Table.Column,gini_index,number,Gini Index: see http://en.wikipedia.org/wiki/Gini_coefficient for detailed definition on wikipedia,double prec.,
+Table.Column,LL_95CI,number,Lower limit of 95% confidence interval,double prec.,
+Table.Column,UL_95CI,number,Lower limit of 95% confidence interval,double prec.,
+Table.Column,SE,number,Standard error of Gini index,double prec.,
+Table.Column,RSE,number,Relative standard error (se/value*100) expressed as a percent,double prec.,
+Table.Column,CA_decile,integer,California decile,integer,"CA_decile' groups California places into 10 groups (or deciles) each, for total population. Equal values or 'ties' are assigned the mean decile rank. For example, in a database of 100 records where 70 records equal 0, 0 values span from the 1st to 7th deciles (70% of all data records)."
+Table.Column,CA_RR,number,Rate ratio to California rate,double prec.,
+Table.Column,Median_HH_income,number,Median household income,double prec.,Median household income data is provided for users to stratify the Gini index by income deciles for places and counties
+Table.Column,Median_HH_decile,number,Median household decile,double prec.,Median household income data is provided for users to stratify the Gini index by income deciles for places and counties
+Table.Column,version,text,Date/time stamp of version of data,,mm/DD/CCYY hh:mm:ss

@@ -1,0 +1,46 @@
+Declare,metatab-latest
+Description,High School or Greater Educational Attainment in the Population Aged 25 Years and Older
+Identifier,9180a03f-9c82-4738-8017-19666fd3d498
+Name,cdph.ca.gov-ed_attainment-1
+Name.Origin,cdph.ca.gov
+Name.Version,1
+Name.Dataset,ed_attainment
+Modified,2017-04-07T04:39:54
+Issued,2017-04-07T04:39:54
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-ed_attainment-1.xlsx
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-ed_attainment-1.zip
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-ed_attainment-1/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-ed_attainment-1.csv
+
+Section,Resources,Name,Schema,Space,Time,Description
+Datafile,http://www.cdph.ca.gov/programs/Documents/ed_attain_ge_hs_output04-14-13.zip#ed_attain_ge_hs_output04-14-13.xlsx;Educ_attain,ed_attainment,ed_attainment,,,High School or Greater Educational Attainment in the Population Aged 25 Years and Older
+
+Section,Documentation,Title,Schema,Description
+Datadictionary,http://www.cdph.ca.gov/programs/Documents/ed_attain_ge_hs_output04-14-13.zip#ed_attain_ge_hs_output04-14-13.xlsx;Data Dictionary,ed_attainment-dd,ed_attainment,High School or Greater Educational Attainment in the Population Aged 25 Years and Older
+Documentation,http://www.cdph.ca.gov/programs/Documents/ed_attain_ge_hs_output04-14-13.zip#ed_attain_ge_hs_output04-14-13.xlsx;DataFilteringInstructions,ed_attainment-filtering,ed_attainment,High School or Greater Educational Attainment in the Population Aged 25 Years and Older
+Documentation,http://www.cdph.ca.gov/programs/Documents/Educ_attain_HS_Narrative_Examples4-28-13.pdf,ed_attainment,ed_attainment,
+
+Section,Schema,DataType,Description,Widthformat,Coding
+Table,ed_attainment,,,,
+Table.Column,ind_id,number,Indicator ID,3,369
+Table.Column,ind_definition,text,Definition of indicator in plain language,255,Free text
+Table.Column,reportyear,number,Year(s) that the indicator was reported,9,"2000, 2005-2007, 2008-2010, 2006-2010"
+Table.Column,race_eth_code,integer,numeric code for a race/ethnicity group,1,1=American Indian or Alaska Native; 2=Asian; 3=Black or African American; 4=Hispanic or Latino; 5=Native Hawaiian or Other Pacific Islander (NHOPI); 6=White;7= Multiple; 8=Other;9=Total
+Table.Column,race_eth_name,text,Name of race/ethnic group,9,AIAN; Asian; AfricanAm; Latino; NHOPI; White; Multiple; Other; Total
+Table.Column,geotype,text,Type of geographic unit,2,CT;Census Tract; PL;Place; CO;County; RE;region; ST;State
+Table.Column,geotypevalue,number,Value of geographic unit,single prec.,"9-digit FIPS census tract code; 5-digit FIPS place code, 5-digit FIPS county code, 2-digit region ID, 2-digit FIPS state code"
+Table.Column,geoname,text,Name of geographic unit,37,"census tract, place name, county name, region name, state name"
+Table.Column,county_name,text,Name of county that geotype is in,25,
+Table.Column,county_fips,text,FIPS code of county that geotype is in,5,2-digit census state code (06) plus 3-digit census county code
+Table.Column,region_name,text,MPO-based region name; see MPO_County list tab,26,
+Table.Column,region_code,text,MPO-based region code; seeMPO_County list tab,,01=Bay Area; 02=Butte; 03=Central/Southeast Sierra; 04=Monterey Bay; 05=North Coast; 06=Northeast Sierra; 07=Northern Sacramento Valley; 08=Sacramento Area; 09=San Diego; 10=San Joaquin Valley; 11=San Luis Obispo; 12=Santa Barbara; 13=Shasta; 14=Southern California
+Table.Column,pop25pl_hs,number,Population aged 25 years old and over attaining at least a high school degree or GED equivalency (indicator numerator),double prec.,
+Table.Column,pop25pl,number,Population aged 25 years old and over (indicator denominator),double prec.,
+Table.Column,p_hs_edatt,number,Percent of population aged 25 years old and over attaining at least a high school degree or GED equivalency,double prec.,
+Table.Column,SE,number,Standard error of percent,double prec.,
+Table.Column,RSE,number,Relative standard error (se/percent * 100) expressed as a percent,double prec.,
+Table.Column,LL_95CI,number,Lower limit of 95% confidence interval,double prec.,
+Table.Column,UL_95CI,number,Lower limit of 95% confidence interval,double prec.,
+Table.Column,CA_decile,integer,California decile,integer,"CA_decile' groups California places into 10 groups (or deciles) each, for total population. Equal values or 'ties' are assigned the mean decile rank. For example, in a database of 100 records where 70 records equal 0, 0 values span from the 1st to 7th deciles (70% of all data records)."
+Table.Column,CA_RR,number,Rate ratio to California rate,double prec.,
+Table.Column,version,text,Date/time stamp of version of data,,mm/DD/CCYY hh:mm:ss

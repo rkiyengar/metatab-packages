@@ -1,0 +1,50 @@
+Declare,metatab-latest
+Description,Jobs to Housing Ratio
+Identifier,3630eb82-83a9-4091-a9dd-408024cbbf6d
+Name,cdph.ca.gov-job_house_ratio-1
+Name.Dataset,job_house_ratio
+Name.Version,1
+Name.Origin,cdph.ca.gov
+Modified,2017-04-07T13:03:56
+Issued,2017-04-07T13:03:56
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-job_house_ratio-1.xlsx
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-job_house_ratio-1.zip
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-job_house_ratio-1/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-job_house_ratio-1.csv
+
+Section,Resources,Name,Schema,Space,Time,Description
+Datafile,http://www.cdph.ca.gov/programs/Documents/HCI_JobHouseRatio_PL-MS-CO-768-4-24-15.xlsx#JobsHousingRatio,job_house_ratio,job_house_ratio,,,Jobs to Housing Ratio
+
+Section,Documentation,Title,Schema,Description
+Datadictionary,http://www.cdph.ca.gov/programs/Documents/HCI_JobHouseRatio_PL-MS-CO-768-4-24-15.xlsx#DataDictionary,job_house_ratio-dd,job_house_ratio,Jobs to Housing Ratio
+Documentation,http://www.cdph.ca.gov/programs/Documents/HCI_JobHouseRatio_PL-MS-CO-768-4-24-15.xlsx#DataFilteringInstructions,job_house_ratio-filtering,job_house_ratio,Jobs to Housing Ratio
+Documentation,http://www.cdph.ca.gov/programs/Documents/HCI_JobHouseRatio_768-NarrativeExamples-4-3-15.pdf,job_house_ratio,job_house_ratio,Jobs to Housing Ratio
+
+Section,Schema,DataType,Description,Widthformat,Coding
+Table,job_house_ratio,,,,
+Table.Column,ind_id,number,Indicator ID,3,768
+Table.Column,ind_definition,text,Definition of indicator in plain language,255,Free text
+Table.Column,race_eth_code,integer,numeric code for a race/ethnicity group,1,1=American Indian or Alaska Native; 2=Asian; 3=Black or African American; 4=Hispanic or Latino; 5=Native Hawaiian or Other Pacific Islander (NHOPI); 6=White;7= Multiple; 8=Other;9=Total
+Table.Column,race_eth_name,text,Name of race/ethnic group,9,AIAN; Asian; AfricanAm; Latino; NHOPI; White; Multiple; Other; Total
+Table.Column,reportyear,text,Year that the indicator was reported,9,2007-2011
+Table.Column,geotype,text,Type of geographic unit,2,PL;Place; CO;County; MS; Metropolitan or Micropolitan Statistical Area
+Table.Column,geotypevalue,number,Value of geographic unit,single prec.,"FIPS ID; place code, CT code, zip code, region id"
+Table.Column,geoname,text,Name of geographic unit,37,"place, county, statistical area"
+Table.Column,county_name,text,Name of county that geotype is in,25,
+Table.Column,county_fips,text,FIPS code of county that geotype is in,5,2-digit census state code (06) plus 3-digit census county code
+Table.Column,msa_name,text,Metro or micropolitan statistical area name,26,
+Table.Column,msa_code,text,Metro or micropolitan statistical area name code,5,
+Table.Column,strata_name_code,number,Numeric code for the strata,3,
+Table.Column,strata_name,text,Strata name,13,Type of ratio calculated
+Table.Column,strata_level_name_code,number,Numeric code for the level of the strata,3,
+Table.Column,strata_level_name,text,Levels of the strata,30,"Types of ratio: (a) Low wage jobs to affordable housing, (b) total jobs to total housing"
+Table.Column,jobs,integer,Number of jobs,integer,
+Table.Column,housing,integer,Number of housing units,integer,
+Table.Column,ratio,number,Jobs to housing ratio,double prec.,
+Table.Column,ll_95ci,number,Lower limit of 95% confidence interval,double prec.,
+Table.Column,ul_95ci,number,Lower limit of 95% confidence interval,double prec.,
+Table.Column,ratio_se,number,Standard error of the ratio,double prec.,
+Table.Column,ratio_rse,number,Relative standard error (se/value) expressed as a percent,double prec.,
+Table.Column,ratio_decile,integer,"California decile for the ratio, available for places (geotype=PL).  Deciles are for each strata level separately",integer,"CA_decile' groups California places into 10 groups (or deciles) each, for total population. Equal values or 'ties' are assigned the mean decile rank. For example, in a database of 100 records where 70 records equal 0, 0 values span from the 1st to 7th deciles (70% of all data records)."
+Table.Column,MS_RR,number,"Relative risk, ratio of place ratio to metro or micropolitan statistical area",double prec.,
+Table.Column,version,text,Date/time stamp of version of data,,mm/DD/CCYY hh:mm:ss

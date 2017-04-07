@@ -1,0 +1,50 @@
+Declare,metatab-latest
+Description,Prevalence of smoking in adults and youth
+Identifier,d1798055-e50d-48a1-b51b-3c32e36db9b0
+Name,cdph.ca.gov-smoking-1
+Name.Version,1
+Name.Dataset,smoking
+Name.Origin,cdph.ca.gov
+Modified,2017-04-07T18:39:41
+Issued,2017-04-07T18:39:41
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-smoking-1.xlsx
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-smoking-1.zip
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-smoking-1/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-smoking-1.csv
+
+Section,Resources,Name,Schema,Space,Time,Description
+Datafile,http://www.cdph.ca.gov/programs/Documents/HCI_Smoking_755_06NOV15.xlsx#Smoking,smoking,smoking,,,Prevalence of smoking in adults and youth
+
+Section,Documentation,Title,Schema,Description
+Datadictionary,http://www.cdph.ca.gov/programs/Documents/HCI_Smoking_755_06NOV15.xlsx#DataDictionary,smoking-dd,smoking,Prevalence of smoking in adults and youth
+Documentation,http://www.cdph.ca.gov/programs/Documents/HCI_Smoking_755_06NOV15.xlsx#DataFilteringInstructions,smoking-filtering,smoking,Prevalence of smoking in adults and youth
+Documentation,http://www.cdph.ca.gov/programs/Documents/HCI_Smoking_755_Narrative_11-12-15.pdf,smoking,smoking,Prevalence of smoking in adults and youth
+
+Section,Schema,DataType,Description,Widthformat,Coding
+Table,smoking,,,,
+Table.Column,ind_id,number,Indicator ID,3,755
+Table.Column,ind_definition,text,Definition of indicator in plain language,255,Free text
+Table.Column,reportyear,text,Year that the indicator was reported,9,"2001, 2003, 2005, 2007, 2009, 2011-2012, 2013-2014"
+Table.Column,race_eth_code,integer,numeric code for a race/ethnicity group,1,1=American Indian or Alaska Native; 2=Asian; 3=Black or African American; 4=Hispanic or Latino; 5=Native Hawaiian or Other Pacific Islander (NHOPI); 6=White;7= Multiple; 8=Other;9=Total
+Table.Column,race_eth_name,text,Name of race/ethnic group,10,AIAN; Asian; AfricanAm; Latino; NHOPI; White; Multiple; Other; Total
+Table.Column,geotype,text,Type of geographic unit,2,CO=County; CA=State
+Table.Column,geotypevalue,number,Value of geographic unit,single prec.,FIPS ID
+Table.Column,geoname,text,Name of geographic unit,50,"State, counties, or groups of counties as defined by the California Health Interview Survey (see CHISCounties tab)."
+Table.Column,county_name,text,Name of county that geotype is in,25,
+Table.Column,county_fips,text,FIPS code of county that geotype is in,5,2-digit census state code (06) plus 3-digit census county code
+Table.Column,region_name,text,MPO-based region name that geotype is in,25,See MPOCounty list tab
+Table.Column,region_code,text,MPO-based region code that geotype is in,2,See MPO_County list tab
+Table.Column,strata_name_code,number,Numeric code for the strata,2,
+Table.Column,strata_name,text,Strata name,25,Type of smoker
+Table.Column,strata_level_name_code,number,Numeric code for the level of the strata,2,
+Table.Column,strata_level_name,text,Levels of the strata,25,"Adult: Percentage of adults (18 years and over) that are current smokers. An adult is considered a current smoker if the adult responds yes to smoking “at least 100 cigarettes in your entire lifetime” and indicates smoking every day or some days.  Teen: Percentage of teenagers (12-17 years old) that are current smokers. For the 2003 data, a current smoker is an adolescent that smoked more than 3 cigarettes in the 30 days preceding the interview.  For the other years, a current smoker is an adolescent that has ever smoked and has smoked at least one day in the 30 days preceding the interview."
+Table.Column,numerator,integer,"Number of current smokers (either adult or teen smokers, depending on the strata level)",integer,
+Table.Column,denominator,integer,"Total population (either adult or teen population, depending on the strata level)",integer,
+Table.Column,percent,number,Percent of current smokers,double prec.,
+Table.Column,ll_95ci,number,Lower limit of 95% confidence interval of the percent,double prec.,"Lower limit of 95% confidence interval.  The 95% confidence limits depict the range within which the percentage would probably occur in 95 of 100 sets of data (if data similar to the present set were independently acquired on 100 separate occasions). In five of those 100 data sets, the percentage would fall outside the limits."
+Table.Column,ul_95ci,number,Upper limit of 95% confidence interval of the percent,double prec.,Upper limit of 95% confidence interval.
+Table.Column,se,number,Standard error,double prec.,The standard error (SE) of the mean is a measure of the precision of the sample mean.  The standard error falls as the sample size increases. (Reference: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1255808/)
+Table.Column,rse,number,Relative standard error (se/percent) expressed as a percent,double prec.,"The relative standard error (RSE) provides the rational basis for determining which rates may be considered “unreliable.” Conforming to National Center for Health Statistics (NCHS) standards, rates that are calculated from fewer than 20 data elements, the equivalent of an RSE of 23 percent or more, are considered unreliable (http://www.cdph.ca.gov/programs/ohir/Documents/OHIRProfiles2014.pdf).  For this project we consider estimates with RSE ≥ 30% as unreliable."
+Table.Column,CA_decile,number,Not calculated,double prec.,"'CA_decile' groups California places into 10 groups (or deciles) each based on the distribution of the percent. Equal values or 'ties' are assigned the mean decile rank. For example, in a database of 100 records where 70 records equal 0, 0 values span from the 1st to 7th deciles (70% of all data records). As a result, all 0 values will be assigned to the 4th decile: the mean between the 1st and 7th deciles.  It is not applicable for this indicator (NA) since there is no place geotype."
+Table.Column,CA_RR,number,Relative risk,double prec.,Ratio of local percentage to state percentage. This indicates how many times the local percentage is higher or lower than the state percentage (Reference: http://health.mo.gov/training/epi/RateRatio-b.html). Values higher than 1 indicate local rates are higher than state rates.
+Table.Column,version,text,Date/time stamp of version of data,,mm/DD/CCYY hh:mm:ss

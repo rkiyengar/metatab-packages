@@ -20,18 +20,18 @@ def err(*args):
     sys.exit(1)
 
 if len(sys.argv) < 2:
-    err("Must provide a reference to a package")
+    err("Must provide a reference to a package. Probably cdph.ca.gov.hci-all_files.metatab.csv")
 
 bf = sys.argv[1]
 
 p = Package(bf)
 
-packs = defaultdict(CsvPackage)
+packs = {}
 
-prt("Opening xwalk package")
-xwalk = open_package('http://library.metatab.org/zip/cdph.ca.gov-county_crosswalk-ca-3.zip')
-xwalk_table = xwalk.find_first('Root.Table')
-xwalk_table.value = 'county-xwalk'
+#prt("Opening xwalk package")
+#xwalk = open_package('http://library.metatab.org/zip/cdph.ca.gov-county_crosswalk-ca-3.zip')
+#xwalk_table = xwalk.find_first('Root.Table')
+#xwalk_table.value = 'county-xwalk'
 
 name_map = {
     'datafile': 'data-',
@@ -49,11 +49,19 @@ for r in list(p.resources()):
 
     if r.term_is('Root.Datafile'):
         r.value = r.value.replace('https','http')
+        
+        if r.schema not in packs:
+            packs[r.schema] = CsvPackage()
+        
         packs[r.schema].sections.resources.add_term(r)
   
 
 for r in list(p.resources(term=['Root.Datadictionary','Root.Documentation'], section='Documentation')):
     r.value = r.value.replace('https','http')
+    
+    if r.schema not in packs:
+        packs[r.schema] = CsvPackage()
+    
     packs[r.schema].sections.documentation.add_term(r)
     
 
@@ -64,6 +72,7 @@ for name, package in packs.items():
     except KeyError as e:
         warn(name, e)
         continue
+        
     n = package.sections.root.new_term('Name', name)
     n.new_child('Dataset',name)
     n.new_child('Version',1)
@@ -76,10 +85,10 @@ for name, package in packs.items():
     package.sections.resources.sort_by_term()
     package.sections.documentation.sort_by_term()
 
-    package.sections.resources.new_term('Datafile',
-        'metatab+http://library.metatab.org/cdph.ca.gov-county_crosswalk-ca-2#county_crosswalk',
-        name=xwalk_table.value,
-        description='Crosswalk between California counties, MPO areas, CHIS regions and FIPS codes.')
+    #package.sections.resources.new_term('Datafile',
+    #    'metatab+http://library.metatab.org/cdph.ca.gov-county_crosswalk-ca-2#county_crosswalk',
+    #    name=xwalk_table.value,
+    #    description='Crosswalk between California counties, MPO areas, CHIS regions and FIPS codes.')
 
     t = p.doc.find_first('Root.Table', name)
 
@@ -89,7 +98,16 @@ for name, package in packs.items():
 
     prt("Saving package ", package.doc.find_first_value('root.name'))
 
-    package.sections.schema.move_term(xwalk_table)
+    #package.sections.schema.move_term(xwalk_table)
+    
+    version = package.doc.find('Table.Column', value='version')
+    for v in version:
+        v['datatype'] = 'text'
+        
+    version = package.doc.find('Table.Column', value='race_eth_code')
+    for v in version:
+        v['datatype'] = 'integer'
+    
     
     package.save()
 

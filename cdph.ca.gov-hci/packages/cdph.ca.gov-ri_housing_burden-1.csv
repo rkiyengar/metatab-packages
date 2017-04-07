@@ -1,0 +1,61 @@
+Declare,metatab-latest
+Description,Housing Cost Burden: Percent of households incurring housing cost burdens
+Identifier,8f1fe9fe-1643-4868-8d0f-610afff437d7
+Name,cdph.ca.gov-ri_housing_burden-1
+Name.Origin,cdph.ca.gov
+Name.Dataset,ri_housing_burden
+Name.Version,1
+Modified,2017-04-07T17:56:50
+Issued,2017-04-07T17:56:50
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-ri_housing_burden-1.xlsx
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-ri_housing_burden-1.zip
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-ri_housing_burden-1/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-ri_housing_burden-1.csv
+
+Section,Resources,Name,Schema,Space,Time,Description
+Datafile,http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO_RE_ST-A-N-7-30-14.zip#HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO_RE_ST-A-N-7-30-14.xlsx;ACS_CHAS_CT_PL_CO_RE_ST,ri_housing_burden-ballance,ri_housing_burden,ballance,,Housing Cost Burden: Percent of households incurring housing cost burdens
+Datafile,http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-O-S-7-30-14.zip#HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-O-S-7-30-14.xlsx;ACS_CHAS_CT_PL_CO,ri_housing_burden-orange_sutter,ri_housing_burden,orange_sutter,,Housing Cost Burden: Percent of households incurring housing cost burdens
+Datafile,http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-T-Y-7-30-14.zip#HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-T-Y-7-30-14.xlsx;ACS_CHAS_CT_PL_CO,ri_housing_burden-tehama_yuba,ri_housing_burden,tehama_yuba,,Housing Cost Burden: Percent of households incurring housing cost burdens
+
+Section,Documentation,Title,Schema,Description
+Datadictionary,http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO_RE_ST-A-N-7-30-14.zip#HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO_RE_ST-A-N-7-30-14.xlsx;ACS_DataDictionary,ri_housing_burden-ballance-dd,ri_housing_burden,Housing Cost Burden: Percent of households incurring housing cost burdens
+Datadictionary,http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO_RE_ST-A-N-7-30-14.zip#HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO_RE_ST-A-N-7-30-14.xlsx;CHAS_DataDictionary,ri_housing_burden-ballance-dd,ri_housing_burden,Housing Cost Burden: Percent of households incurring housing cost burdens
+Datadictionary,http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-O-S-7-30-14.zip#HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-O-S-7-30-14.xlsx;ACS_DataDictionary,ri_housing_burden-orange_sutter-dd,ri_housing_burden,Housing Cost Burden: Percent of households incurring housing cost burdens
+Datadictionary,http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-O-S-7-30-14.zip#HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-O-S-7-30-14.xlsx;CHAS_DataDictionary,ri_housing_burden-orange_sutter-dd,ri_housing_burden,Housing Cost Burden: Percent of households incurring housing cost burdens
+Datadictionary,http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-T-Y-7-30-14.zip#HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-T-Y-7-30-14.xlsx;ACS_DataDictionary,ri_housing_burden-tehama_yuba-dd,ri_housing_burden,Housing Cost Burden: Percent of households incurring housing cost burdens
+Datadictionary,http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-T-Y-7-30-14.zip#HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-T-Y-7-30-14.xlsx;CHAS_DataDictionary,ri_housing_burden-tehama_yuba-dd,ri_housing_burden,Housing Cost Burden: Percent of households incurring housing cost burdens
+Documentation,http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO_RE_ST-A-N-7-30-14.zip#HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO_RE_ST-A-N-7-30-14.xlsx;DataFilterInstructns,ri_housing_burden-ballance-filtering,ri_housing_burden,Housing Cost Burden: Percent of households incurring housing cost burdens
+Documentation,http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-O-S-7-30-14.zip#HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-O-S-7-30-14.xlsx;DataFilterInstructns,ri_housing_burden-orange_sutter-filtering,ri_housing_burden,Housing Cost Burden: Percent of households incurring housing cost burdens
+Documentation,http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-T-Y-7-30-14.zip#HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-T-Y-7-30-14.xlsx;DataFilterInstructns,ri_housing_burden-tehama_yuba-filtering,ri_housing_burden,Housing Cost Burden: Percent of households incurring housing cost burdens
+Documentation,http://www.cdph.ca.gov/programs/Documents/HCI_HousingCostBurden_CHASandACS_106_Narrative7-11-14.pdf,ri_housing_burden,ri_housing_burden,Housing Cost Burden: Percent of households incurring housing cost burdens
+Documentation,http://www.cdph.ca.gov/programs/Documents/HCI_HousingCostBurden_CHASandACS_106_Narrative7-11-14.pdf,ri_housing_burden,ri_housing_burden,Housing Cost Burden: Percent of households incurring housing cost burdens
+Documentation,http://www.cdph.ca.gov/programs/Documents/HCI_HousingCostBurden_CHASandACS_106_Narrative7-11-14.pdf,ri_housing_burden,ri_housing_burden,Housing Cost Burden: Percent of households incurring housing cost burdens
+
+Section,Schema,DataType,Description,Widthformat,Coding
+Table,ri_housing_burden,,,,
+Table.Column,ind_id,number,Indicator ID,8,106
+Table.Column,ind_definition,text,Definition of indicator in plain language,79,"Percent of households spending 30% (50%) or more of annual income on housing costs (rent and utilities or mortgage, utilities, property tax, insurance and, if applicable, home association fees"
+Table.Column,datasource,text,source of the indicator data,5,U.S. Census Bureau American Community Survey (ACS)
+Table.Column,reportyear,text,Year(s) that the indicator was reported,9,2006-2010
+Table.Column,race_eth_code,integer,numeric code for a race/ethnicity group,1,1-9
+Table.Column,race_eth_name,text,Name of race/ethnic group,12,1=AIAN; 2=Asian; 3=AfricanAm; 4= Latino; 5=NHOPI; 6=White; 7=Multiple; 8=Other; 9=Total
+Table.Column,income_level,text,Income level (n=1),100,All income levels
+Table.Column,geotype,text,Type of geographic unit,12,CT=Census tract
+Table.Column,geotypevalue,text,Value of geographic unit,17,"11-digit census tract code, 5-digit FIPS place code, 5-digit FIPS county code, 1-digit region ID, 2-digit FIPS state code"
+Table.Column,geoname,text,Name of geographic unit,37,"census tract, place name, county name, region name, state name"
+Table.Column,county_name,text,Name of county that geotype is in,17,"NA for geotype=RE, CA"
+Table.Column,county_fips,text,FIPS code of county that geotype is in,12,2-digit census state code (06) plus 3-digit census county code
+Table.Column,region_code,text,MPO-based region code: see MPO County-to-Region List tab,14,01=Bay Area; 02=Butte; 03=Central/Southeast Sierra; 04=Monterey Bay; 05=North Coast; 06=Northeast Sierra; 07=Northern Sacramento Valley; 08=Sacramento Area; 09=San Diego; 10=San Joaquin Valley; 11=San Luis Obispo; 12=Santa Barbara; 13=Shasta; 14=Southern California
+Table.Column,region_name,text,MPO-based region name: see MPO County-to-Region List tab,29,
+Table.Column,burden,text,Description of housing cost burden strata,100,"≥ 30% (≥ 50%) of monthly household income consumed by monthly, gross rent; ≥  30%  (≥ 50%) of monthly household income consumed by monthly, selected housing costs; ≥  30% (≥ 50%) of monthly household income consumed by monthly, gross rent or selected housing costs"
+Table.Column,tenure,text,Description of housing tenure,50,"Rent-paying, renter-occupied households; Mortgage-paying, owner-occupied households; combined rent-/mortgage-paying households"
+Table.Column,total_households,number,Households paying rent or owner-occupied households paying mortgages; the denominator for this indicator,8,
+Table.Column,burdened_households,number,Households carrying a ≥ 30% (≥ 50%) housing cost burden; the numerator for this indicator,8,
+Table.Column,percent,number,"Proportion of households carrying a ≥ 30% (≥ 50%) housing cost burden among total households, multiplied by 100",8,
+Table.Column,LL95CI,number,Lower limit of 95% confidence interval,8,
+Table.Column,UL95CI,number,Upper limit of 95% confidence interval,8,
+Table.Column,SE,number,Standard error of percent,8,
+Table.Column,rse,number,Relative standard error (se/percent * 100) expressed as a percent,8,
+Table.Column,CA_decile,number,California decile,Integer,"CA_decile groups California census tracts and California places into 10 groups (or deciles) each, for total population. Equal values or 'ties' are assigned the mean decile rank. For example, in a database of 100 records where 70 records equal 0, 0 values span from the 1st to 7th deciles (70% of all data records). As a result, all 0 values will be assigned to the 4th decile: the mean between the 1st and 7th deciles."
+Table.Column,CA_RR,number,Rate ratio to California rate,8,Ratio of housing cost burden percent prevalence to California housing cost burden percent prevalence
+Table.Column,version,text,Date/time stamp of version of data,8,mm/DD/CCYY hh:mm:ss

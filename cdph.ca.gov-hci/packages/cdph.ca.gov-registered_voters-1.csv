@@ -1,0 +1,48 @@
+Declare,metatab-latest
+Description,Voter Registration/Participation: Percent of the eligible population registered to vote and the percent who voted in statewide elections
+Identifier,496c6eb3-6ed6-4e00-8c37-f4f8e229dd4b
+Name,cdph.ca.gov-registered_voters-1
+Name.Origin,cdph.ca.gov
+Name.Dataset,registered_voters
+Name.Version,1
+Modified,2017-04-07T17:49:01
+Issued,2017-04-07T17:49:01
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-registered_voters-1.xlsx
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-registered_voters-1.zip
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-registered_voters-1/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-registered_voters-1.csv
+
+Section,Resources,Name,Schema,Space,Time,Description
+Datafile,http://www.cdph.ca.gov/programs/Documents/HCI_RegisteredVoters_653_CA_CO_RE_PL_CT_5-1-14.zip#HCI_RegisteredVoters_653_CA_CO_RE_PL_CT_5-1-14.xlsx;VoterParticipation,registered_voters,registered_voters,,,Voter Registration/Participation: Percent of the eligible population registered to vote and the percent who voted in statewide elections
+
+Section,Documentation,Title,Schema,Description
+Datadictionary,http://www.cdph.ca.gov/programs/Documents/HCI_RegisteredVoters_653_CA_CO_RE_PL_CT_5-1-14.zip#HCI_RegisteredVoters_653_CA_CO_RE_PL_CT_5-1-14.xlsx;DataDictionary,registered_voters-dd,registered_voters,Voter Registration/Participation: Percent of the eligible population registered to vote and the percent who voted in statewide elections
+Documentation,http://www.cdph.ca.gov/programs/Documents/HCI_RegisteredVoters_653_CA_CO_RE_PL_CT_5-1-14.zip#HCI_RegisteredVoters_653_CA_CO_RE_PL_CT_5-1-14.xlsx;DataFilteringInstructions,registered_voters-filtering,registered_voters,Voter Registration/Participation: Percent of the eligible population registered to vote and the percent who voted in statewide elections
+Documentation,http://www.cdph.ca.gov/programs/Documents/HCI_RegisteredVoters_653_Narrative_and_examples_6-2-14.pdf,registered_voters,registered_voters,Voter Registration/Participation: Percent of the eligible population registered to vote and the percent who voted in statewide elections
+
+Section,Schema,DataType,Description,Widthformat,Coding
+Table,registered_voters,,,,
+Table.Column,ind_id,number,Indicator ID,3,556
+Table.Column,ind_definition,text,Definition of indicator in plain language,255,Free text
+Table.Column,reportyear,text,Year that the indicator was reported,9,"2002, 2004, 2006, 2008, 2010"
+Table.Column,race_eth_code,integer,numeric code for a race/ethnicity group,1,1=American Indian or Alaska Native; 2=Asian; 3=Black or African American; 4=Hispanic or Latino; 5=Native Hawaiian or Other Pacific Islander (NHOPI); 6=White;7= Multiple; 8=Other;9=Total
+Table.Column,race_eth_name,text,Name of race/ethnic group,9,AIAN; Asian; AfricanAm; Latino; NHOPI; White; Multiple; Other; Total
+Table.Column,geotype,text,Type of geographic unit,2,CT; Cenus Tract; PL;Place; CO;County; RE; Region CA;State
+Table.Column,geotypevalue,number,Value of geographic unit,single prec.,"FIPS ID; place code, CT code, zip code, region id"
+Table.Column,geoname,text,Name of geographic unit,37,"place, county, region name"
+Table.Column,county_name,text,Name of county that geotype is in,25,
+Table.Column,county_fips,text,FIPS code of county that geotype is in,5,2-digit census state code (06) plus 3-digit census county code
+Table.Column,region_name,text,MPO-based region name; see MPO_County list tab,26,
+Table.Column,region_code,text,MPO-based region code; see MPO_County list tab,2,01=Bay Area; 02=Butte; 03=Central/Southeast Sierra; 04=Monterey Bay; 05=North Coast; 06=Northeast Sierra; 07=Northern Sacramento Valley; 08=Sacramento Area; 09=San Diego; 10=San Joaquin Valley; 11=San Luis Obispo; 12=Santa Barbara; 13=Shasta; 14=Southern California
+Table.Column,type,text,Type of participation: registered of those eligible (registered/eligible) or voted of those registered (voted/registered).,20,
+Table.Column,numerator,number,"When type= registered/eligible, the numerator is the number of people who registered to vote.                                            When type= voted/registered, the numerator is the number of people who voted.",double prec.,
+Table.Column,denominator,number,"When type= registered/eligible, the denominator is the number of people who is eligible to vote.                                                 When type= voted/registered, the denominator is the number of people who registered to vote.",double prec.,
+Table.Column,percent,number,Numerator/denominator*100,double prec.,
+Table.Column,ll_95ci,number,Lower limit of 95% confidence interval of the percent,double prec.,
+Table.Column,ul_95ci,number,Lower limit of 95% confidence interval of the percent,double prec.,
+Table.Column,se,number,Standard error of the percent,double prec.,
+Table.Column,rse,number,Relative standard error of the percent,double prec.,
+Table.Column,ca_decile,integer,California decile,integer,"CA_decile' groups California places into 10 groups (or deciles) each, for total population. Equal values or 'ties' are assigned the mean decile rank. For example, in a database of 100 records where 70 records equal 0, 0 values span from the 1st to 7th deciles (70% of all data records)."
+Table.Column,ca_rr,number,Rate ratio to California rate,double prec.,
+Table.Column,vap,number,Voting age population.  Population 18 years and over.,double prec.,
+Table.Column,version,text,Date/time stamp of version of data,,mm/DD/CCYY hh:mm:ss

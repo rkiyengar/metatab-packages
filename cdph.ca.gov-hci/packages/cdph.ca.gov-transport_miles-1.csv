@@ -1,0 +1,56 @@
+Declare,metatab-latest
+Description,"Miles per capita by car, public transit, and walk/bicycle"
+Identifier,b8d0baea-8d84-4765-875f-6bc978529336
+Name,cdph.ca.gov-transport_miles-1
+Name.Origin,cdph.ca.gov
+Name.Dataset,transport_miles
+Name.Version,1
+Modified,2017-04-07T21:50:40
+Issued,2017-04-07T21:50:40
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-transport_miles-1.xlsx
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-transport_miles-1.zip
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-transport_miles-1/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdph.ca.gov-transport_miles-1.csv
+
+Section,Resources,Name,Schema,Space,Time,Description
+Datafile,http://www.cdph.ca.gov/programs/Documents/HCI_MilesByOccurrence_39_CA_CO_PL_RE_10-3-13.xls#Sheet4,transport_miles-r4,transport_miles,,,"Miles per capita by car, public transit, and walk/bicycle, for geotype R4."
+Datafile,http://www.cdph.ca.gov/programs/Documents/HCI_MilesByOccurrence_39_CA_CO_PL_RE_10-3-13.xls#milesbyoccurrence,transport_miles,transport_miles,,,"Miles per capita by car, public transit, and walk/bicycle"
+
+Section,Documentation,Title,Schema,Description,,
+Datadictionary,http://www.cdph.ca.gov/programs/Documents/HCI_MilesByOccurrence_39_CA_CO_PL_RE_10-3-13.xls#DataDictionary,transport_miles-dd,transport_miles,"Miles per capita by car, public transit, and walk/bicycle",,
+Documentation,http://www.cdph.ca.gov/programs/Documents/HCI_MilesByOccurrence_39_CA_CO_PL_RE_10-3-13.xls#Guide2Numerator-Denominator,transport_miles-filtering,transport_miles,"Miles per capita by car, public transit, and walk/bicycle",,
+Documentation,http://www.cdph.ca.gov/programs/Documents/HCI_MilesByOccurrence_39_CA_CO_PL_RE_10-3-13.xls#DataFilteringInstructions,transport_miles-filtering,transport_miles,"Miles per capita by car, public transit, and walk/bicycle",,
+Documentation,http://www.cdph.ca.gov/programs/Documents/HCI_MilesByOccurrence_39_Narrative_and_examples_10-3-13.pdf,transport_miles,transport_miles,"Miles per capita by car, public transit, and walk/bicycle",,
+
+Section,Schema,DataType,Description,Widthformat,Coding,
+Table,transport_miles,,,,,
+Table.Column,ind_id,number,Indicator ID,3,556,
+Table.Column,ind_definition,text,Definition of indicator in plain language,255,Free text,
+Table.Column,reportyear,text,Year that the indicator was reported,9,"2002-2010; 3 year averages (2002-2004, 2005-2007, and 2008-2010); 5 year average (2006-20010).",
+Table.Column,geotype,text,Type of geographic unit,2,PL;Place; CO;County; RE; Region; R4; Consolidated Statistical Metropolitan Area; CA;State,
+Table.Column,geotypevalue,number,Value of geographic unit,single prec.,"FIPS ID; place code, CT code, zip code, region id",
+Table.Column,geoname,text,Name of geographic unit,37,"place, county, region name",
+Table.Column,county_name,text,Name of county that geotype is in,25,,
+Table.Column,county_fips,text,FIPS code of county that geotype is in,5,2-digit census state code (06) plus 3-digit census county code,
+Table.Column,region_name,text,MPO-based region name; see MPO_County list tab,26,,
+Table.Column,region_code,text,MPO-based region code; see MPO_County list tab,2,01=Bay Area; 02=Butte; 03=Central/Southeast Sierra; 04=Monterey Bay; 05=North Coast; 06=Northeast Sierra; 07=Northern Sacramento Valley; 08=Sacramento Area; 09=San Diego; 10=San Joaquin Valley; 11=San Luis Obispo; 12=Santa Barbara; 13=Shasta; 14=Southern California,
+Table.Column,mode,text,Mode of transportation,23,"Bicycle, Pedestrian, Vehicle",
+Table.Column,avmttotal,number,"Numerator, annual vehicle miles traveled in the geographic area.  In the case of bicycles and pedestrians, this variable indicates the miles traveled by biking and walking",double prec.,,
+Table.Column,totalpop,number,"Denominator, total population in the geographic area",double prec.,,
+Table.Column,MpCratio,number,Miles traveled by occurrence per capita,double prec.,Not calculated for PL,
+Table.Column,LL95CI_MpCratio,number,Lower limit of 95% confidence interval,double prec.,NA=not available,
+Table.Column,UL95CI_MpCratio,number,Lower limit of 95% confidence interval,double prec.,NA=not available,
+Table.Column,MpCratio_se,number,Standard error of MpCratio,double prec.,NA=not available,
+Table.Column,MpCratio_rse,number,Relative standard error (se/value) expressed as a percent,double prec.,NA=not available,
+Table.Column,CA_decile_MpCratio,integer,"California decile for MpCratio, available for counties (geotype=CO), year 2006-2010.  Deciles are for each mode by severity combination",integer,"CA_decile' groups California places into 10 groups (or deciles) each, for total population. Equal values or 'ties' are assigned the mean decile rank. For example, in a database of 100 records where 70 records equal 0, 0 values span from the 1st to 7th deciles (70% of all data records).",
+Table.Column,CA_RR_MpC,number,Ratio of MpCratio in geographic area to state average,double prec.,,
+Table.Column,areasqmi,number,Land area in square miles,double prec.,,
+Table.Column,MpSqMiratio,number,Miles traveled by occurrence per square mile,double prec.,Not calculated for PL,
+Table.Column,LL95CI_MpSqMiratio,number,Lower limit of 95% confidence interval,double prec.,NA=not available,
+Table.Column,UL95CI_MpSqMiratio,number,Lower limit of 95% confidence interval,double prec.,NA=not available,
+Table.Column,MpSqMiratio_se,number,Standard error of MpSqMiratio,double prec.,NA=not available,
+Table.Column,MpSqMiratio_rse,number,Relative standard error (se/value) expressed as a percent,double prec.,NA=not available,
+Table.Column,CA_decile_MpSqMiratio,integer,"California decile for MpSqMiratio, available for counties (geotype=CO), year 2006-2010.  Deciles are for each mode by severity combination",integer,"CA_decile' groups California places into 10 groups (or deciles) each, for total population. Equal values or 'ties' are assigned the mean decile rank. For example, in a database of 100 records where 70 records equal 0, 0 values span from the 1st to 7th deciles (70% of all data records).",
+Table.Column,CA_RR_MpSqMi,number,Ratio of MpSqMiratio in geographic area to state average,double prec.,,
+Table.Column,groupquarters,number,Total population in group quarters in the geographic area,double prec.,,
+Table.Column,version,text,Date/time stamp of version of data,,mm/DD/CCYY hh:mm:ss,
