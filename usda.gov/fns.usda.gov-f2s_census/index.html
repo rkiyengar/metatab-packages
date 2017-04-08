@@ -1,0 +1,1317 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <style>
+    .narrow-dl .dl-horizontal dd {
+        margin-left: 100px;
+    }
+
+    .narrow-dl .dl-horizontal dt {
+        width: 80px;
+    }
+
+    </style>
+    <title>Farm To School Census</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Farm To School Census</h1>
+                <p>This file contains the raw data for all public school districts, private schools, and charter schools (SFAs) that completed the 2015 USDA Farm to School Census. Results can also be found online at https://farmtoschoolcensus.fns.usda.gov.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <h2>Documentation</h2>
+                <h2>Notes</h2>
+<ul>
+<li>Notes for the 'census' file'</li>
+<li>The QuestionSource, Universe, Definition, CodesNotes and QuestionText properties in the schema are taken from the datasets 'Variable Map” data file</li>
+<li>However, the variable map diverges from the column headers after colum 223. The remaining columns are from the Common Core of Data.</li>
+<li>The  file includes matched data from the Common Core of Data (school year 2013-2014) found at https://nces.ed.gov/ccd/pubagency.asp.</li>
+<li>The variable map tab describes the coding for each of variables created from the Census data and select variables from the Common Core of Data. All variables matched from the Common Core of Data are described at https://nces.ed.gov/ccd/pdf/2015147_2013-14_LEA_documentation_v1a.pdf.</li>
+<li>For detailed information about how this data was collected and analyzed, please visit https://farmtoschoolcensus.fns.usda.gov/about.</li>
+<li>All of the data are self-reported and may conflict with other data sources.</li>
+<li>If you have questions about the data file or plan to use the data to complete additional analysis, please contact Matthew Benson at matthew.benson@fns.usda.gov.</li>
+<li>Updated online October 31, 2016- v1c.</li>
+<li>Notes for the state_* files</li>
+<li>For the  state_census file, the totcost, totdolinclmilk, totdolexclmilk are included in the variable map, but these varibles are actually part of the state_dollar data schema. This files columns diverge from the Variable map after the pctinterstate
+variable.</li>
+<li>This file contains state, territory, and national level summary statistics for those public school districts, private schools, and charter schools (SFAs) that completed the 2015 USDA Farm to School Census.</li>
+<li>All of the respondent data are self-reported and may conflict with other data sources.</li>
+<li>For detailed information about how this data was collected and analyzed, please visit https://farmtoschoolcensus.fns.usda.gov/about.</li>
+<li>If you have questions about the data file or plan to use the data to complete additional analysis, please contact Matthew Benson at matthew.benson@fns.usda.gov.</li>
+<li>The state level CCD estimates tab summarizes the number of schools and students participating in farm to school activities using the Common Core of Data.</li>
+<li>The state level dollar estimates tab summarizes the dollars spent on all food and local food (including and excluding fluid milk).</li>
+<li>The variable map tab describes the coding for each of variables created from the Census data.</li>
+</ul>
+                <h2>Resources</h2>
+                <dl class="dl-horizontal">
+<dt>state_census</dt>
+<dd><em>https://farmtoschoolcensus.fns.usda.gov/sites/default/files/asset/document/2015%20F2S%20Census%20State-National%20Data_1.11.17_web.xlsx#2015+F2S+Census_State</em><br/>This file contains state, territory, and national level summary statistics for those public school districts, private schools, and charter schools (SFAs) that completed the 2015 USDA Farm to School Census.</dd>
+<dt>state_ccd</dt>
+<dd><em>https://farmtoschoolcensus.fns.usda.gov/sites/default/files/asset/document/2015%20F2S%20Census%20State-National%20Data_1.11.17_web.xlsx#State_CCD+Estimates</em><br/>The state level CCD estimates tab summarizes the number of schools and students participating in farm to school activities using the Common Core of Data.</dd>
+<dt>state_dollar</dt>
+<dd><em>https://farmtoschoolcensus.fns.usda.gov/sites/default/files/asset/document/2015%20F2S%20Census%20State-National%20Data_1.11.17_web.xlsx#State_Dollar+Estimates</em><br/>The state level dollar estimates tab summarizes the dollars spent on all food and local food (including and excluding fluid milk).</dd>
+<dt>census</dt>
+<dd><em>https://farmtoschoolcensus.fns.usda.gov/sites/default/files/asset/document/2015%20F2S%20Census%20SFA%20Data_10.31.16_web_3.xlsx#2</em><br/>2015 Farm to School Census Repondent Data (Updated 10/31/16)</dd>
+</dl>
+            </div>
+            <div class="col-md-5 narrow-dl">
+                <h2>Identity</h2>
+                <dl class="dl-horizontal">
+<dt>name</dt>
+<dd>fns.usda.gov-f2s_census-2015-1</dd>
+<dt>identifier</dt>
+<dd>7167e453-f1bd-43f5-ba2e-3abff46db737</dd>
+<dt>version</dt>
+<dd>2</dd>
+<dt>origin</dt>
+<dd>fns.usda.gov</dd>
+<dt>time</dt>
+<dd>2015</dd>
+<dt>grain</dt>
+<dd>None</dd>
+<dt>dataset</dt>
+<dd>f2s_census</dd>
+<dt>space</dt>
+<dd>None</dd>
+</dl>
+                <h2>Contacts</h2>
+                <dl class="dl-horizontal">
+<dt>Origin</dt>
+<dd><a href="mailto:matthew.benson@fns.usda.gov">Farm To School Program</a> <a href="https://farmtoschoolcensus.fns.usda.gov/">United States Department of Agriculture</a></dd>
+<dt>Wrangler</dt>
+<dd><a href="mailto:eric@civicknowledge.com">Eric Busboom</a> <a href="http://civicknowledge.com">Civic Knowledge</a></dd>
+</dl>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+            <h3>state_census</h3>
+<p><a href="https://farmtoschoolcensus.fns.usda.gov/sites/default/files/asset/document/2015%20F2S%20Census%20State-National%20Data_1.11.17_web.xlsx#2015+F2S+Census_State">https://farmtoschoolcensus.fns.usda.gov/sites/default/files/asset/document/2015%20F2S%20Census%20State-National%20Data_1.11.17_web.xlsx#2015+F2S+Census_State</a></p>
+<p>This file contains state, territory, and national level summary statistics for those public school districts, private schools, and charter schools (SFAs) that completed the 2015 USDA Farm to School Census.
+<table class="table table-striped">
+<tr><th>Header</th><th>Type</th><th>Description</th></tr><tr><td>state</td><td>text</td><td>State of respondents school district</td></tr> 
+<tr><td>pctf2s2013</td><td>number</td><td>Percent of responding districts that Had farm to school activities in SY 2013-2014</td></tr> 
+<tr><td>pctf2s2014</td><td>number</td><td>Percent of responding districts that Started activities in SY 2014-2015</td></tr> 
+<tr><td>pctf2sfuture</td><td>number</td><td>Percent of responding districts that Plan to start activities in the future</td></tr> 
+<tr><td>pctf2snoplan</td><td>number</td><td>Percent of responding districts that Had no farm to school activities and no plans</td></tr> 
+<tr><td>pctbenenjoyed2red</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started to enjoy reduced food waste as a benefit of farm to school. (SY 2014-2015)</td></tr> 
+<tr><td>pctbenenjoyed2low</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started to enjoy lower school meal program costs as a benefit of farm to school (SY 2014-2015)</td></tr> 
+<tr><td>pctbenenjoyed2acc</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started to enjoy greater acceptance of the new meal pattern as a benefit of farm to school (SY 2014-2015)</td></tr> 
+<tr><td>pctbenenjoyed2inc</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started to enjoy increased participation in school meals as a benefit of farm to school (SY 2014-2015)</td></tr> 
+<tr><td>pctbenenjoyed2com</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started to enjoy greater community support for school meals as a benefit of farm to school (SY 2014-2015)</td></tr> 
+<tr><td>pctlocalcitycounty2014</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Defined Local as within the same City/County</td></tr> 
+<tr><td>pctlocalfifty2014</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Defined Local as within a 50 Mile Radius</td></tr> 
+<tr><td>pctlocalhundred2014</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Defined Local as within a 100 Mile Radius</td></tr> 
+<tr><td>pctlocaltwohundred2014</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Defined Local as with a 200 Mile Radius</td></tr> 
+<tr><td>pctlocaldaydrive2014</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Defined Local as within a Day's Drive</td></tr> 
+<tr><td>pctlocalstate2014</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Defined Local as within the State</td></tr> 
+<tr><td>pctlocalregion2014</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Defined Local as with the Region</td></tr> 
+<tr><td>pctlocalothrrest2014</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Defined Local as Geographic Along with Other Restrictions</td></tr> 
+<tr><td>pctlocalother2014</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Defined Local as Other</td></tr> 
+<tr><td>pctstartserv</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started serving locally produced foods in the cafeteria (SY 2014-2015)</td></tr> 
+<tr><td>pctstartsmrtsnack</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started serving locally produced foods as a Smart Snack (a la carte, as fundraisers, etc.) (SY 2014-2015)</td></tr> 
+<tr><td>pctstartaftrschool</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started serving locally produced food or providing farm to school activities as part of afterschool programs. (SY 2014-2015)</td></tr> 
+<tr><td>pctstartsrvg</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started serving products from school-based gardens or school-based farms in the cafeteria (SY 2014-2015)</td></tr> 
+<tr><td>pctstarttaste</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started holding taste testing/demos of locally produced foods in the cafeteria, classroom, or other school-related setting (SY 2014-2015)</td></tr> 
+<tr><td>pctstartgrdntst</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started holding taste testing/demos of product from school-based gardens or school-based farms in the cafeteria, classroom or other school-related setting (SY 2014-2015)</td></tr> 
+<tr><td>pctstartstrategies</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started using Smarter Lunchroom strategies to encourage student selection and consumption of locally produced foods (e.g., product placement, food prompts, creative signage, etc..) (SY 2014-2015)</td></tr> 
+<tr><td>pctstartuse</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started using cafeteria food coaches (e.g. adults or students in the cafeteria encouraging kids to eat health/local foods) (SY 2014-2015)</td></tr> 
+<tr><td>pctstartusdamat</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started using USDA Team Nutrition materials (such as The Great Garden Detective Adventure or Dig In!) as part of taste testing or educational activities. (SY 2014-2015)</td></tr> 
+<tr><td>pctstartgrdn</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started conducting edible school gardening or orchard activities as part of a school curriculum (SY 2014-2015)</td></tr> 
+<tr><td>pctstartgrdnas</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started conducting edible school gardening or orchard activities as part of an after school program (SY 2014-2015)</td></tr> 
+<tr><td>pctstarttrip</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started conducting student field trips to farms or orchards (SY 2014-2015)</td></tr> 
+<tr><td>pctstartvisit</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started having farmer(s) visit the cafeteria, classroom or other school-related setting. (SY 2014-2015)</td></tr> 
+<tr><td>pctstarttheme</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started promoting local efforts through themed or branded promotions (e.g. Harvest of the Month, Local Day, Taste of Washington, etc..) (SY 2014-2015)</td></tr> 
+<tr><td>pctstartprom</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started promoting locally produced foods at school in general (e.g. via cafeteria signs, posters, newsletters, etc.) (SY 2014-2015)</td></tr> 
+<tr><td>pctstartmedia</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started generating media coverage of local foods being used in schools (e.g. press interviews or other activities that
+resulted in local coverage) (SY 2014-2015)</td></tr> 
+<tr><td>pctstarthost</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started hosting farm to school related community events (e.g. invited parents to lunch, corn shucking contests, etc.) (SY 2014-2015)</td></tr> 
+<tr><td>pctstartceleb</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started celebrating Farm to School Month (October 2014) (SY 2014-2015)</td></tr> 
+<tr><td>pctstartinteg</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started Integrating farm to school concepts, including school gardening activities, into educational curriculum
+(math, science, language arts, etc.) (SY 2014-2015)</td></tr> 
+<tr><td>pctstarttrng</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started providing training to school food service staff on farm to school or school gardens (SY 2014-2015)</td></tr> 
+<tr><td>pctstartproducer</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started working with local food producers to develop a specific food product using local foods (SY 2014-2015)</td></tr> 
+<tr><td>pctstartimplement</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started implementing farm to school activities as part of overall school efforts to reduce food waste (SY 2014-2015)</td></tr> 
+<tr><td>pctstartevaluate</td><td>number</td><td>Percent of responding SYS 2014-2015 districts that Started evaluating changes in student acceptance and food waste as a result of implementing farm to school
+activities (SY 2014-2015)</td></tr> 
+<tr><td>pctbenpercred</td><td>number</td><td>Percent of future farm to school districts that are Planing to enjoy reduced food waste as a benefit of farm to school</td></tr> 
+<tr><td>pctbenperclow</td><td>number</td><td>Percent of future farm to school districts that are Planning to enjoy lower school meal program costs as a benefit of farm to school</td></tr> 
+<tr><td>pctbenpercacc</td><td>number</td><td>Percent of future farm to school districts that are Planning to enjoy greater acceptance of the new meal pattern as a benefit of farm to school</td></tr> 
+<tr><td>pctbenpercinc</td><td>number</td><td>Percent of future farm to school districts that are Planning to enjoy increased participation in school meals as a benefit of farm to school</td></tr> 
+<tr><td>pctbenperccom</td><td>number</td><td>Percent of future farm to school districts that are Planning to enjoy greater community support for school meals as a benefit of farm to school</td></tr> 
+<tr><td>pctplanserv</td><td>number</td><td>Percent of future farm to school districts that are Planning to serve locally produced foods in the cafeteria (future)</td></tr> 
+<tr><td>pctplansmrtsnack</td><td>number</td><td>Percent of future farm to school districts that are Planning to serve locally produced foods as a Smart Snack (a la carte, as fundraisers, etc.) (future)</td></tr> 
+<tr><td>pctplanaftrschool</td><td>number</td><td>Percent of future farm to school districts that are Planning to serve locally produced foods or providing farm to school activities as part of afterschool programs (future)</td></tr> 
+<tr><td>pctplansrvg</td><td>number</td><td>Percent of future farm to school districts that are Planning to serve products from school-based gardens or school-based farms in the cafeteria (future)</td></tr> 
+<tr><td>pctplantaste</td><td>number</td><td>Percent of future farm to school districts that are Planning to hold taste tests/cooking demonstrations of locally produced foods in the cafeteria, classroom or other school-related setting (future)</td></tr> 
+<tr><td>pctplangrdntst</td><td>number</td><td>Percent of future farm to school districts that are Planning to hold taste tests/demos of products from school-based gardens or school-based farms in the cafeteria,
+classroom or other school-related setting (future)</td></tr> 
+<tr><td>pctplanstrategies</td><td>number</td><td>Percent of future farm to school districts that are Planning to use Smarter Lunchroom strategies to encourage student selection and consumption of locally produced foods (e.g., product placement, food prompts, creative signage, etc.) (future)</td></tr> 
+<tr><td>pctplanuse</td><td>number</td><td>Percent of future farm to school districts that are Planning to use cafeteria food coaches to promote the consumption of local foods (e.g. adults or students in the
+cafeteria encouraging kids to eat healthy/local foods) (future)</td></tr> 
+<tr><td>pctplanusdamat</td><td>number</td><td>Percent of future farm to school districts that are Planning to use USDA Team Nutrition materials (such as The Great Garden Detective Adventure or Dig In!) as part of taste testing or educational activities (future)</td></tr> 
+<tr><td>pctplangrdn</td><td>number</td><td>Percent of future farm to school districts that are Planning to conduct edible school gardening or orchard activities as part of a school curriculum (future)</td></tr> 
+<tr><td>pctplangrdnas</td><td>number</td><td>Percent of future farm to school districts that are Planning to conduct edible school gardening or orchard activities as part of an after school program (future)</td></tr> 
+<tr><td>pctplantrip</td><td>number</td><td>Percent of future farm to school districts that are Planning to conduct student field trips to farms or orchards (future)</td></tr> 
+<tr><td>pctplanvisit</td><td>number</td><td>Percent of future farm to school districts that are Planning to have farmer(s) visit the cafeteria, classroom or other school-related setting (future)</td></tr> 
+<tr><td>pctplantheme</td><td>number</td><td>Percent of future farm to school districts that are Planning to promote local efforts through themed or branded promotions (e.g. Harvest of the Month, Local Day, Taste of Washington, etc.)</td></tr> 
+<tr><td>pctplanprom</td><td>number</td><td>Percent of future farm to school districts that are Planning to promote locally produced foods at school in general (e.g. via cafeteria signs, posters, newsletters, etc.) (future)</td></tr> 
+<tr><td>pctplanmedia</td><td>number</td><td>Percent of future farm to school districts that are Planning to generate media coverage of local foods being used in schools (e.g. press interviews or other activities that
+resulted in local coverage) (future)</td></tr> 
+<tr><td>pctplanhost</td><td>number</td><td>Percent of future farm to school districts that are Planning to host farm to school related community events (e.g. invited parents to lunch, corn shucking contests, etc.) (future)</td></tr> 
+<tr><td>pctplanceleb</td><td>number</td><td>Percent of future farm to school districts that are Planning to celebrate Farm to School Month (future)</td></tr> 
+<tr><td>pctplaninteg</td><td>number</td><td>Percent of future farm to school districts that are Planning to integrate farm to school concepts, including school gardening activities, into educational curriculum
+(math, science, language arts, etc.) (future)</td></tr> 
+<tr><td>pctplantrng</td><td>number</td><td>Percent of future farm to school districts that are Planning to provide training to school food service staff on farm to school or school gardens (future)</td></tr> 
+<tr><td>pctplanproducers</td><td>number</td><td>Percent of future farm to school districts that are Planning to work with local food producers to develop a specific food product using local foods (future)</td></tr> 
+<tr><td>pctplanimplement</td><td>number</td><td>Percent of future farm to school districts that are Planning to implement farm to school activities as part of overall school efforts to reduce food waste (future)</td></tr> 
+<tr><td>pctplanevaluate</td><td>number</td><td>Percent of future farm to school districts that are Planning to evaluate changes in student acceptance and food waste as a result of implementing farm to school activities (future)</td></tr> 
+<tr><td>pctprobbidf2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Local producers aren't bidding (no plan)</td></tr> 
+<tr><td>pctprobseasf2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Hard to find year-round availability of key items (no plan)</td></tr> 
+<tr><td>pctprobcoordf2sn</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Hard to coordinate procurement of local with regular procurement</td></tr> 
+<tr><td>pctprobavailf2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Local items not available from primary vendors (no plan)</td></tr> 
+<tr><td>pctprobrangef2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Vendors for local items don't offer a broad range of products (no plan)</td></tr> 
+<tr><td>pctprobhighf2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Higher prices (no plan)</td></tr> 
+<tr><td>pctprobunstablef2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Unstable product prices (no plan)</td></tr> 
+<tr><td>pctprobreliabf2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Lack of reliability in delivering ordered items (no plan)</td></tr> 
+<tr><td>pctprobequipf2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Lack of kitchen equipment to process/prepare local foods. (no plan)</td></tr> 
+<tr><td>pctprobgapf2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with GAP or other food safety requirements (no plan)</td></tr> 
+<tr><td>pctprobcomplf2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Lack of compliance with your institution's purchasing regulations and policies (no plan)</td></tr> 
+<tr><td>pctprobprocf2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Lack of availability of processed/precut products (no plan)</td></tr> 
+<tr><td>pctprobsupplierf2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Hard to find new suppliers/growers or distributors (no plan)</td></tr> 
+<tr><td>pctprobinfooff2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Hard to get information about product availability (no plan)</td></tr> 
+<tr><td>pctproborderf2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Hard to place orders with vendors (no plan)</td></tr> 
+<tr><td>pctprobtimef2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Getting on time deliveries (no plan)</td></tr> 
+<tr><td>pctprobqualf2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Getting product delivered that meets your quality requirements &amp; other specs (i.e., size) (no plan)</td></tr> 
+<tr><td>pctprobdelivf2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Having quantity delivered equal to quantity ordered (no plan)</td></tr> 
+<tr><td>pctprobresolvf2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Resolving problem deliveries (no plan)</td></tr> 
+<tr><td>pctprobpayf2sno</td><td>number</td><td>Percent of responding non-farm to school districts that had problem with Inability to pay farmers according to farmers' needs due to school district payment procedures (no plan)</td></tr> 
+<tr><td>pctbenenjoyed1red</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Enjoying reduced food waste as a benefit of farm to school</td></tr> 
+<tr><td>pctbenenjoyed1low</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Enjoying lower school meal program costs as a benefit of farm to school</td></tr> 
+<tr><td>pctbenenjoyed1acc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Enjoying greater acceptance of the new meal pattern as a benefit of farm to school</td></tr> 
+<tr><td>pctbenenjoyed1inc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Enjoying increased participation in school meals as a benefit of farm to school</td></tr> 
+<tr><td>pctbenenjoyed1com</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Enjoying greater community support for school meals as a benefit of farm to school</td></tr> 
+<tr><td>pctageprek</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Pre-K participated in farm to school activities.</td></tr> 
+<tr><td>pctagek5</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Grades K-5 participated in farm to school activities.</td></tr> 
+<tr><td>pctage68</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Grades 6-8 participated in farm to school activities.</td></tr> 
+<tr><td>pctage912</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Grades 9-12 participated in farm to school activities.</td></tr> 
+<tr><td>pctcacfpyes</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Participating in the Child and Adult Care Food Program (CACFP)</td></tr> 
+<tr><td>pctcacfpno</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Not participating in Child and Adult Care Food Program (CACFP)</td></tr> 
+<tr><td>pctcacfpidk</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Don’t know if participating in Child and Adult Care Food Program (CACFP)</td></tr> 
+<tr><td>pctlocalcitycounty2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that  Defined Local as within the same City/County</td></tr> 
+<tr><td>pctlocalfifty2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that  Defined Local as within a 50 Mile Radius</td></tr> 
+<tr><td>pctlocalhundred2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that  Defined Local as within a 100 Mile Radius</td></tr> 
+<tr><td>pctlocaltwohundred2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that  Defined Local as with a 200 Mile Radius</td></tr> 
+<tr><td>pctlocaldaydrive2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that  Defined Local as within a Day's Drive</td></tr> 
+<tr><td>pctlocalstate2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that  Defined Local as within the State</td></tr> 
+<tr><td>pctlocalregion2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that  Defined Local as with the Region</td></tr> 
+<tr><td>pctlocalothrrest2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that  Defined Local as Geographic Along with Other Restrictions</td></tr> 
+<tr><td>pctlocalother2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that  Defined Local as Other</td></tr> 
+<tr><td>pctusedbreak</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Used local foods in breakfast program</td></tr> 
+<tr><td>pctusedlunch</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Used local foods in lunch program</td></tr> 
+<tr><td>pctusedsup</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Used local foods in supper program</td></tr> 
+<tr><td>pctusedsnack</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Used local foods in snacks program</td></tr> 
+<tr><td>pctusedffvp</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Used local foods in Fresh Fruit and Vegetable Program</td></tr> 
+<tr><td>pctusedcacfp</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Used local foods in CACFP (i.e., in a pre-k setting such as Head Start, etc.) program</td></tr> 
+<tr><td>pctusedcacfpas</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Used local foods in CACFP at-risk afterschool program</td></tr> 
+<tr><td>pctusedsumr</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Used local foods in summer meals program (i.e., meals in the summer food service program, in Seamless Summer, or in the NLSP under accredited summer school programs)</td></tr> 
+<tr><td>pctdirectprod</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Obtains local food direct from individual food producers (i.e. farmers, fishers, ranchers)</td></tr> 
+<tr><td>pctdirectcoop</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Obtains local food direct from farmer, rancher, or fisher cooperatives</td></tr> 
+<tr><td>pctdirectfmkt</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Obtains local food direct from farmers markets</td></tr> 
+<tr><td>pctdirectcsa</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Obtains local food via a Community Supported Agriculture (CSA) model</td></tr> 
+<tr><td>pctdirectmanu</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Obtains local food direct from food processors and manufacturers</td></tr> 
+<tr><td>pctinterdist</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Obtains local food from distributors</td></tr> 
+<tr><td>pctintercoop</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Obtains local food from food buying cooperative</td></tr> 
+<tr><td>pctinterfood</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Obtains local food from food hub</td></tr> 
+<tr><td>pctinterfsmc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Obtains local food from food service management companies</td></tr> 
+<tr><td>pctinterdod</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Obtains local food from DoD Fresh Program vendors</td></tr> 
+<tr><td>pctinterusda</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Obtains local food from USDA foods</td></tr> 
+<tr><td>pctinterstate</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Obtains local food from State Farm to School program office</td></tr> 
+<tr><td>pctfruitfuture</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Plans to buy local fruit</td></tr> 
+<tr><td>pctfruityes</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Bought local fruit</td></tr> 
+<tr><td>pctvegfuture</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Plans to buy local vegetables</td></tr> 
+<tr><td>pctvegyes</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Bought local vegetables</td></tr> 
+<tr><td>pctmilkfuture</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Plans to buy local milk</td></tr> 
+<tr><td>pctmilkyes</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Bought local milk</td></tr> 
+<tr><td>pctdairyfuture</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Plans to by local other dairy</td></tr> 
+<tr><td>pctdairyyes</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Bought local other dairy</td></tr> 
+<tr><td>pctmeatfuture</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Plans to buy local other meat</td></tr> 
+<tr><td>pctmeatyes</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Bought local other meat</td></tr> 
+<tr><td>pcteggsfuture</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Plans to buy local eggs</td></tr> 
+<tr><td>pcteggsyes</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Bought local eggs</td></tr> 
+<tr><td>pctseafdfuture</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Plans to buy local seafood</td></tr> 
+<tr><td>pctseafdyes</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Bought local seafood</td></tr> 
+<tr><td>pctvegprotfuture</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Plans to buy local plant-based protein items such as beans, seeds, nuts</td></tr> 
+<tr><td>pctvegprotyes</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Bought local plant-based protein items such as beans, seeds, nuts</td></tr> 
+<tr><td>pctgrainfuture</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Plans to buy local grains and flour</td></tr> 
+<tr><td>pctgrainyes</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Bought local grains and flour</td></tr> 
+<tr><td>pctbakedfuture</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Plans to buy local bakery products</td></tr> 
+<tr><td>pctbakedyes</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Bought local bakery products</td></tr> 
+<tr><td>pctherbfuture</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Plans to buy local herbs</td></tr> 
+<tr><td>pctherbyes</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Bought local herbs</td></tr> 
+<tr><td>pctothrfuture</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Plans to buy other food</td></tr> 
+<tr><td>pctothryes</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Bought other food</td></tr> 
+<tr><td>pctfruitfreqdly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Fruit Daily</td></tr> 
+<tr><td>pctfruitfreqfewwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Fruit More than Weekly</td></tr> 
+<tr><td>pctfruitfreqwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Fruit Weekly</td></tr> 
+<tr><td>pctfruitfreqfewmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Fruit More than Monthly</td></tr> 
+<tr><td>pctfruitfreqmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Fruit Montly</td></tr> 
+<tr><td>pctfruitfreqocc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Fruit Occasionally</td></tr> 
+<tr><td>pctfruitfreqnev</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Vegetables Never</td></tr> 
+<tr><td>pctvegfreqdly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Vegetables Daily</td></tr> 
+<tr><td>pctvegfreqfewwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Vegetables More than Weekly</td></tr> 
+<tr><td>pctvegfreqwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Vegetables Weekly</td></tr> 
+<tr><td>pctvegfreqfewmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Vegetables More than Monthly</td></tr> 
+<tr><td>pctvegfreqmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Vegetables Montly</td></tr> 
+<tr><td>pctvegfreqocc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Vegetables Occasionally</td></tr> 
+<tr><td>pctvegfreqnev</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Vegetables Never</td></tr> 
+<tr><td>pctmilkfreqdly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Milk Daily</td></tr> 
+<tr><td>pctmilkfreqfewwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Milk More than Weekly</td></tr> 
+<tr><td>pctmilkfreqwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Milk Weekly</td></tr> 
+<tr><td>pctmilkfreqfewmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Milk More than Monthly</td></tr> 
+<tr><td>pctmilkfreqmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Milk Montly</td></tr> 
+<tr><td>pctmilkfreqocc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Milk Occasionally</td></tr> 
+<tr><td>pctmilkfreqnev</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Milk Never</td></tr> 
+<tr><td>pctdairyfreqdly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Dairy Products Daily</td></tr> 
+<tr><td>pctdairyfreqfewwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Dairy Products More than Weekly</td></tr> 
+<tr><td>pctdairyfreqwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Dairy Products Weekly</td></tr> 
+<tr><td>pctdairyfreqfewmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Dairy Products More than Monthly</td></tr> 
+<tr><td>pctdairyfreqmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Dairy Products Montly</td></tr> 
+<tr><td>pctdairyfreqocc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Dairy Products Occasionally</td></tr> 
+<tr><td>pctdairyfreqnev</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Dairy Products Never</td></tr> 
+<tr><td>pctmeatfreqdly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Meat Daily</td></tr> 
+<tr><td>pctmeatfreqfewwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Meat More than Weekly</td></tr> 
+<tr><td>pctmeatfreqwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Meat Weekly</td></tr> 
+<tr><td>pctmeatfreqfewmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Meat More than Monthly</td></tr> 
+<tr><td>pctmeatfreqmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Meat Montly</td></tr> 
+<tr><td>pctmeatfreqocc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Meat Occasionally</td></tr> 
+<tr><td>pctmeatfreqnev</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Meat Never</td></tr> 
+<tr><td>pcteggsfreqdly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Eggs Daily</td></tr> 
+<tr><td>pcteggsfreqfewwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Eggs More than Weekly</td></tr> 
+<tr><td>pcteggsfreqwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Eggs Weekly</td></tr> 
+<tr><td>pcteggsfreqfewmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Eggs More than Monthly</td></tr> 
+<tr><td>pcteggsfreqmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Eggs Montly</td></tr> 
+<tr><td>pcteggsfreqocc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Eggs Occasionally</td></tr> 
+<tr><td>pcteggsfreqnev</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Eggs Never</td></tr> 
+<tr><td>pctseafdfreqdly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Seafood Daily</td></tr> 
+<tr><td>pctseafdfreqfewwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Seafood More than Weekly</td></tr> 
+<tr><td>pctseafdfreqwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Seafood Weekly</td></tr> 
+<tr><td>pctseafdfreqfewmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Seafood More than Monthly</td></tr> 
+<tr><td>pctseafdfreqmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Seafood Montly</td></tr> 
+<tr><td>pctseafdfreqocc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Seafood Occasionally</td></tr> 
+<tr><td>pctseafdfreqnev</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Seafood Never</td></tr> 
+<tr><td>pctvegprotfreqdly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Plant-based Protein Items such as Beans, Seed, Nuts Daily</td></tr> 
+<tr><td>pctvegprotfreqfewwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Plant-based Protein Items such as Beans, Seed, Nuts More than Weekly</td></tr> 
+<tr><td>pctvegprotfreqwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Plant-based Protein Items such as Beans, Seed, Nuts Weekly</td></tr> 
+<tr><td>pctvegprotfreqfewmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Plant-based Protein Items such as Beans, Seed, Nuts More than Monthly</td></tr> 
+<tr><td>pctvegprotfreqmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Plant-based Protein Items such as Beans, Seed, Nuts Montly</td></tr> 
+<tr><td>pctvegprotfreqocc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Plant-based Protein Items such as Beans, Seed, Nuts Occasionally</td></tr> 
+<tr><td>pctvegprotfreqnev</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Plant-based Protein Items such as Beans, Seed, Nuts Never</td></tr> 
+<tr><td>pctgrainfreqdly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Grains and Flour Daily</td></tr> 
+<tr><td>pctgrainfreqfewwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Grains and Flour More than Weekly</td></tr> 
+<tr><td>pctgrainfreqwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Grains and Flour Weekly</td></tr> 
+<tr><td>pctgrainfreqfewmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Grains and Flour More than Monthly</td></tr> 
+<tr><td>pctgrainfreqmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Grains and Flour Montly</td></tr> 
+<tr><td>pctgrainfreqocc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Grains and Flour Occasionally</td></tr> 
+<tr><td>pctgrainfreqnev</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Grains and Flour Never</td></tr> 
+<tr><td>pctbakedfreqdly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Bakery Products Daily</td></tr> 
+<tr><td>pctbakedfreqfewwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Bakery Products More than Weekly</td></tr> 
+<tr><td>pctbakedfreqwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Bakery Products Weekly</td></tr> 
+<tr><td>pctbakedfreqfewmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Bakery Products More than Monthly</td></tr> 
+<tr><td>pctbakedfreqmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Bakery Products Montly</td></tr> 
+<tr><td>pctbakedfreqocc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Bakery Products Occasionally</td></tr> 
+<tr><td>pctbakedfreqnev</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Bakery Products Never</td></tr> 
+<tr><td>pctherbfreqdly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Herbs Daily</td></tr> 
+<tr><td>pctherbfreqfewwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Herbs More than Weekly</td></tr> 
+<tr><td>pctherbfreqwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Herbs Weekly</td></tr> 
+<tr><td>pctherbfreqfewmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Herbs More than Monthly</td></tr> 
+<tr><td>pctherbfreqmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Herbs Montly</td></tr> 
+<tr><td>pctherbfreqocc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Herbs Occasionally</td></tr> 
+<tr><td>pctherbfreqnev</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Local Herbs Never</td></tr> 
+<tr><td>pctothrfreqdly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Other Food Daily</td></tr> 
+<tr><td>pctothrfreqfewwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Other Food More than Weekly</td></tr> 
+<tr><td>pctothrfreqwkly</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Other Food Weekly</td></tr> 
+<tr><td>pctothrfreqfewmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Other Food More than Monthly</td></tr> 
+<tr><td>pctothrfreqmon</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Other Food Montly</td></tr> 
+<tr><td>pctothrfreqocc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Other Food Occasionally</td></tr> 
+<tr><td>pctothrfreqnev</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that are Serving Other Food Never</td></tr> 
+<tr><td>pctfutureinc</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Expected future local purchases to increase</td></tr> 
+<tr><td>pctfuturedec</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Expected future local purchases to decrease</td></tr> 
+<tr><td>pctfuturesame</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Expected future local purchases to stay the same</td></tr> 
+<tr><td>pctfuturedk</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Did not know if future local purchase would increase, decrease or stay the same</td></tr> 
+<tr><td>pctfutureother</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Specified other in regard to future local purchases increasing, decreasing or staying the same</td></tr> 
+<tr><td>pctserv</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Served locally produced foods in the cafeteria (SY 2013-2014)</td></tr> 
+<tr><td>pctsmrtsnack</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Served locally produced foods as a Smart Snack (a la carte, as fundraisers, etc.) (SY 2013-2014)</td></tr> 
+<tr><td>pctaftrschool</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Served locally produced food or providing farm to school activities as part of afterschool programs. (SY 2013-2014)</td></tr> 
+<tr><td>pctsrvg</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Served products from school-based gardens or school-based farms in the cafeteria (SY 2013-2014)</td></tr> 
+<tr><td>pcttaste</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Held taste testing/demos of locally produced foods in the cafeteria, classroom, or other school-related setting (SY 2013-2014)</td></tr> 
+<tr><td>pctdemo</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Held taste testing/demos of product from school-based gardens or school-based farms in the cafeteria, classroom or other school-related setting (SY 2013-2014)</td></tr> 
+<tr><td>pctstrategies</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Used Smarter Lunchroom strategies to encourage student selection and consumption of locally produced foods (e.g., product placement, food prompts, creative signage, etc..) (SY 2013-2014)</td></tr> 
+<tr><td>pctcoach</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Used cafeteria food coaches (e.g. adults or students in the cafeteria encouraging kids to eat health/local foods) (SY 2013-2014)</td></tr> 
+<tr><td>pctusdamat</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Used USDA Team Nutrition materials (such as The Great Garden Detective Adventure or Dig In!) as part of taste testing or educational activities. (SY 2013-2014)</td></tr> 
+<tr><td>pctgrdn</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Conducted edible school gardening or orchard activities as part of a school curriculum (SY 2013-2014)</td></tr> 
+<tr><td>pctgrdnas</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Conducted edible school gardening or orchard activities as part of an after school program (SY 2013-2014)</td></tr> 
+<tr><td>pcttrip</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Conducted student field trips to farms or orchards (SY 2013-2014)</td></tr> 
+<tr><td>pctvisit</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Had farmer(s) visit the cafeteria, classroom or other school-related setting. (SY 2013-2014)</td></tr> 
+<tr><td>pcttheme</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Promoted local efforts through themed or branded promotions (e.g. Harvest of the Month, Local Day, Taste of Washington, etc..) (SY 2013-2014)</td></tr> 
+<tr><td>pctprom</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Promoted locally produced foods at school in general (e.g. via cafeteria signs, posters, newsletters, etc.) (SY 2013-2014)</td></tr> 
+<tr><td>pctmedia</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Generated media coverage of local foods being used in schools (e.g. press interviews or other activities that
+resulted in local coverage) (SY 2013-2014)</td></tr> 
+<tr><td>pcthost</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Hosted farm to school related community events (e.g. invited parents to lunch, corn shucking contests, etc.) (SY 2013-2014)</td></tr> 
+<tr><td>pctceleb</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Celebrated Farm to School Month (October 2013) (SY 2013-2014)</td></tr> 
+<tr><td>pctinteg</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Integrated farm to school concepts, including school gardening activities, into educational curriculum
+(math, science, language arts, etc.) (SY 2013-2014)</td></tr> 
+<tr><td>pcttrng</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Provided training to school food service staff on farm to school or school gardens (SY 2013-2014)</td></tr> 
+<tr><td>pctproducers</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Worked with local food producers to develop a specific food product using local foods (SY 2013-2014)</td></tr> 
+<tr><td>pctimplement</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Implemented farm to school activities as part of overall school efforts to reduce food waste (SY 2013-2014)</td></tr> 
+<tr><td>pctevaluate</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Evaluated changes in student acceptance and food waste as a result of implementing farm to school
+activities (SY 2013-2014)</td></tr> 
+<tr><td>pctprobbid2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Local producers aren't bidding (conducts f2s)</td></tr> 
+<tr><td>pctprobseas2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Hard to find year-round availability of key items (conducts f2s)</td></tr> 
+<tr><td>pctprobcoord2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Hard to coordinate procurement of local with regular procurement (conducts f2s)</td></tr> 
+<tr><td>pctprobavail2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Local items not available from primary vendors (conducts f2s)</td></tr> 
+<tr><td>pctprobrange2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Vendors for local items don't offer a broad range of products (conducts f2s)</td></tr> 
+<tr><td>pctprobhigh2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Higher prices (conducts f2s)</td></tr> 
+<tr><td>pctprobunstable2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Unstable product prices (conducts f2s)</td></tr> 
+<tr><td>pctprobreliab2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Lack of reliability in delivering ordered items (conducts f2s)</td></tr> 
+<tr><td>pctprobequip2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Lack of kitchen equipment to process/prepare local foods. (conducts f2s)</td></tr> 
+<tr><td>pctprobgap2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with GAP or other food safety requirements (conducts f2s)</td></tr> 
+<tr><td>pctprobcompl2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Lack of compliance with your institution's purchasing regulations and policies (conducts f2s)</td></tr> 
+<tr><td>pctprobproc2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Lack of availability of processed/precut products (conducts f2s)</td></tr> 
+<tr><td>pctprobsupplier2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Hard to find new suppliers/growers or distributors (conducts f2s)</td></tr> 
+<tr><td>pctprobinfo2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Hard to get information about product availability (conducts f2s)</td></tr> 
+<tr><td>pctproborder2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Hard to place orders with vendors (conducts f2s)</td></tr> 
+<tr><td>pctprobtime2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Getting on time deliveries (conducts f2s)</td></tr> 
+<tr><td>pctprobqual2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Getting product delivered that meets your quality requirements &amp; other specs (i.e., size) (conducts f2s)</td></tr> 
+<tr><td>pctprobdeliv2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Having quantity delivered equal to quantity ordered (conducts f2s)</td></tr> 
+<tr><td>pctprobresolv2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Resolving problem deliveries (conducts f2s)</td></tr> 
+<tr><td>pctprobpay2013</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that had problem with Inability to pay farmers according to farmers' needs due to school district payment procedures (conducts f2s)</td></tr> 
+<tr><td>countf2s2013</td><td>integer</td><td>Count of districts that Had farm to school activities in SY 2013-2014</td></tr> 
+<tr><td>countf2s2014</td><td>integer</td><td>Count of districts that Started activities in SY 2014-2015</td></tr> 
+<tr><td>countf2sfuture</td><td>integer</td><td>Count of districts that Plan to start activities in the future</td></tr> 
+<tr><td>countf2snoplan</td><td>integer</td><td>Count of districts that Had no farm to school activities and no plans</td></tr> 
+<tr><td>countbenenjoyed2red</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started to enjoy reduced food waste as a benefit of farm to school. (SY 2014-2015)</td></tr> 
+<tr><td>countbenenjoyed2low</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started to enjoy lower school meal program costs as a benefit of farm to school (SY 2014-2015)</td></tr> 
+<tr><td>countbenenjoyed2acc</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started to enjoy greater acceptance of the new meal pattern as a benefit of farm to school (SY 2014-2015)</td></tr> 
+<tr><td>countbenenjoyed2inc</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started to enjoy increased participation in school meals as a benefit of farm to school (SY 2014-2015)</td></tr> 
+<tr><td>countbenenjoyed2com</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started to enjoy greater community support for school meals as a benefit of farm to school (SY 2014-2015)</td></tr> 
+<tr><td>countlocalcitycounty2014</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that define 'local' as Within the same City/County</td></tr> 
+<tr><td>countlocalfifty2014</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that define 'local' as Within a 50 Mile Radius</td></tr> 
+<tr><td>countlocalhundred2014</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that define 'local' as Within a 100 Mile Radius</td></tr> 
+<tr><td>countlocaltwohundred2014</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that define 'local' as Within a 200 Mile Radius</td></tr> 
+<tr><td>countlocaldaydrive2014</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that define 'local' as Within a day's drive</td></tr> 
+<tr><td>countlocalstate2014</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that define 'local' as Within the same State</td></tr> 
+<tr><td>countlocalregion2014</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that define 'local' as Within the same Region</td></tr> 
+<tr><td>countlocalothrrest2014</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that define 'local' as Geographic along with other restrictions</td></tr> 
+<tr><td>countlocalother2014</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that define 'local' as Other</td></tr> 
+<tr><td>countstartserv</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started serving locally produced foods in the cafeteria (SY 2014-2015)</td></tr> 
+<tr><td>countstartsmrtsnack</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started serving locally produced foods as a Smart Snack (a la carte, as fundraisers, etc.) (SY 2014-2015)</td></tr> 
+<tr><td>countstartaftrschool</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started serving locally produced food or providing farm to school activities as part of afterschool programs. (SY 2014-2015)</td></tr> 
+<tr><td>countstartsrvg</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started serving products from school-based gardens or school-based farms in the cafeteria (SY 2014-2015)</td></tr> 
+<tr><td>countstarttaste</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started holding taste testing/demos of locally produced foods in the cafeteria, classroom, or other school-related setting (SY 2014-2015)</td></tr> 
+<tr><td>countstartgrdntst</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started holding taste testing/demos of product from school-based gardens or school-based farms in the cafeteria, classroom or other school-related setting (SY 2014-2015)</td></tr> 
+<tr><td>countstartstrategies</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started using Smarter Lunchroom strategies to encourage student selection and consumption of locally produced foods (e.g., product placement, food prompts, creative signage, etc..) (SY 2014-2015)</td></tr> 
+<tr><td>countstartuse</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started using cafeteria food coaches (e.g. adults or students in the cafeteria encouraging kids to eat health/local foods) (SY 2014-2015)</td></tr> 
+<tr><td>countstartusdamat</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started using USDA Team Nutrition materials (such as The Great Garden Detective Adventure or Dig In!) as part of taste testing or educational activities. (SY 2014-2015)</td></tr> 
+<tr><td>countstartgrdn</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started conducting edible school gardening or orchard activities as part of a school curriculum (SY 2014-2015)</td></tr> 
+<tr><td>countstartgrdnas</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started conducting edible school gardening or orchard activities as part of an after school program (SY 2014-2015)</td></tr> 
+<tr><td>countstarttrip</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started conducting student field trips to farms or orchards (SY 2014-2015)</td></tr> 
+<tr><td>countstartvisit</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started having farmer(s) visit the cafeteria, classroom or other school-related setting. (SY 2014-2015)</td></tr> 
+<tr><td>countstarttheme</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started promoting local efforts through themed or branded promotions (e.g. Harvest of the Month, Local Day, Taste of Washington, etc..) (SY 2014-2015)</td></tr> 
+<tr><td>countstartprom</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started promoting locally produced foods at school in general (e.g. via cafeteria signs, posters, newsletters, etc.) (SY 2014-2015)</td></tr> 
+<tr><td>countstartmedia</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started generating media coverage of local foods being used in schools (e.g. press interviews or other activities that
+resulted in local coverage) (SY 2014-2015)</td></tr> 
+<tr><td>countstarthost</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started hosting farm to school related community events (e.g. invited parents to lunch, corn shucking contests, etc.) (SY 2014-2015)</td></tr> 
+<tr><td>countstartceleb</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started celebrating Farm to School Month (October 2014) (SY 2014-2015)</td></tr> 
+<tr><td>countstartinteg</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started Integrating farm to school concepts, including school gardening activities, into educational curriculum
+(math, science, language arts, etc.) (SY 2014-2015)</td></tr> 
+<tr><td>countstarttrng</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started providing training to school food service staff on farm to school or school gardens (SY 2014-2015)</td></tr> 
+<tr><td>countstartproducer</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started working with local food producers to develop a specific food product using local foods (SY 2014-2015)</td></tr> 
+<tr><td>countstartimplement</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started implementing farm to school activities as part of overall school efforts to reduce food waste (SY 2014-2015)</td></tr> 
+<tr><td>countstartevaluate</td><td>integer</td><td>Count of responding SYS 2014-2015 districts that Started evaluating changes in student acceptance and food waste as a result of implementing farm to school
+activities (SY 2014-2015)</td></tr> 
+<tr><td>countbenpercred</td><td>integer</td><td>Count of future farm to school districts that are Planing to enjoy reduced food waste as a benefit of farm to school</td></tr> 
+<tr><td>countbenperclow</td><td>number</td><td>Count of future farm to school districts that are Planning to enjoy lower school meal program costs as a benefit of farm to school</td></tr> 
+<tr><td>countbenpercacc</td><td>integer</td><td>Count of future farm to school districts that are Planning to enjoy greater acceptance of the new meal pattern as a benefit of farm to school</td></tr> 
+<tr><td>countbenpercinc</td><td>integer</td><td>Count of future farm to school districts that are Planning to enjoy increased participation in school meals as a benefit of farm to school</td></tr> 
+<tr><td>countbenperccom</td><td>integer</td><td>Count of future farm to school districts that are Planning to enjoy greater community support for school meals as a benefit of farm to school</td></tr> 
+<tr><td>countplanserv</td><td>integer</td><td>Count of future farm to school districts that are Planning to serve locally produced foods in the cafeteria (future)</td></tr> 
+<tr><td>countplansmrtsnack</td><td>integer</td><td>Count of future farm to school districts that are Planning to serve locally produced foods as a Smart Snack (a la carte, as fundraisers, etc.) (future)</td></tr> 
+<tr><td>countplanaftrschool</td><td>integer</td><td>Count of future farm to school districts that are Planning to serve locally produced foods or providing farm to school activities as part of afterschool programs (future)</td></tr> 
+<tr><td>countplansrvg</td><td>integer</td><td>Count of future farm to school districts that are Planning to serve products from school-based gardens or school-based farms in the cafeteria (future)</td></tr> 
+<tr><td>countplantaste</td><td>integer</td><td>Count of future farm to school districts that are Planning to hold taste tests/cooking demonstrations of locally produced foods in the cafeteria, classroom or other school-related setting (future)</td></tr> 
+<tr><td>countplangrdntst</td><td>integer</td><td>Count of future farm to school districts that are Planning to hold taste tests/demos of products from school-based gardens or school-based farms in the cafeteria,
+classroom or other school-related setting (future)</td></tr> 
+<tr><td>countplanstrategies</td><td>integer</td><td>Count of future farm to school districts that are Planning to use Smarter Lunchroom strategies to encourage student selection and consumption of locally produced foods (e.g., product placement, food prompts, creative signage, etc.) (future)</td></tr> 
+<tr><td>countplanuse</td><td>integer</td><td>Count of future farm to school districts that are Planning to use cafeteria food coaches to promote the consumption of local foods (e.g. adults or students in the
+cafeteria encouraging kids to eat healthy/local foods) (future)</td></tr> 
+<tr><td>countplanusdamat</td><td>integer</td><td>Count of future farm to school districts that are Planning to use USDA Team Nutrition materials (such as The Great Garden Detective Adventure or Dig In!) as part of taste testing or educational activities (future)</td></tr> 
+<tr><td>countplangrdn</td><td>integer</td><td>Count of future farm to school districts that are Planning to conduct edible school gardening or orchard activities as part of a school curriculum (future)</td></tr> 
+<tr><td>countplangrdnas</td><td>integer</td><td>Count of future farm to school districts that are Planning to conduct edible school gardening or orchard activities as part of an after school program (future)</td></tr> 
+<tr><td>countplantrip</td><td>integer</td><td>Count of future farm to school districts that are Planning to conduct student field trips to farms or orchards (future)</td></tr> 
+<tr><td>countplanvisit</td><td>integer</td><td>Count of future farm to school districts that are Planning to have farmer(s) visit the cafeteria, classroom or other school-related setting (future)</td></tr> 
+<tr><td>countplantheme</td><td>integer</td><td>Count of future farm to school districts that are Planning to promote local efforts through themed or branded promotions (e.g. Harvest of the Month, Local Day, Taste of Washington, etc.)</td></tr> 
+<tr><td>countplanprom</td><td>integer</td><td>Count of future farm to school districts that are Planning to promote locally produced foods at school in general (e.g. via cafeteria signs, posters, newsletters, etc.) (future)</td></tr> 
+<tr><td>countplanmedia</td><td>integer</td><td>Count of future farm to school districts that are Planning to generate media coverage of local foods being used in schools (e.g. press interviews or other activities that
+resulted in local coverage) (future)</td></tr> 
+<tr><td>countplanhost</td><td>integer</td><td>Count of future farm to school districts that are Planning to host farm to school related community events (e.g. invited parents to lunch, corn shucking contests, etc.) (future)</td></tr> 
+<tr><td>countplanceleb</td><td>integer</td><td>Count of future farm to school districts that are Planning to celebrate Farm to School Month (future)</td></tr> 
+<tr><td>countplaninteg</td><td>integer</td><td>Count of future farm to school districts that are Planning to integrate farm to school concepts, including school gardening activities, into educational curriculum
+(math, science, language arts, etc.) (future)</td></tr> 
+<tr><td>countplantrng</td><td>integer</td><td>Count of future farm to school districts that are Planning to provide training to school food service staff on farm to school or school gardens (future)</td></tr> 
+<tr><td>countplanproducers</td><td>integer</td><td>Count of future farm to school districts that are Planning to work with local food producers to develop a specific food product using local foods (future)</td></tr> 
+<tr><td>countplanimplement</td><td>integer</td><td>Count of future farm to school districts that are Planning to implement farm to school activities as part of overall school efforts to reduce food waste (future)</td></tr> 
+<tr><td>countplanevaluate</td><td>integer</td><td>Count of future farm to school districts that are Planning to evaluate changes in student acceptance and food waste as a result of implementing farm to school activities (future)</td></tr> 
+<tr><td>countprobbidf2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Local producers aren't bidding (no plan)</td></tr> 
+<tr><td>countprobseasf2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Hard to find year-round availability of key items (no plan)</td></tr> 
+<tr><td>countprobcoordf2sn</td><td>integer</td><td>Count of non-farm to school districts that had problem with Hard to coordinate procurement of local with regular procurement</td></tr> 
+<tr><td>countprobavailf2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Local items not available from primary vendors (no plan)</td></tr> 
+<tr><td>countprobrangef2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Vendors for local items don't offer a broad range of products (no plan)</td></tr> 
+<tr><td>countprobhighf2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Higher prices (no plan)</td></tr> 
+<tr><td>countprobunstablef2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Unstable product prices (no plan)</td></tr> 
+<tr><td>countprobreliabf2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Lack of reliability in delivering ordered items (no plan)</td></tr> 
+<tr><td>countprobequipf2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Lack of kitchen equipment to process/prepare local foods. (no plan)</td></tr> 
+<tr><td>countprobgapf2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with GAP or other food safety requirements (no plan)</td></tr> 
+<tr><td>countprobcomplf2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Lack of compliance with your institution's purchasing regulations and policies (no plan)</td></tr> 
+<tr><td>countprobprocf2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Lack of availability of processed/precut products (no plan)</td></tr> 
+<tr><td>countprobsupplierf2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Hard to find new suppliers/growers or distributors (no plan)</td></tr> 
+<tr><td>countprobinfooff2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Hard to get information about product availability (no plan)</td></tr> 
+<tr><td>countproborderf2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Hard to place orders with vendors (no plan)</td></tr> 
+<tr><td>countprobtimef2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Getting on time deliveries (no plan)</td></tr> 
+<tr><td>countprobqualf2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Getting product delivered that meets your quality requirements &amp; other specs (i.e., size) (no plan)</td></tr> 
+<tr><td>countprobdelivf2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Having quantity delivered equal to quantity ordered (no plan)</td></tr> 
+<tr><td>countprobresolvf2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Resolving problem deliveries (no plan)</td></tr> 
+<tr><td>countprobpayf2sno</td><td>integer</td><td>Count of non-farm to school districts that had problem with Inability to pay farmers according to farmers' needs due to school district payment procedures (no plan)</td></tr> 
+<tr><td>countbenenjoyed1red</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Enjoying reduced food waste as a benefit of farm to school</td></tr> 
+<tr><td>countbenenjoyed1low</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Enjoying lower school meal program costs as a benefit of farm to school</td></tr> 
+<tr><td>countbenenjoyed1acc</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Enjoying greater acceptance of the new meal pattern as a benefit of farm to school</td></tr> 
+<tr><td>countbenenjoyed1inc</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Enjoying increased participation in school meals as a benefit of farm to school</td></tr> 
+<tr><td>countbenenjoyed1com</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Enjoying greater community support for school meals as a benefit of farm to school</td></tr> 
+<tr><td>countageprek</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that Pre-K participated in farm to school activities.</td></tr> 
+<tr><td>countagek5</td><td>integer</td><td>Percent of responding SYS 2013-2014 districts that Grades K-5 participated in farm to school activities.</td></tr> 
+<tr><td>countage68</td><td>integer</td><td>Percent of responding SYS 2013-2014 districts that Grades 6-8 participated in farm to school activities.</td></tr> 
+<tr><td>countage912</td><td>integer</td><td>Percent of responding SYS 2013-2014 districts that Grades 9-12 participated in farm to school activities.</td></tr> 
+<tr><td>countcacfpyes</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Participating in the Child and Adult Care Food Program (CACFP)</td></tr> 
+<tr><td>countcacfpno</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Not participating in Child and Adult Care Food Program (CACFP)</td></tr> 
+<tr><td>countcacfpidk</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Don’t know if participating in Child and Adult Care Food Program (CACFP)</td></tr> 
+<tr><td>countsaladbars</td><td>integer</td><td>Count of  Schools in the district with salad bars in SY 2013-2014</td></tr> 
+<tr><td>countgardens</td><td>integer</td><td>Count of  Schools in the district with school gardens in SY 2013-2014</td></tr> 
+<tr><td>countschools</td><td>integer</td><td>Count of  Schools in the district participating in farm to school in SY 2013-2014</td></tr> 
+<tr><td>countlocalcitycounty2013</td><td>integer</td><td>Count of districts SYS 2013-2014 that defining 'local' as Within the same City/County</td></tr> 
+<tr><td>countlocalfifty2013</td><td>integer</td><td>Count of districts SYS 2013-2014 that defining 'local' as Within a 50 Mile Radius</td></tr> 
+<tr><td>countlocalhundred2013</td><td>integer</td><td>Count of districts SYS 2013-2014 that defining 'local' as Within a 100 Mile Radius</td></tr> 
+<tr><td>countlocaltwohundred2013</td><td>integer</td><td>Count of districts SYS 2013-2014 that defining 'local' as Within a 200 Mile Radius</td></tr> 
+<tr><td>countlocaldaydrive2013</td><td>integer</td><td>Count of districts SYS 2013-2014 that defining 'local' as Within a day's drive</td></tr> 
+<tr><td>countlocalstate2013</td><td>integer</td><td>Count of districts SYS 2013-2014 that defining 'local' as Within the same State</td></tr> 
+<tr><td>countlocalregion2013</td><td>integer</td><td>Count of districts SYS 2013-2014 that defining 'local' as Within the same Region</td></tr> 
+<tr><td>countlocalothrrest2013</td><td>integer</td><td>Count of districts SYS 2013-2014 that defining 'local' as Geographic along with other restrictions</td></tr> 
+<tr><td>countlocalother2013</td><td>integer</td><td>Count of districts SYS 2013-2014 that defining 'local' as Other</td></tr> 
+<tr><td>countusedbreak</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Used local foods in breakfast program</td></tr> 
+<tr><td>countusedlunch</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Used local foods in lunch program</td></tr> 
+<tr><td>countusedsup</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Used local foods in supper program</td></tr> 
+<tr><td>countusedsnack</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Used local foods in snacks program</td></tr> 
+<tr><td>countusedffvp</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Used local foods in Fresh Fruit and Vegetable Program</td></tr> 
+<tr><td>countusedcacfp</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Used local foods in CACFP (i.e., in a pre-k setting such as Head Start, etc.) program</td></tr> 
+<tr><td>countusedcacfpas</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Used local foods in CACFP at-risk afterschool program</td></tr> 
+<tr><td>countusedsumr</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Used local foods in summer meals program (i.e., meals in the summer food service program, in Seamless Summer, or in the NLSP under accredited summer school programs)</td></tr> 
+<tr><td>countdirectprod</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Obtain local food direct from individual food producers (i.e. farmers, fishers, ranchers)</td></tr> 
+<tr><td>countdirectcoop</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Obtain local food direct from farmer, rancher, or fisher cooperatives</td></tr> 
+<tr><td>countdirectfmkt</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Obtain local food direct from farmers markets</td></tr> 
+<tr><td>countdirectcsa</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Obtain local food via a Community Supported Agriculture (CSA) model</td></tr> 
+<tr><td>countdirectmanu</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Obtain local food direct from food processors and manufacturers</td></tr> 
+<tr><td>countinterdist</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Obtains local food from distributors</td></tr> 
+<tr><td>countintercoop</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Obtains local food from food buying cooperative</td></tr> 
+<tr><td>countinterfood</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Obtains local food from food hub</td></tr> 
+<tr><td>countinterfsmc</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Obtains local food from food service management companies</td></tr> 
+<tr><td>countinterdod</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Obtains local food from DoD Fresh Program vendors</td></tr> 
+<tr><td>countinterusda</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Obtains local food from USDA foods</td></tr> 
+<tr><td>countinterstate</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Obtains local food from other intermediary source</td></tr> 
+<tr><td>countfruitfuture</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Plans to buy local fruit</td></tr> 
+<tr><td>countfruityes</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Bought local fruit</td></tr> 
+<tr><td>countvegfuture</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Plans to buy local vegetables</td></tr> 
+<tr><td>countvegyes</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Bought local vegetables</td></tr> 
+<tr><td>countmilkfuture</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Plans to buy local milk</td></tr> 
+<tr><td>countmilkyes</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Bought local milk</td></tr> 
+<tr><td>countdairyfuture</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Plans to by local other dairy</td></tr> 
+<tr><td>countdairyyes</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Bought local other dairy</td></tr> 
+<tr><td>countmeatfuture</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Plans to buy local other meat</td></tr> 
+<tr><td>countmeatyes</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Bought local other meat</td></tr> 
+<tr><td>counteggsfuture</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Plans to buy local eggs</td></tr> 
+<tr><td>counteggsyes</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Bought local eggs</td></tr> 
+<tr><td>countseafd1future</td><td>integer</td><td>Count of  Schools in the district participating in farm to school in SY 2013-2014</td></tr> 
+<tr><td>countseafdyes</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Plans to buy local seafood</td></tr> 
+<tr><td>countvegprotfuture</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Plans to buy local plant-based protein items such as beans, seeds, nuts</td></tr> 
+<tr><td>countvegprotyes</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Bought local plant-based protein items such as beans, seeds, nuts</td></tr> 
+<tr><td>countgrainfuture</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Plans to buy local grains and flour</td></tr> 
+<tr><td>countgrainyes</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Bought local grains and flour</td></tr> 
+<tr><td>countbakedfuture</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Plans to buy local bakery products</td></tr> 
+<tr><td>countbakedyes</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Bought local bakery products</td></tr> 
+<tr><td>countherbfuture</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Plans to buy local herbs</td></tr> 
+<tr><td>countherbyes</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Bought local herbs</td></tr> 
+<tr><td>countothrfuture</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Plans to buy other food</td></tr> 
+<tr><td>countothryes</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Bought other food</td></tr> 
+<tr><td>countfruitfreqdly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Fruit Daily</td></tr> 
+<tr><td>countfruitfreqfewwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Fruit More than Weekly</td></tr> 
+<tr><td>countfruitfreqwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Fruit Weekly</td></tr> 
+<tr><td>countfruitfreqfewmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Fruit More than Monthly</td></tr> 
+<tr><td>countfruitfreqmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Fruit Montly</td></tr> 
+<tr><td>countfruitfreqocc</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Fruit Occasionally</td></tr> 
+<tr><td>countfruitfreqnev</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Vegetables Never</td></tr> 
+<tr><td>countvegfreqdly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Vegetables Daily</td></tr> 
+<tr><td>countvegfreqfewwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Vegetables More than Weekly</td></tr> 
+<tr><td>countvegfreqwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Vegetables Weekly</td></tr> 
+<tr><td>countvegfreqfewmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Vegetables More than Monthly</td></tr> 
+<tr><td>countvegfreqmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Vegetables Montly</td></tr> 
+<tr><td>countvegfreqocc</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Vegetables Occasionally</td></tr> 
+<tr><td>countvegfreqnev</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Vegetables Never</td></tr> 
+<tr><td>countmilkfreqdly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Milk Daily</td></tr> 
+<tr><td>countmilkfreqfewwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Milk More than Weekly</td></tr> 
+<tr><td>countmilkfreqwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Milk Weekly</td></tr> 
+<tr><td>countmilkfreqfewmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Milk More than Monthly</td></tr> 
+<tr><td>countmilkfreqmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Milk Montly</td></tr> 
+<tr><td>countmilkfreqocc</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Milk Occasionally</td></tr> 
+<tr><td>countmilkfreqnev</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Milk Never</td></tr> 
+<tr><td>countdairyfreqdly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Dairy Products Daily</td></tr> 
+<tr><td>countdairyfreqfewwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Dairy Products More than Weekly</td></tr> 
+<tr><td>countdairyfreqwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Dairy Products Weekly</td></tr> 
+<tr><td>countdairyfreqfewmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Dairy Products More than Monthly</td></tr> 
+<tr><td>countdairyfreqmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Dairy Products Montly</td></tr> 
+<tr><td>countdairyfreqocc</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Dairy Products Occasionally</td></tr> 
+<tr><td>countdairyfreqnev</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Dairy Products Never</td></tr> 
+<tr><td>countmeatfreqdly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Meat Daily</td></tr> 
+<tr><td>countmeatfreqfewwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Meat More than Weekly</td></tr> 
+<tr><td>countmeatfreqwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Meat Weekly</td></tr> 
+<tr><td>countmeatfreqfewmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Meat More than Monthly</td></tr> 
+<tr><td>countmeatfreqmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Meat Montly</td></tr> 
+<tr><td>countmeatfreqocc</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Meat Occasionally</td></tr> 
+<tr><td>countmeatfreqnev</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Meat Never</td></tr> 
+<tr><td>counteggsfreqdly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Eggs Daily</td></tr> 
+<tr><td>counteggsfreqfewwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Eggs More than Weekly</td></tr> 
+<tr><td>counteggsfreqwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Eggs Weekly</td></tr> 
+<tr><td>counteggsfreqfewmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Eggs More than Monthly</td></tr> 
+<tr><td>counteggsfreqmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Eggs Montly</td></tr> 
+<tr><td>counteggsfreqocc</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Eggs Occasionally</td></tr> 
+<tr><td>counteggsfreqnev</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Eggs Never</td></tr> 
+<tr><td>countseafdfreqdly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Seafood Daily</td></tr> 
+<tr><td>countseafdfreqfewwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Seafood More than Weekly</td></tr> 
+<tr><td>countseafdfreqwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Seafood Weekly</td></tr> 
+<tr><td>countseafdfreqfewmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Seafood More than Monthly</td></tr> 
+<tr><td>countseafdfreqmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Seafood Montly</td></tr> 
+<tr><td>countseafdfreqocc</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Seafood Occasionally</td></tr> 
+<tr><td>countseafdfreqnev</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Seafood Never</td></tr> 
+<tr><td>countvegprotfreqdly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Plant-based Protein Items such as Beans, Seed, Nuts Daily</td></tr> 
+<tr><td>countvegprotfreqfewwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Plant-based Protein Items such as Beans, Seed, Nuts More than Weekly</td></tr> 
+<tr><td>countvegprotfreqwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Plant-based Protein Items such as Beans, Seed, Nuts Weekly</td></tr> 
+<tr><td>countvegprotfreqfewmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Plant-based Protein Items such as Beans, Seed, Nuts More than Monthly</td></tr> 
+<tr><td>countvegprotfreqmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Plant-based Protein Items such as Beans, Seed, Nuts Montly</td></tr> 
+<tr><td>countvegprotfreqocc</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Plant-based Protein Items such as Beans, Seed, Nuts Occasionally</td></tr> 
+<tr><td>countvegprotfreqnev</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Plant-based Protein Items such as Beans, Seed, Nuts Never</td></tr> 
+<tr><td>countgrainfreqdly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Grains and Flour Daily</td></tr> 
+<tr><td>countgrainfreqfewwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Grains and Flour More than Weekly</td></tr> 
+<tr><td>countgrainfreqwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Grains and Flour Weekly</td></tr> 
+<tr><td>countgrainfreqfewmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Grains and Flour More than Monthly</td></tr> 
+<tr><td>countgrainfreqmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Grains and Flour Montly</td></tr> 
+<tr><td>countgrainfreqocc</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Grains and Flour Occasionally</td></tr> 
+<tr><td>countgrainfreqnev</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Grains and Flour Never</td></tr> 
+<tr><td>countbakedfreqdly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Bakery Products Daily</td></tr> 
+<tr><td>countbakedfreqfewwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Bakery Products More than Weekly</td></tr> 
+<tr><td>countbakedfreqwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Bakery Products Weekly</td></tr> 
+<tr><td>countbakedfreqfewmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Bakery Products More than Monthly</td></tr> 
+<tr><td>countbakedfreqmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Bakery Products Montly</td></tr> 
+<tr><td>countbakedfreqocc</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Bakery Products Occasionally</td></tr> 
+<tr><td>countbakedfreqnev</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Bakery Products Never</td></tr> 
+<tr><td>countherbfreqdly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Herbs Daily</td></tr> 
+<tr><td>countherbfreqfewwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Herbs More than Weekly</td></tr> 
+<tr><td>countherbfreqwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Herbs Weekly</td></tr> 
+<tr><td>countherbfreqfewmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Herbs More than Monthly</td></tr> 
+<tr><td>countherbfreqmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Herbs Montly</td></tr> 
+<tr><td>countherbfreqocc</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Herbs Occasionally</td></tr> 
+<tr><td>countherbfreqnev</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Local Herbs Never</td></tr> 
+<tr><td>countothrfreqdly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Other Food Daily</td></tr> 
+<tr><td>countothrfreqfewwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Other Food More than Weekly</td></tr> 
+<tr><td>countothrfreqwkly</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Other Food Weekly</td></tr> 
+<tr><td>countothrfreqfewmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Other Food More than Monthly</td></tr> 
+<tr><td>countothrfreqmon</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Other Food Montly</td></tr> 
+<tr><td>countothrfreqocc</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Other Food Occasionally</td></tr> 
+<tr><td>countothrfreqnev</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that are Serving Other Food Never</td></tr> 
+<tr><td>countfutureinc</td><td>integer</td><td>Count of SYS 2013-2014 districts that Expected future local purchases to increase</td></tr> 
+<tr><td>countfuturedec</td><td>integer</td><td>Count of SYS 2013-2014 districts that Expected future local purchases to decrease</td></tr> 
+<tr><td>countfuturesame</td><td>integer</td><td>Count of SYS 2013-2014 districts that Expected future local purchases to stay the same</td></tr> 
+<tr><td>countfuturedk</td><td>integer</td><td>Count of SYS 2013-2014 districts that Did not know if future local purchase would increase, decrease or stay the same</td></tr> 
+<tr><td>countfutureother</td><td>integer</td><td>Count of SYS 2013-2014 districts that Specified other in regard to future local purchases increasing, decreasing or staying the same</td></tr> 
+<tr><td>countserv</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Served locally produced foods in the cafeteria (SY 2013-2014)</td></tr> 
+<tr><td>countsmrtsnack</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Served locally produced foods as a Smart Snack (a la carte, as fundraisers, etc.) (SY 2013-2014)</td></tr> 
+<tr><td>countaftrschool</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Served locally produced food or providing farm to school activities as part of afterschool programs. (SY 2013-2014)</td></tr> 
+<tr><td>countsrvg</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Served products from school-based gardens or school-based farms in the cafeteria (SY 2013-2014)</td></tr> 
+<tr><td>counttaste</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Held taste testing/demos of locally produced foods in the cafeteria, classroom, or other school-related setting (SY 2013-2014)</td></tr> 
+<tr><td>countdemo</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Held taste testing/demos of product from school-based gardens or school-based farms in the cafeteria, classroom or other school-related setting (SY 2013-2014)</td></tr> 
+<tr><td>countstrategies</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Used Smarter Lunchroom strategies to encourage student selection and consumption of locally produced foods (e.g., product placement, food prompts, creative signage, etc..) (SY 2013-2014)</td></tr> 
+<tr><td>countcoach</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Used cafeteria food coaches (e.g. adults or students in the cafeteria encouraging kids to eat health/local foods) (SY 2013-2014)</td></tr> 
+<tr><td>countusdamat</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Used USDA Team Nutrition materials (such as The Great Garden Detective Adventure or Dig In!) as part of taste testing or educational activities. (SY 2013-2014)</td></tr> 
+<tr><td>countgrdn</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Conducted edible school gardening or orchard activities as part of a school curriculum (SY 2013-2014)</td></tr> 
+<tr><td>countgrdnas</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Conducted edible school gardening or orchard activities as part of an after school program (SY 2013-2014)</td></tr> 
+<tr><td>counttrip</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Conducted student field trips to farms or orchards (SY 2013-2014)</td></tr> 
+<tr><td>countvisit</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Had farmer(s) visit the cafeteria, classroom or other school-related setting. (SY 2013-2014)</td></tr> 
+<tr><td>counttheme</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Promoted local efforts through themed or branded promotions (e.g. Harvest of the Month, Local Day, Taste of Washington, etc..) (SY 2013-2014)</td></tr> 
+<tr><td>countprom</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Promoted locally produced foods at school in general (e.g. via cafeteria signs, posters, newsletters, etc.) (SY 2013-2014)</td></tr> 
+<tr><td>countmedia</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Generated media coverage of local foods being used in schools (e.g. press interviews or other activities that
+resulted in local coverage) (SY 2013-2014)</td></tr> 
+<tr><td>counthost</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Hosted farm to school related community events (e.g. invited parents to lunch, corn shucking contests, etc.) (SY 2013-2014)</td></tr> 
+<tr><td>countceleb</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Celebrated Farm to School Month (October 2013) (SY 2013-2014)</td></tr> 
+<tr><td>countinteg</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Integrated farm to school concepts, including school gardening activities, into educational curriculum
+(math, science, language arts, etc.) (SY 2013-2014)</td></tr> 
+<tr><td>counttrng</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Provided training to school food service staff on farm to school or school gardens (SY 2013-2014)</td></tr> 
+<tr><td>countproducers</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Worked with local food producers to develop a specific food product using local foods (SY 2013-2014)</td></tr> 
+<tr><td>countimplement</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Implemented farm to school activities as part of overall school efforts to reduce food waste (SY 2013-2014)</td></tr> 
+<tr><td>countevaluate</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that  Evaluated changes in student acceptance and food waste as a result of implementing farm to school
+activities (SY 2013-2014)</td></tr> 
+<tr><td>countprobbid2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Local producers aren't bidding (conducts f2s)</td></tr> 
+<tr><td>countprobseas2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Hard to find year-round availability of key items (conducts f2s)</td></tr> 
+<tr><td>countprobcoord2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Hard to coordinate procurement of local with regular procurement (conducts f2s)</td></tr> 
+<tr><td>countprobavail2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Local items not available from primary vendors (conducts f2s)</td></tr> 
+<tr><td>countprobrange2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Vendors for local items don't offer a broad range of products (conducts f2s)</td></tr> 
+<tr><td>countprobhigh2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Higher prices (conducts f2s)</td></tr> 
+<tr><td>countprobunstable2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Unstable product prices (conducts f2s)</td></tr> 
+<tr><td>countprobreliab2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Lack of reliability in delivering ordered items (conducts f2s)</td></tr> 
+<tr><td>countprobequip2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Lack of kitchen equipment to process/prepare local foods. (conducts f2s)</td></tr> 
+<tr><td>countprobgap2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with GAP or other food safety requirements (conducts f2s)</td></tr> 
+<tr><td>countprobcompl2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Lack of compliance with your institution's purchasing regulations and policies (conducts f2s)</td></tr> 
+<tr><td>countprobproc2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Lack of availability of processed/precut products (conducts f2s)</td></tr> 
+<tr><td>countprobsupplier2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Hard to find new suppliers/growers or distributors (conducts f2s)</td></tr> 
+<tr><td>countprobinfo2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Hard to get information about product availability (conducts f2s)</td></tr> 
+<tr><td>countproborder2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Hard to place orders with vendors (conducts f2s)</td></tr> 
+<tr><td>countprobtime2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Getting on time deliveries (conducts f2s)</td></tr> 
+<tr><td>countprobqual2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Getting product delivered that meets your quality requirements &amp; other specs (i.e., size) (conducts f2s)</td></tr> 
+<tr><td>countprobdeliv2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Having quantity delivered equal to quantity ordered (conducts f2s)</td></tr> 
+<tr><td>countprobresolv2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Resolving problem deliveries (conducts f2s)</td></tr> 
+<tr><td>countprobpay2013</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that reported problems with Inability to pay farmers according to farmers' needs due to school district payment procedures (conducts f2s)</td></tr> 
+<tr><td>responses</td><td>integer</td><td>Number of districts responding to the Farm to School Census Number of total responses</td></tr> 
+<tr><td>districts</td><td>integer</td><td>Number of Districts invited to particpate in the Farm to School Census Number of possible responses</td></tr> 
+<tr><td>responserate</td><td>number</td><td>Number of reponding districts divided by the number of invited districts Response rate</td></tr> 
+<tr><td>pct_saladbarnum</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that  Have at least one salad bar</td></tr> 
+<tr><td>pct_gardennum</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that  Have at least one school garden</td></tr> 
+<tr><td>pct_activity_3</td><td>text</td><td>Percent of responding SYS 2013-2014 districts   Participate in at least 3 farm to school activities</td></tr> 
+<tr><td>pct_activity_5</td><td>text</td><td>Percent of responding SYS 2013-2014 districts   Participate in at least 5 farm to school activities</td></tr> 
+<tr><td>cnt_state</td><td>integer</td><td>Count of responding SYS 2013-2014 and SYS 2014-2015 districts that Had farm to school activities</td></tr> 
+<tr><td>pct_by_state</td><td>number</td><td>Percent of responding SYS 2013-2014 and SYS 2014-2015 districts that Had farm to school activities</td></tr> 
+<tr><td>cnt_enjoy</td><td>text</td><td>Count of responding SYS 2014-2015 districts that Receive at least one benefit from participating in farm to school activities</td></tr> 
+<tr><td>pct_enjoy</td><td>text</td><td>Percent of responding SYS 2014-2015 districts that Receive at least one benefit from participating in farm to school activities</td></tr> 
+<tr><td>cnt_perceive</td><td>text</td><td>Count of districts planning to start activities in the future that Perceive at least one benefit from participating in farm to school activities</td></tr> 
+<tr><td>pct_perceive</td><td>text</td><td>Count of districts planning to start activities in the future that Perceive at least one benefit from participating in farm to school activities</td></tr> 
+<tr><td>cnt_benefit</td><td>integer</td><td>Count of responding SYS 2013-2014 districts that Receive at least one benefit from participating in farm to school activities</td></tr> 
+<tr><td>pct_benefit</td><td>number</td><td>Percent of responding SYS 2013-2014 districts that Receive at least one benefit from participating in farm to school activities</td></tr> 
+<tr><td>REGIONAL_FNS_CNT</td><td>integer</td><td>Classifying states by FNS region 1=Mid-Atlantic region; 2=Mountain Plains region; 3=Midwest region; 4=Northeast region; 5=Southeast region; 6=Southwest region; 7=Western Region</td></tr> </table></p>
+<h3>state_ccd</h3>
+<p><a href="https://farmtoschoolcensus.fns.usda.gov/sites/default/files/asset/document/2015%20F2S%20Census%20State-National%20Data_1.11.17_web.xlsx#State_CCD+Estimates">https://farmtoschoolcensus.fns.usda.gov/sites/default/files/asset/document/2015%20F2S%20Census%20State-National%20Data_1.11.17_web.xlsx#State_CCD+Estimates</a></p>
+<p>The state level CCD estimates tab summarizes the number of schools and students participating in farm to school activities using the Common Core of Data.
+<table class="table table-striped">
+<tr><th>Header</th><th>Type</th><th>Description</th></tr><tr><td>state</td><td>text</td><td>Number of districts responding to the Farm to School Census Number of total responses</td></tr> 
+<tr><td>countf2sschools</td><td>integer</td><td>Count of schools in districts Participated in farm to school activities in SY 2013-14 or SY 2014-15</td></tr> 
+<tr><td>countf2sstudents</td><td>integer</td><td>Count of students in districts that Participated in farm to school activities in SY 2013-14 or SY 2014-15</td></tr> </table></p>
+<h3>state_dollar</h3>
+<p><a href="https://farmtoschoolcensus.fns.usda.gov/sites/default/files/asset/document/2015%20F2S%20Census%20State-National%20Data_1.11.17_web.xlsx#State_Dollar+Estimates">https://farmtoschoolcensus.fns.usda.gov/sites/default/files/asset/document/2015%20F2S%20Census%20State-National%20Data_1.11.17_web.xlsx#State_Dollar+Estimates</a></p>
+<p>The state level dollar estimates tab summarizes the dollars spent on all food and local food (including and excluding fluid milk).
+<table class="table table-striped">
+<tr><th>Header</th><th>Type</th><th>Description</th></tr><tr><td>state</td><td>text</td><td>Number of districts responding to the Farm to School Census Number of total responses</td></tr> 
+<tr><td>totcost</td><td>integer</td><td>Total of Reported cost of food (not including donated USDA Foods) of districts doing farm to school in SY 2013-2014</td></tr> 
+<tr><td>totdolinclmilk</td><td>integer</td><td>Total of Estimated dollars spent on local food including milk in SY 2013-2014</td></tr> 
+<tr><td>totdolexclmilk</td><td>integer</td><td>Total of Estimated dollars spent on local food excluding milk in SY 2013-2014</td></tr> 
+<tr><td>pct_newcostmilk</td><td>number</td><td>Percent of responding SYS 2013-2014 districts   Mean food budget spent on local foods including fluid milk</td></tr> 
+<tr><td>pct_newcostnomilk</td><td>number</td><td>Percent of responding SYS 2013-2014 districts   Mean food budget spent on local foods NOT including fluid milk</td></tr> </table></p>
+<h3>census</h3>
+<p><a href="https://farmtoschoolcensus.fns.usda.gov/sites/default/files/asset/document/2015%20F2S%20Census%20SFA%20Data_10.31.16_web_3.xlsx#2">https://farmtoschoolcensus.fns.usda.gov/sites/default/files/asset/document/2015%20F2S%20Census%20SFA%20Data_10.31.16_web_3.xlsx#2</a></p>
+<p>2015 Farm to School Census Repondent Data (Updated 10/31/16)
+<table class="table table-striped">
+<tr><th>Header</th><th>Type</th><th>Description</th></tr><tr><td>sfaname</td><td>text</td><td>Name of SFA from list frame</td></tr> 
+<tr><td>state</td><td>text</td><td>State</td></tr> 
+<tr><td>husscawardwinner</td><td>text</td><td>Designates winner of HUSSC (Healthier U.S. School Challenge) award</td></tr> 
+<tr><td>oneinamelonwinner</td><td>text</td><td>Designates state winner of One in a Melon award</td></tr> 
+<tr><td>oneinamelonstory</td><td>text</td><td>Sample story submitted by general public for One in a Melon award</td></tr> 
+<tr><td>usdaf2sgrantee</td><td>text</td><td>Designates recipients of a USDA Farm to School Grant (FY13-FY16)</td></tr> 
+<tr><td>topdistricts</td><td>text</td><td>Designates top school district for that state in farm to school during SY 2013-2014</td></tr> 
+<tr><td>newzipc</td><td>text</td><td>Zipcode (original response)</td></tr> 
+<tr><td>sfaid</td><td>text</td><td>State's school food authority ID</td></tr> 
+<tr><td>year</td><td>integer</td><td>Year Census was fielded</td></tr> 
+<tr><td>region</td><td>text</td><td>FNS region state resides in</td></tr> 
+<tr><td>coding</td><td>integer</td><td>Classifies which FNS region the state resides in</td></tr> 
+<tr><td>f2s</td><td>integer</td><td>Conducts farm to school activities</td></tr> 
+<tr><td>benenjoyed2red</td><td>text</td><td>Started to enjoy reduced food waste as a benefit of farm to school. (SY 2014-2015)</td></tr> 
+<tr><td>benenjoyed2low</td><td>text</td><td>Started to enjoy lower school meal program costs as a benefit of farm to school (SY 2014-2015)</td></tr> 
+<tr><td>benenjoyed2acc</td><td>text</td><td>Started to enjoy greater acceptance of the new meal pattern as a benefit of farm to school (SY 2014-2015)</td></tr> 
+<tr><td>benenjoyed2inc</td><td>text</td><td>Started to enjoy increased participation in school meals as a benefit of farm to school (SY 2014-2015)</td></tr> 
+<tr><td>benenjoyed2com</td><td>text</td><td>Started to enjoy greater community support for school meals as a benefit of farm to school (SY 2014-2015)</td></tr> 
+<tr><td>benenjoyed2oth</td><td>text</td><td>Started to enjoy other benefit of farm to school.</td></tr> 
+<tr><td>localdef2014</td><td>text</td><td>Definition of "local"</td></tr> 
+<tr><td>localdefothr2014</td><td>text</td><td>Other definition of "local"</td></tr> 
+<tr><td>startserv</td><td>text</td><td>Started serving locally produced foods in the cafeteria (SY 2014-2015)</td></tr> 
+<tr><td>startsmrtsnack</td><td>text</td><td>Started serving locally produced foods as a Smart Snack (a la carte, as fundraisers, etc.) (SY 2014-2015)</td></tr> 
+<tr><td>startaftrschool</td><td>text</td><td>Started serving locally produced food or providing farm to school activities as part of afterschool programs. (SY 2014-2015)</td></tr> 
+<tr><td>startsrvg</td><td>text</td><td>Started serving products from school-based gardens or school-based farms in the cafeteria (SY 2014-2015)</td></tr> 
+<tr><td>starttaste</td><td>text</td><td>Started holding taste testing/demos of locally produced foods in the cafeteria, classroom, or other school-related setting (SY 2014-2015)</td></tr> 
+<tr><td>startgrdntst</td><td>text</td><td>Started holding taste testing/demos of product from school-based gardens or school-based farms in the cafeteria, classroom or other school-related setting (SY 2014-2015)</td></tr> 
+<tr><td>startstrategies</td><td>text</td><td>Started using Smarter Lunchroom strategies to encourage student selection and consumption of locally produced foods (e.g., product placement, food prompts, creative signage, etc..) (SY 2014-2015)</td></tr> 
+<tr><td>startuse</td><td>text</td><td>Started using cafeteria food coaches (e.g. adults or students in the cafeteria encouraging kids to eat health/local foods) (SY 2014-2015)</td></tr> 
+<tr><td>startusdamat</td><td>text</td><td>Started using USDA Team Nutrition materials (such as The Great Garden Detective Adventure or Dig In!) as part of taste testing or educational activities. (SY 2014-2015)</td></tr> 
+<tr><td>startgrdn</td><td>text</td><td>Started conducting edible school gardening or orchard activities as part of a school curriculum (SY 2014-2015)</td></tr> 
+<tr><td>startgrdnas</td><td>text</td><td>Started conducting edible school gardening or orchard activities as part of an after school program (SY 2014-2015)</td></tr> 
+<tr><td>starttrip</td><td>text</td><td>Started conducting student field trips to farms or orchards (SY 2014-2015)</td></tr> 
+<tr><td>startvisit</td><td>text</td><td>Started having farmer(s) visit the cafeteria, classroom or other school-related setting. (SY 2014-2015)</td></tr> 
+<tr><td>starttheme</td><td>text</td><td>Started promoting local efforts through themed or branded promotions (e.g. Harvest of the Month, Local Day, Taste of Washington, etc..) (SY 2014-2015)</td></tr> 
+<tr><td>startprom</td><td>text</td><td>Started promoting locally produced foods at school in general (e.g. via cafeteria signs, posters, newsletters, etc.) (SY 2014-2015)</td></tr> 
+<tr><td>startmedia</td><td>text</td><td>Started generating media coverage of local foods being used in schools (e.g. press interviews or other activities that
+resulted in local coverage) (SY 2014-2015)</td></tr> 
+<tr><td>starthost</td><td>text</td><td>Started hosting farm to school related community events (e.g. invited parents to lunch, corn shucking contests, etc.) (SY 2014-2015)</td></tr> 
+<tr><td>startceleb</td><td>text</td><td>Started celebrating Farm to School Month (October 2014) (SY 2014-2015)</td></tr> 
+<tr><td>startinteg</td><td>text</td><td>Started Integrating farm to school concepts, including school gardening activities, into educational curriculum
+(math, science, language arts, etc.) (SY 2014-2015)</td></tr> 
+<tr><td>starttrng</td><td>text</td><td>Started providing training to school food service staff on farm to school or school gardens (SY 2014-2015)</td></tr> 
+<tr><td>startproducer</td><td>text</td><td>Started working with local food producers to develop a specific food product using local foods (SY 2014-2015)</td></tr> 
+<tr><td>startimplement</td><td>text</td><td>Started implementing farm to school activities as part of overall school efforts to reduce food waste (SY 2014-2015)</td></tr> 
+<tr><td>startevaluate</td><td>text</td><td>Started evaluating changes in student acceptance and food waste as a result of implementing farm to school
+activities (SY 2014-2015)</td></tr> 
+<tr><td>startothrspec</td><td>text</td><td>Started other activity in SY 2014-2015</td></tr> 
+<tr><td>benpercred</td><td>text</td><td>Planing to enjoy reduced food waste as a benefit of farm to school</td></tr> 
+<tr><td>benperclow</td><td>text</td><td>Planning to enjoy lower school meal program costs as a benefit of farm to school</td></tr> 
+<tr><td>benpercacc</td><td>text</td><td>Planning to enjoy greater acceptance of the new meal pattern as a benefit of farm to school</td></tr> 
+<tr><td>benpercinc</td><td>text</td><td>Planning to enjoy increased participation in school meals as a benefit of farm to school</td></tr> 
+<tr><td>benperccom</td><td>text</td><td>Planning to enjoy greater community support for school meals as a benefit of farm to school</td></tr> 
+<tr><td>benpercoth</td><td>text</td><td>Planning to enjoy other benefit of farm to school.</td></tr> 
+<tr><td>planserv</td><td>text</td><td>Planning to serve locally produced foods in the cafeteria (future)</td></tr> 
+<tr><td>plansmrtsnack</td><td>text</td><td>Planning to serve locally produced foods as a Smart Snack (a la carte, as fundraisers, etc.) (future)</td></tr> 
+<tr><td>planaftrschool</td><td>text</td><td>Planning to serve locally produced foods or providing farm to school activities as part of afterschool programs (future)</td></tr> 
+<tr><td>plansrvg</td><td>text</td><td>Planning to serve products from school-based gardens or school-based farms in the cafeteria (future)</td></tr> 
+<tr><td>plantaste</td><td>text</td><td>Planning to hold taste tests/cooking demonstrations of locally produced foods in the cafeteria, classroom or other school-related setting (future)</td></tr> 
+<tr><td>plangrdntst</td><td>text</td><td>Planning to hold taste tests/demos of products from school-based gardens or school-based farms in the cafeteria,
+classroom or other school-related setting (future)</td></tr> 
+<tr><td>planstrategies</td><td>text</td><td>Planning to use Smarter Lunchroom strategies to encourage student selection and consumption of locally produced foods (e.g., product placement, food prompts, creative signage, etc.) (future)</td></tr> 
+<tr><td>planuse</td><td>text</td><td>Planning to use cafeteria food coaches to promote the consumption of local foods (e.g. adults or students in the
+cafeteria encouraging kids to eat healthy/local foods) (future)</td></tr> 
+<tr><td>planusdamat</td><td>text</td><td>Planning to use USDA Team Nutrition materials (such as The Great Garden Detective Adventure or Dig In!) as part of taste testing or educational activities (future)</td></tr> 
+<tr><td>plangrdn</td><td>text</td><td>Planning to conduct edible school gardening or orchard activities as part of a school curriculum (future)</td></tr> 
+<tr><td>plangrdnas</td><td>text</td><td>Planning to conduct edible school gardening or orchard activities as part of an after school program (future)</td></tr> 
+<tr><td>plantrip</td><td>text</td><td>Planning to conduct student field trips to farms or orchards (future)</td></tr> 
+<tr><td>planvisit</td><td>text</td><td>Planning to have farmer(s) visit the cafeteria, classroom or other school-related setting (future)</td></tr> 
+<tr><td>plantheme</td><td>text</td><td>Planning to promote local efforts through themed or branded promotions (e.g. Harvest of the Month, Local Day, Taste of Washington, etc.)</td></tr> 
+<tr><td>planprom</td><td>text</td><td>Planning to promote locally produced foods at school in general (e.g. via cafeteria signs, posters, newsletters, etc.) (future)</td></tr> 
+<tr><td>planmedia</td><td>text</td><td>Planning to generate media coverage of local foods being used in schools (e.g. press interviews or other activities that
+resulted in local coverage) (future)</td></tr> 
+<tr><td>planhost</td><td>text</td><td>Planning to host farm to school related community events (e.g. invited parents to lunch, corn shucking contests, etc.) (future)</td></tr> 
+<tr><td>planceleb</td><td>text</td><td>Planning to celebrate Farm to School Month (future)</td></tr> 
+<tr><td>planinteg</td><td>text</td><td>Planning to integrate farm to school concepts, including school gardening activities, into educational curriculum
+(math, science, language arts, etc.) (future)</td></tr> 
+<tr><td>plantrng</td><td>text</td><td>Planning to provide training to school food service staff on farm to school or school gardens (future)</td></tr> 
+<tr><td>planproducers</td><td>text</td><td>Planning to work with local food producers to develop a specific food product using local foods (future)</td></tr> 
+<tr><td>planimplement</td><td>text</td><td>Planning to implement farm to school activities as part of overall school efforts to reduce food waste (future)</td></tr> 
+<tr><td>planevaluate</td><td>text</td><td>Planning to evaluate changes in student acceptance and food waste as a result of implementing farm to school activities (future)</td></tr> 
+<tr><td>planothrspec</td><td>text</td><td>Planning other farm to school activity (future)</td></tr> 
+<tr><td>whenstart</td><td>text</td><td>When farm to school activities planned to start.</td></tr> 
+<tr><td>probbidf2sno</td><td>text</td><td>Local producers aren't bidding (no plan)</td></tr> 
+<tr><td>probseasf2sno</td><td>text</td><td>Hard to find year-round availability of key items (no plan)</td></tr> 
+<tr><td>probcoordf2sn</td><td>text</td><td>Hard to coordinate procurement of local with regular procurement</td></tr> 
+<tr><td>probavailf2sno</td><td>text</td><td>Local items not available from primary vendors (no plan)</td></tr> 
+<tr><td>probrangef2sno</td><td>text</td><td>Vendors for local items don't offer a broad range of products (no plan)</td></tr> 
+<tr><td>probhighf2sno</td><td>text</td><td>Higher prices (no plan)</td></tr> 
+<tr><td>probunstablef2sno</td><td>text</td><td>Unstable product prices (no plan)</td></tr> 
+<tr><td>probreliabf2sno</td><td>text</td><td>Lack of reliability in delivering ordered items (no plan)</td></tr> 
+<tr><td>probequipf2sno</td><td>text</td><td>Lack of kitchen equipment to process/prepare local foods. (no plan)</td></tr> 
+<tr><td>probgapf2sno</td><td>text</td><td>GAP or other food safety requirements (no plan)</td></tr> 
+<tr><td>probcomplf2sno</td><td>text</td><td>Lack of compliance with your institution's purchasing regulations and policies (no plan)</td></tr> 
+<tr><td>probprocf2sno</td><td>text</td><td>Lack of availability of processed/precut products (no plan)</td></tr> 
+<tr><td>probsupplierf2sno</td><td>text</td><td>Hard to find new suppliers/growers or distributors (no plan)</td></tr> 
+<tr><td>probinfooff2sno</td><td>text</td><td>Hard to get information about product availability (no plan)</td></tr> 
+<tr><td>proborderf2sno</td><td>text</td><td>Hard to place orders with vendors (no plan)</td></tr> 
+<tr><td>probtimef2sno</td><td>text</td><td>Getting on time deliveries (no plan)</td></tr> 
+<tr><td>probqualf2sno</td><td>text</td><td>Getting product delivered that meets your quality requirements &amp; other specs (i.e., size) (no plan)</td></tr> 
+<tr><td>probdelivf2sno</td><td>text</td><td>Having quantity delivered equal to quantity ordered (no plan)</td></tr> 
+<tr><td>probresolvf2sno</td><td>text</td><td>Resolving problem deliveries (no plan)</td></tr> 
+<tr><td>probpayf2sno</td><td>text</td><td>Inability to pay farmers according to farmers' needs due to school district payment procedures (no plan)</td></tr> 
+<tr><td>probothrf2sno</td><td>text</td><td>Other problem with local procurement (no plan)</td></tr> 
+<tr><td>benenjoyed1red</td><td>text</td><td>Enjoying reduced food waste as a benefit of farm to school (SY 2013-2014)</td></tr> 
+<tr><td>benenjoyed1low</td><td>text</td><td>Enjoying lower school meal program costs as a benefit of farm to school (SY 2013-2014)</td></tr> 
+<tr><td>benenjoyed1acc</td><td>text</td><td>Enjoying greater acceptance of the new meal pattern as a benefit of farm to school (SY 2013-2014)</td></tr> 
+<tr><td>benenjoyed1inc</td><td>text</td><td>Enjoying increased participation in school meals as a benefit of farm to school (SY 2013-2014)</td></tr> 
+<tr><td>benenjoyed1com</td><td>text</td><td>Enjoying greater community support for school meals as a benefit of farm to school (SY 2013-2014)</td></tr> 
+<tr><td>benenjoyed1oth</td><td>text</td><td>Enjoying other benefit of farm to school.</td></tr> 
+<tr><td>ageprek</td><td>text</td><td>Pre-K participated in farm to school activities.</td></tr> 
+<tr><td>agek5</td><td>text</td><td>Grades K-5 participated in farm to school activities.</td></tr> 
+<tr><td>age68</td><td>text</td><td>Grades 6-8 participated in farm to school activities.</td></tr> 
+<tr><td>age912</td><td>text</td><td>Grades 9-12 participated in farm to school activities.</td></tr> 
+<tr><td>ageothr1</td><td>text</td><td>Other age group participated in farm to school activities.</td></tr> 
+<tr><td>cacfpyes</td><td>text</td><td>Participating in the Child and Adult Care Food Program (CACFP)</td></tr> 
+<tr><td>cacfpno</td><td>text</td><td>Not participating in Child and Adult Care Food Program (CACFP)</td></tr> 
+<tr><td>cacfpidk</td><td>text</td><td>Don’t know if participating in Child and Adult Care Food Program (CACFP)</td></tr> 
+<tr><td>schoolnum</td><td>text</td><td>Number of schools participating.</td></tr> 
+<tr><td>gardennum</td><td>text</td><td>Number of schools with school gardens.</td></tr> 
+<tr><td>saladbarnum</td><td>text</td><td>Numberof schools with salad bars.</td></tr> 
+<tr><td>localdef2013</td><td>text</td><td>Definition of "local"</td></tr> 
+<tr><td>locdefothr2013</td><td>text</td><td>Other definition of "local"</td></tr> 
+<tr><td>usedbreak</td><td>text</td><td>Used local foods in breakfast program</td></tr> 
+<tr><td>usedlunch</td><td>text</td><td>Used local foods in lunch program</td></tr> 
+<tr><td>usedsup</td><td>text</td><td>Used local foods in supper program</td></tr> 
+<tr><td>usedsnack</td><td>text</td><td>Used local foods in snacks program</td></tr> 
+<tr><td>usedffvp</td><td>text</td><td>Used local foods in Fresh Fruit and Vegetable Program</td></tr> 
+<tr><td>usedcacfp</td><td>text</td><td>Used local foods in CACFP (i.e., in a pre-k setting such as Head Start, etc.) program</td></tr> 
+<tr><td>usedcacfpas</td><td>text</td><td>Used local foods in CACFP at-risk afterschool program</td></tr> 
+<tr><td>usedsumr</td><td>text</td><td>Used local foods in summer meals program (i.e., meals in the summer food service program, in Seamless Summer, or in the NLSP under accredited summer school programs)</td></tr> 
+<tr><td>directprod</td><td>text</td><td>Obtains local food direct from individual food producers (i.e. farmers, fishers, ranchers)</td></tr> 
+<tr><td>directcoop</td><td>text</td><td>Obtains local food direct from farmer, rancher, or fisher cooperatives</td></tr> 
+<tr><td>directfmkt</td><td>text</td><td>Obtains local food direct from farmers markets</td></tr> 
+<tr><td>directcsa</td><td>text</td><td>Obtains local food via a Community Supported Agriculture (CSA) model</td></tr> 
+<tr><td>directmanu</td><td>text</td><td>Obtains local food direct from food processors and manufacturers</td></tr> 
+<tr><td>interdist</td><td>text</td><td>Obtains local food from distributors</td></tr> 
+<tr><td>intercoop</td><td>text</td><td>Obtains local food from food buying cooperative</td></tr> 
+<tr><td>interfood</td><td>text</td><td>Obtains local food from food hub</td></tr> 
+<tr><td>interfsmc</td><td>text</td><td>Obtains local food from food service management companies</td></tr> 
+<tr><td>interdod</td><td>text</td><td>Obtains local food from DoD Fresh Program vendors</td></tr> 
+<tr><td>interusda</td><td>text</td><td>Obtains local food from USDA foods</td></tr> 
+<tr><td>interstate</td><td>text</td><td>Obtains local food from State Farm to School program office</td></tr> 
+<tr><td>interothr</td><td>text</td><td>Obtains local food from other intermediary source</td></tr> 
+<tr><td>fruit</td><td>text</td><td>Bought local fruit</td></tr> 
+<tr><td>veg</td><td>text</td><td>Bought local vegetables</td></tr> 
+<tr><td>milk</td><td>text</td><td>Bought local milk</td></tr> 
+<tr><td>dairy</td><td>text</td><td>Bought local other dairy</td></tr> 
+<tr><td>meat</td><td>text</td><td>Bought local other meat</td></tr> 
+<tr><td>eggs</td><td>text</td><td>Bought local eggs</td></tr> 
+<tr><td>seafd</td><td>text</td><td>Bought local seafood</td></tr> 
+<tr><td>vegprot</td><td>text</td><td>Bought local plant-based protein items such as beans, seeds, nuts.</td></tr> 
+<tr><td>grain</td><td>text</td><td>Bought local grains and flour</td></tr> 
+<tr><td>baked</td><td>text</td><td>Bought local bakery products</td></tr> 
+<tr><td>herb</td><td>text</td><td>Bought local herbs.</td></tr> 
+<tr><td>othr</td><td>text</td><td>Bought other food.</td></tr> 
+<tr><td>specothrpurch</td><td>text</td><td>Other food bought</td></tr> 
+<tr><td>top1</td><td>text</td><td>First of top 5 local food items</td></tr> 
+<tr><td>top2</td><td>text</td><td>Second of top 5 local food items</td></tr> 
+<tr><td>top3</td><td>text</td><td>Third of top 5 local food items</td></tr> 
+<tr><td>top4</td><td>text</td><td>Fourth of top 5 local food items</td></tr> 
+<tr><td>top5</td><td>text</td><td>Fifth of top 5 local food items.</td></tr> 
+<tr><td>top5list</td><td>text</td><td>Concatenated list of top 5 local food items</td></tr> 
+<tr><td>fruitfreq</td><td>text</td><td>Frequency of serving local fruit</td></tr> 
+<tr><td>vegfreq</td><td>text</td><td>Frequency of serving local vegables</td></tr> 
+<tr><td>milkfreq</td><td>text</td><td>Frequency of serving local milk</td></tr> 
+<tr><td>dairyfreq</td><td>text</td><td>Frequency of serving local dairy products</td></tr> 
+<tr><td>meatfreq</td><td>text</td><td>Frequency of serving local meat</td></tr> 
+<tr><td>eggsfreq</td><td>text</td><td>Frequency of serving local eggs</td></tr> 
+<tr><td>seafdfreq</td><td>text</td><td>Frequency of serving local seafood</td></tr> 
+<tr><td>vegprotfreq</td><td>text</td><td>Frequency of serving local plant-based protein items such as beans, seeds, nuts</td></tr> 
+<tr><td>grainfreq</td><td>text</td><td>Frequency of serving local grains and flour</td></tr> 
+<tr><td>bakedfreq</td><td>text</td><td>Frequency of serving local bakery products</td></tr> 
+<tr><td>herbfreq</td><td>text</td><td>Frequency of serving local herbs</td></tr> 
+<tr><td>othrfreq</td><td>text</td><td>Frequency of serving other food</td></tr> 
+<tr><td>specothrfreq</td><td>text</td><td>Other food frequency</td></tr> 
+<tr><td>newcost</td><td>text</td><td>Total food expenditures</td></tr> 
+<tr><td>newcostmilk</td><td>text</td><td>Food expenditure (local foods) including milk</td></tr> 
+<tr><td>pct_newcostmilk</td><td>text</td><td>Percent of foodcost that was local, including fluid milk</td></tr> 
+<tr><td>newcostnomilk</td><td>text</td><td>Food expenditure (local foods) not including milk</td></tr> 
+<tr><td>pct_newcostnomilk</td><td>text</td><td>Percent of foodcost that was local, not including fluid milk</td></tr> 
+<tr><td>future</td><td>text</td><td>Expected future local purchases</td></tr> 
+<tr><td>futureothr</td><td>text</td><td>Expected future local purchases, specified other</td></tr> 
+<tr><td>serv</td><td>text</td><td>Served locally produced foods in the cafeteria (SY 2013-2014)</td></tr> 
+<tr><td>smrtsnack</td><td>text</td><td>Served locally produced foods as a Smart Snack (a la carte, as fundraisers, etc.) (SY 2013-2014)</td></tr> 
+<tr><td>aftrschool</td><td>text</td><td>Served locally produced food or providing farm to school activities as part of afterschool programs. (SY 2013-2014)</td></tr> 
+<tr><td>srvg</td><td>text</td><td>Served products from school-based gardens or school-based farms in the cafeteria (SY 2013-2014)</td></tr> 
+<tr><td>taste</td><td>text</td><td>Held taste testing/demos of locally produced foods in the cafeteria, classroom, or other school-related setting (SY 2013-2014)</td></tr> 
+<tr><td>demo</td><td>text</td><td>Held taste testing/demos of product from school-based gardens or school-based farms in the cafeteria, classroom or other school-related setting (SY 2013-2014)</td></tr> 
+<tr><td>strategies</td><td>text</td><td>Used Smarter Lunchroom strategies to encourage student selection and consumption of locally produced foods (e.g., product placement, food prompts, creative signage, etc..) (SY 2013-2014)</td></tr> 
+<tr><td>coach</td><td>text</td><td>Used cafeteria food coaches (e.g. adults or students in the cafeteria encouraging kids to eat health/local foods) (SY 2013-2014)</td></tr> 
+<tr><td>usdamat</td><td>text</td><td>Used USDA Team Nutrition materials (such as The Great Garden Detective Adventure or Dig In!) as part of taste testing or educational activities. (SY 2013-2014)</td></tr> 
+<tr><td>grdn</td><td>text</td><td>Conducted edible school gardening or orchard activities as part of a school curriculum (SY 2013-2014)</td></tr> 
+<tr><td>grdnas</td><td>text</td><td>Conducted edible school gardening or orchard activities as part of an after school program (SY 2013-2014)</td></tr> 
+<tr><td>trip</td><td>text</td><td>Conducted student field trips to farms or orchards (SY 2013-2014)</td></tr> 
+<tr><td>visit</td><td>text</td><td>Had farmer(s) visit the cafeteria, classroom or other school-related setting. (SY 2013-2014)</td></tr> 
+<tr><td>theme</td><td>text</td><td>Promoted local efforts through themed or branded promotions (e.g. Harvest of the Month, Local Day, Taste of Washington, etc..) (SY 2013-2014)</td></tr> 
+<tr><td>prom</td><td>text</td><td>Promoted locally produced foods at school in general (e.g. via cafeteria signs, posters, newsletters, etc.) (SY 2013-2014)</td></tr> 
+<tr><td>media</td><td>text</td><td>Generated media coverage of local foods being used in schools (e.g. press interviews or other activities that
+resulted in local coverage) (SY 2013-2014)</td></tr> 
+<tr><td>host</td><td>text</td><td>Hosted farm to school related community events (e.g. invited parents to lunch, corn shucking contests, etc.) (SY 2013-2014)</td></tr> 
+<tr><td>celeb</td><td>text</td><td>Celebrated Farm to School Month (October 2013) (SY 2013-2014)</td></tr> 
+<tr><td>integ</td><td>text</td><td>Integrated farm to school concepts, including school gardening activities, into educational curriculum
+(math, science, language arts, etc.) (SY 2013-2014)</td></tr> 
+<tr><td>trng</td><td>text</td><td>Provided training to school food service staff on farm to school or school gardens (SY 2013-2014)</td></tr> 
+<tr><td>producers</td><td>text</td><td>Worked with local food producers to develop a specific food product using local foods (SY 2013-2014)</td></tr> 
+<tr><td>implement</td><td>text</td><td>Implemented farm to school activities as part of overall school efforts to reduce food waste (SY 2013-2014)</td></tr> 
+<tr><td>evaluate</td><td>text</td><td>Evaluated changes in student acceptance and food waste as a result of implementing farm to school
+activities (SY 2013-2014)</td></tr> 
+<tr><td>othr2013spec</td><td>text</td><td>Other farm to school activity (SY 2013-2014)</td></tr> 
+<tr><td>probbid2013</td><td>text</td><td>Local producers aren't bidding (conducts f2s)</td></tr> 
+<tr><td>probseas2013</td><td>text</td><td>Hard to find year-round availability of key items (conducts f2s)</td></tr> 
+<tr><td>probcoord2013</td><td>text</td><td>Hard to coordinate procurement of local with regular procurement (conducts f2s)</td></tr> 
+<tr><td>probavail2013</td><td>text</td><td>Local items not available from primary vendors (conducts f2s)</td></tr> 
+<tr><td>probrange2013</td><td>text</td><td>Vendors for local items don't offer a broad range of products (conducts f2s)</td></tr> 
+<tr><td>probhigh2013</td><td>text</td><td>Higher prices (conducts f2s)</td></tr> 
+<tr><td>probunstable2013</td><td>text</td><td>Unstable product prices (conducts f2s)</td></tr> 
+<tr><td>probreliab2013</td><td>text</td><td>Lack of reliability in delivering ordered items (conducts f2s)</td></tr> 
+<tr><td>probequip2013</td><td>text</td><td>Lack of kitchen equipment to process/prepare local foods. (conducts f2s)</td></tr> 
+<tr><td>probgap2013</td><td>text</td><td>GAP or other food safety requirements (conducts f2s)</td></tr> 
+<tr><td>probcompl2013</td><td>text</td><td>Lack of compliance with your institution's purchasing regulations and policies (conducts f2s)</td></tr> 
+<tr><td>probproc2013</td><td>text</td><td>Lack of availability of processed/precut products (conducts f2s)</td></tr> 
+<tr><td>probsupplier2013</td><td>text</td><td>Hard to find new suppliers/growers or distributors (conducts f2s)</td></tr> 
+<tr><td>probinfo2013</td><td>text</td><td>Hard to get information about product availability (conducts f2s)</td></tr> 
+<tr><td>proborder2013</td><td>text</td><td>Hard to place orders with vendors (conducts f2s)</td></tr> 
+<tr><td>probtime2013</td><td>text</td><td>Getting on time deliveries (conducts f2s)</td></tr> 
+<tr><td>probqual2013</td><td>text</td><td>Getting product delivered that meets your quality requirements &amp; other specs (i.e., size) (conducts f2s)</td></tr> 
+<tr><td>probdeliv2013</td><td>text</td><td>Having quantity delivered equal to quantity ordered (conducts f2s)</td></tr> 
+<tr><td>probresolv2013</td><td>text</td><td>Resolving problem deliveries (conducts f2s)</td></tr> 
+<tr><td>probpay2013</td><td>text</td><td>Inability to pay farmers according to farmers' needs due to school district payment procedures (conducts f2s)</td></tr> 
+<tr><td>probothr12013</td><td>text</td><td>Other problem with local procurement (conducts f2s)</td></tr> 
+<tr><td>othrinfo</td><td>text</td><td>Other information</td></tr> 
+<tr><td>success</td><td>text</td><td>Success story</td></tr> 
+<tr><td>survyear</td><td>integer</td><td></td></tr> 
+<tr><td>leaid</td><td>integer</td><td></td></tr> 
+<tr><td>fipst</td><td>integer</td><td></td></tr> 
+<tr><td>stid</td><td>text</td><td></td></tr> 
+<tr><td>name</td><td>text</td><td></td></tr> 
+<tr><td>phone</td><td>text</td><td></td></tr> 
+<tr><td>mstree</td><td>text</td><td></td></tr> 
+<tr><td>mcity</td><td>text</td><td></td></tr> 
+<tr><td>mzip4</td><td>text</td><td></td></tr> 
+<tr><td>lstree</td><td>text</td><td></td></tr> 
+<tr><td>lcity</td><td>text</td><td></td></tr> 
+<tr><td>lstate</td><td>text</td><td></td></tr> 
+<tr><td>lzip</td><td>integer</td><td></td></tr> 
+<tr><td>lzip4</td><td>text</td><td></td></tr> 
+<tr><td>type</td><td>integer</td><td></td></tr> 
+<tr><td>union</td><td>text</td><td></td></tr> 
+<tr><td>conum</td><td>integer</td><td></td></tr> 
+<tr><td>coname</td><td>text</td><td>Name of county SFA resides in</td></tr> 
+<tr><td>csa</td><td>text</td><td></td></tr> 
+<tr><td>cbsa</td><td>text</td><td></td></tr> 
+<tr><td>metmic</td><td>integer</td><td></td></tr> 
+<tr><td>ulocal</td><td>integer</td><td></td></tr> 
+<tr><td>cdcode</td><td>integer</td><td></td></tr> 
+<tr><td>latcod</td><td>number</td><td></td></tr> 
+<tr><td>loncod</td><td>number</td><td></td></tr> 
+<tr><td>biea</td><td>integer</td><td></td></tr> 
+<tr><td>bound</td><td>integer</td><td></td></tr> 
+<tr><td>amempup</td><td>integer</td><td></td></tr> 
+<tr><td>iamempup</td><td>text</td><td></td></tr> 
+<tr><td>aftepup</td><td>integer</td><td></td></tr> 
+<tr><td>iaftepup</td><td>text</td><td></td></tr> 
+<tr><td>aspeced</td><td>integer</td><td></td></tr> 
+<tr><td>iaspeced</td><td>text</td><td></td></tr> 
+<tr><td>aell</td><td>integer</td><td></td></tr> 
+<tr><td>iaell</td><td>text</td><td></td></tr> 
+<tr><td>aaidcorsup</td><td>integer</td><td></td></tr> 
+<tr><td>iaaidcorsup</td><td>text</td><td></td></tr> 
+<tr><td>aguid</td><td>integer</td><td></td></tr> 
+<tr><td>iaguid</td><td>text</td><td></td></tr> 
+<tr><td>alibstf</td><td>integer</td><td></td></tr> 
+<tr><td>ialibstf</td><td>text</td><td></td></tr> 
+<tr><td>aleaadm</td><td>integer</td><td></td></tr> 
+<tr><td>ialeaadm</td><td>text</td><td></td></tr> 
+<tr><td>aschadm</td><td>integer</td><td></td></tr> 
+<tr><td>iaschadm</td><td>text</td><td></td></tr> 
+<tr><td>asupstf</td><td>integer</td><td></td></tr> 
+<tr><td>iasupstf</td><td>text</td><td></td></tr> 
+<tr><td>gslo</td><td>text</td><td></td></tr> 
+<tr><td>gshi</td><td>text</td><td></td></tr> 
+<tr><td>pkoffrd</td><td>integer</td><td></td></tr> 
+<tr><td>kgoffrd</td><td>integer</td><td></td></tr> 
+<tr><td>g01offrd</td><td>integer</td><td></td></tr> 
+<tr><td>g02offrd</td><td>integer</td><td></td></tr> 
+<tr><td>g03offrd</td><td>integer</td><td></td></tr> 
+<tr><td>g04offrd</td><td>integer</td><td></td></tr> 
+<tr><td>g05offrd</td><td>integer</td><td></td></tr> 
+<tr><td>g06offrd</td><td>integer</td><td></td></tr> 
+<tr><td>g07offrd</td><td>integer</td><td></td></tr> 
+<tr><td>g08offrd</td><td>integer</td><td></td></tr> 
+<tr><td>g09offrd</td><td>integer</td><td></td></tr> 
+<tr><td>g10offrd</td><td>integer</td><td></td></tr> 
+<tr><td>g11offrd</td><td>integer</td><td></td></tr> 
+<tr><td>g12offrd</td><td>integer</td><td></td></tr> 
+<tr><td>ugoffrd</td><td>integer</td><td></td></tr> 
+<tr><td>agchrt</td><td>text</td><td></td></tr> 
+<tr><td>sch</td><td>integer</td><td>Percentage of students eligible for free or reduced price school meals</td></tr> 
+<tr><td>speced</td><td>integer</td><td></td></tr> 
+<tr><td>ell</td><td>integer</td><td></td></tr> 
+<tr><td>pktch</td><td>number</td><td></td></tr> 
+<tr><td>kgtch</td><td>number</td><td></td></tr> 
+<tr><td>elmtch</td><td>number</td><td></td></tr> 
+<tr><td>sectch</td><td>number</td><td></td></tr> 
+<tr><td>ugtch</td><td>number</td><td></td></tr> 
+<tr><td>tottch</td><td>number</td><td></td></tr> 
+<tr><td>aides</td><td>number</td><td></td></tr> 
+<tr><td>corsup</td><td>number</td><td></td></tr> 
+<tr><td>elmgui</td><td>number</td><td></td></tr> 
+<tr><td>secgui</td><td>number</td><td></td></tr> 
+<tr><td>othgui</td><td>number</td><td></td></tr> 
+<tr><td>totgui</td><td>number</td><td></td></tr> 
+<tr><td>libspe</td><td>number</td><td></td></tr> 
+<tr><td>libsup</td><td>number</td><td></td></tr> 
+<tr><td>leaadm</td><td>number</td><td></td></tr> 
+<tr><td>leasup</td><td>number</td><td></td></tr> 
+<tr><td>schadm</td><td>number</td><td></td></tr> 
+<tr><td>schsup</td><td>number</td><td></td></tr> 
+<tr><td>stusup</td><td>number</td><td></td></tr> 
+<tr><td>othsup</td><td>number</td><td></td></tr> 
+<tr><td>pk</td><td>integer</td><td></td></tr> 
+<tr><td>ampkm</td><td>integer</td><td></td></tr> 
+<tr><td>ampkf</td><td>integer</td><td></td></tr> 
+<tr><td>aspkm</td><td>integer</td><td></td></tr> 
+<tr><td>aspkf</td><td>integer</td><td></td></tr> 
+<tr><td>hipkm</td><td>integer</td><td></td></tr> 
+<tr><td>hipkf</td><td>integer</td><td></td></tr> 
+<tr><td>blpkm</td><td>integer</td><td></td></tr> 
+<tr><td>blpkf</td><td>integer</td><td></td></tr> 
+<tr><td>whpkm</td><td>integer</td><td></td></tr> 
+<tr><td>whpkf</td><td>integer</td><td></td></tr> 
+<tr><td>hppkm</td><td>integer</td><td></td></tr> 
+<tr><td>hppkf</td><td>integer</td><td></td></tr> 
+<tr><td>trpkm</td><td>integer</td><td></td></tr> 
+<tr><td>trpkf</td><td>integer</td><td></td></tr> 
+<tr><td>kg</td><td>integer</td><td></td></tr> 
+<tr><td>amkgm</td><td>integer</td><td></td></tr> 
+<tr><td>amkgf</td><td>integer</td><td></td></tr> 
+<tr><td>askgm</td><td>integer</td><td></td></tr> 
+<tr><td>askgf</td><td>integer</td><td></td></tr> 
+<tr><td>hikgm</td><td>integer</td><td></td></tr> 
+<tr><td>hikgf</td><td>integer</td><td></td></tr> 
+<tr><td>blkgm</td><td>integer</td><td></td></tr> 
+<tr><td>blkgf</td><td>integer</td><td></td></tr> 
+<tr><td>whkgm</td><td>integer</td><td></td></tr> 
+<tr><td>whkgf</td><td>integer</td><td></td></tr> 
+<tr><td>hpkgm</td><td>integer</td><td></td></tr> 
+<tr><td>hpkgf</td><td>integer</td><td></td></tr> 
+<tr><td>trkgm</td><td>integer</td><td></td></tr> 
+<tr><td>trkgf</td><td>integer</td><td></td></tr> 
+<tr><td>g01</td><td>integer</td><td></td></tr> 
+<tr><td>am01m</td><td>integer</td><td></td></tr> 
+<tr><td>am01f</td><td>integer</td><td></td></tr> 
+<tr><td>as01m</td><td>integer</td><td></td></tr> 
+<tr><td>as01f</td><td>integer</td><td></td></tr> 
+<tr><td>hi01m</td><td>integer</td><td></td></tr> 
+<tr><td>hi01f</td><td>integer</td><td></td></tr> 
+<tr><td>bl01m</td><td>integer</td><td></td></tr> 
+<tr><td>bl01f</td><td>integer</td><td></td></tr> 
+<tr><td>wh01m</td><td>integer</td><td></td></tr> 
+<tr><td>wh01f</td><td>integer</td><td></td></tr> 
+<tr><td>hp01m</td><td>integer</td><td></td></tr> 
+<tr><td>hp01f</td><td>integer</td><td></td></tr> 
+<tr><td>tr01m</td><td>integer</td><td></td></tr> 
+<tr><td>tr01f</td><td>integer</td><td></td></tr> 
+<tr><td>g02</td><td>integer</td><td></td></tr> 
+<tr><td>am02m</td><td>integer</td><td></td></tr> 
+<tr><td>am02f</td><td>integer</td><td></td></tr> 
+<tr><td>as02m</td><td>integer</td><td></td></tr> 
+<tr><td>as02f</td><td>integer</td><td></td></tr> 
+<tr><td>hi02m</td><td>integer</td><td></td></tr> 
+<tr><td>hi02f</td><td>integer</td><td></td></tr> 
+<tr><td>bl02m</td><td>integer</td><td></td></tr> 
+<tr><td>bl02f</td><td>integer</td><td></td></tr> 
+<tr><td>wh02m</td><td>integer</td><td></td></tr> 
+<tr><td>wh02f</td><td>integer</td><td></td></tr> 
+<tr><td>hp02m</td><td>integer</td><td></td></tr> 
+<tr><td>hp02f</td><td>integer</td><td></td></tr> 
+<tr><td>tr02m</td><td>integer</td><td></td></tr> 
+<tr><td>tr02f</td><td>integer</td><td></td></tr> 
+<tr><td>g03</td><td>integer</td><td></td></tr> 
+<tr><td>am03m</td><td>integer</td><td></td></tr> 
+<tr><td>am03f</td><td>integer</td><td></td></tr> 
+<tr><td>as03m</td><td>integer</td><td></td></tr> 
+<tr><td>as03f</td><td>integer</td><td></td></tr> 
+<tr><td>hi03m</td><td>integer</td><td></td></tr> 
+<tr><td>hi03f</td><td>integer</td><td></td></tr> 
+<tr><td>bl03m</td><td>integer</td><td></td></tr> 
+<tr><td>bl03f</td><td>integer</td><td></td></tr> 
+<tr><td>wh03m</td><td>integer</td><td></td></tr> 
+<tr><td>wh03f</td><td>integer</td><td></td></tr> 
+<tr><td>hp03m</td><td>integer</td><td></td></tr> 
+<tr><td>hp03f</td><td>integer</td><td></td></tr> 
+<tr><td>tr03m</td><td>integer</td><td></td></tr> 
+<tr><td>tr03f</td><td>integer</td><td></td></tr> 
+<tr><td>g04</td><td>integer</td><td></td></tr> 
+<tr><td>am04m</td><td>integer</td><td></td></tr> 
+<tr><td>am04f</td><td>integer</td><td></td></tr> 
+<tr><td>as04m</td><td>integer</td><td></td></tr> 
+<tr><td>as04f</td><td>integer</td><td></td></tr> 
+<tr><td>hi04m</td><td>integer</td><td></td></tr> 
+<tr><td>hi04f</td><td>integer</td><td></td></tr> 
+<tr><td>bl04m</td><td>integer</td><td></td></tr> 
+<tr><td>bl04f</td><td>integer</td><td></td></tr> 
+<tr><td>wh04m</td><td>integer</td><td></td></tr> 
+<tr><td>wh04f</td><td>integer</td><td></td></tr> 
+<tr><td>hp04m</td><td>integer</td><td></td></tr> 
+<tr><td>hp04f</td><td>integer</td><td></td></tr> 
+<tr><td>tr04m</td><td>integer</td><td></td></tr> 
+<tr><td>tr04f</td><td>integer</td><td></td></tr> 
+<tr><td>g05</td><td>integer</td><td></td></tr> 
+<tr><td>am05m</td><td>integer</td><td></td></tr> 
+<tr><td>am05f</td><td>integer</td><td></td></tr> 
+<tr><td>as05m</td><td>integer</td><td></td></tr> 
+<tr><td>as05f</td><td>integer</td><td></td></tr> 
+<tr><td>hi05m</td><td>integer</td><td></td></tr> 
+<tr><td>hi05f</td><td>integer</td><td></td></tr> 
+<tr><td>bl05m</td><td>integer</td><td></td></tr> 
+<tr><td>bl05f</td><td>integer</td><td></td></tr> 
+<tr><td>wh05m</td><td>integer</td><td></td></tr> 
+<tr><td>wh05f</td><td>integer</td><td></td></tr> 
+<tr><td>hp05m</td><td>integer</td><td></td></tr> 
+<tr><td>hp05f</td><td>integer</td><td></td></tr> 
+<tr><td>tr05m</td><td>integer</td><td></td></tr> 
+<tr><td>tr05f</td><td>integer</td><td></td></tr> 
+<tr><td>g06</td><td>integer</td><td></td></tr> 
+<tr><td>am06m</td><td>integer</td><td></td></tr> 
+<tr><td>am06f</td><td>integer</td><td></td></tr> 
+<tr><td>as06m</td><td>integer</td><td></td></tr> 
+<tr><td>as06f</td><td>integer</td><td></td></tr> 
+<tr><td>hi06m</td><td>integer</td><td></td></tr> 
+<tr><td>hi06f</td><td>integer</td><td></td></tr> 
+<tr><td>bl06m</td><td>integer</td><td></td></tr> 
+<tr><td>bl06f</td><td>integer</td><td></td></tr> 
+<tr><td>wh06m</td><td>integer</td><td></td></tr> 
+<tr><td>wh06f</td><td>integer</td><td></td></tr> 
+<tr><td>hp06m</td><td>integer</td><td></td></tr> 
+<tr><td>hp06f</td><td>integer</td><td></td></tr> 
+<tr><td>tr06m</td><td>integer</td><td></td></tr> 
+<tr><td>tr06f</td><td>integer</td><td></td></tr> 
+<tr><td>g07</td><td>integer</td><td></td></tr> 
+<tr><td>am07m</td><td>integer</td><td></td></tr> 
+<tr><td>am07f</td><td>integer</td><td></td></tr> 
+<tr><td>as07m</td><td>integer</td><td></td></tr> 
+<tr><td>as07f</td><td>integer</td><td></td></tr> 
+<tr><td>hi07m</td><td>integer</td><td></td></tr> 
+<tr><td>hi07f</td><td>integer</td><td></td></tr> 
+<tr><td>bl07m</td><td>integer</td><td></td></tr> 
+<tr><td>bl07f</td><td>integer</td><td></td></tr> 
+<tr><td>wh07m</td><td>integer</td><td></td></tr> 
+<tr><td>wh07f</td><td>integer</td><td></td></tr> 
+<tr><td>hp07m</td><td>integer</td><td></td></tr> 
+<tr><td>hp07f</td><td>integer</td><td></td></tr> 
+<tr><td>tr07m</td><td>integer</td><td></td></tr> 
+<tr><td>tr07f</td><td>integer</td><td></td></tr> 
+<tr><td>g08</td><td>integer</td><td></td></tr> 
+<tr><td>am08m</td><td>integer</td><td></td></tr> 
+<tr><td>am08f</td><td>integer</td><td></td></tr> 
+<tr><td>as08m</td><td>integer</td><td></td></tr> 
+<tr><td>as08f</td><td>integer</td><td></td></tr> 
+<tr><td>hi08m</td><td>integer</td><td></td></tr> 
+<tr><td>hi08f</td><td>integer</td><td></td></tr> 
+<tr><td>bl08m</td><td>integer</td><td></td></tr> 
+<tr><td>bl08f</td><td>integer</td><td></td></tr> 
+<tr><td>wh08m</td><td>integer</td><td></td></tr> 
+<tr><td>wh08f</td><td>integer</td><td></td></tr> 
+<tr><td>hp08m</td><td>integer</td><td></td></tr> 
+<tr><td>hp08f</td><td>integer</td><td></td></tr> 
+<tr><td>tr08m</td><td>integer</td><td></td></tr> 
+<tr><td>tr08f</td><td>integer</td><td></td></tr> 
+<tr><td>g09</td><td>integer</td><td></td></tr> 
+<tr><td>am09m</td><td>integer</td><td></td></tr> 
+<tr><td>am09f</td><td>integer</td><td></td></tr> 
+<tr><td>as09m</td><td>integer</td><td></td></tr> 
+<tr><td>as09f</td><td>integer</td><td></td></tr> 
+<tr><td>hi09m</td><td>integer</td><td></td></tr> 
+<tr><td>hi09f</td><td>integer</td><td></td></tr> 
+<tr><td>bl09m</td><td>integer</td><td></td></tr> 
+<tr><td>bl09f</td><td>integer</td><td></td></tr> 
+<tr><td>wh09m</td><td>integer</td><td></td></tr> 
+<tr><td>wh09f</td><td>integer</td><td></td></tr> 
+<tr><td>hp09m</td><td>integer</td><td></td></tr> 
+<tr><td>hp09f</td><td>integer</td><td></td></tr> 
+<tr><td>tr09m</td><td>integer</td><td></td></tr> 
+<tr><td>tr09f</td><td>integer</td><td></td></tr> 
+<tr><td>g10</td><td>integer</td><td></td></tr> 
+<tr><td>am10m</td><td>integer</td><td></td></tr> 
+<tr><td>am10f</td><td>integer</td><td></td></tr> 
+<tr><td>as10m</td><td>integer</td><td></td></tr> 
+<tr><td>as10f</td><td>integer</td><td></td></tr> 
+<tr><td>hi10m</td><td>integer</td><td></td></tr> 
+<tr><td>hi10f</td><td>integer</td><td></td></tr> 
+<tr><td>bl10m</td><td>integer</td><td></td></tr> 
+<tr><td>bl10f</td><td>integer</td><td></td></tr> 
+<tr><td>wh10m</td><td>integer</td><td></td></tr> 
+<tr><td>wh10f</td><td>integer</td><td></td></tr> 
+<tr><td>hp10m</td><td>integer</td><td></td></tr> 
+<tr><td>hp10f</td><td>integer</td><td></td></tr> 
+<tr><td>tr10m</td><td>integer</td><td></td></tr> 
+<tr><td>tr10f</td><td>integer</td><td></td></tr> 
+<tr><td>g11</td><td>integer</td><td></td></tr> 
+<tr><td>am11m</td><td>integer</td><td></td></tr> 
+<tr><td>am11f</td><td>integer</td><td></td></tr> 
+<tr><td>as11m</td><td>integer</td><td></td></tr> 
+<tr><td>as11f</td><td>integer</td><td></td></tr> 
+<tr><td>hi11m</td><td>integer</td><td></td></tr> 
+<tr><td>hi11f</td><td>integer</td><td></td></tr> 
+<tr><td>bl11m</td><td>integer</td><td></td></tr> 
+<tr><td>bl11f</td><td>integer</td><td></td></tr> 
+<tr><td>wh11m</td><td>integer</td><td></td></tr> 
+<tr><td>wh11f</td><td>integer</td><td></td></tr> 
+<tr><td>hp11m</td><td>integer</td><td></td></tr> 
+<tr><td>hp11f</td><td>integer</td><td></td></tr> 
+<tr><td>tr11m</td><td>integer</td><td></td></tr> 
+<tr><td>tr11f</td><td>integer</td><td></td></tr> 
+<tr><td>g12</td><td>integer</td><td></td></tr> 
+<tr><td>am12m</td><td>integer</td><td></td></tr> 
+<tr><td>am12f</td><td>integer</td><td></td></tr> 
+<tr><td>as12m</td><td>integer</td><td></td></tr> 
+<tr><td>as12f</td><td>integer</td><td></td></tr> 
+<tr><td>hi12m</td><td>integer</td><td></td></tr> 
+<tr><td>hi12f</td><td>integer</td><td></td></tr> 
+<tr><td>bl12m</td><td>integer</td><td></td></tr> 
+<tr><td>bl12f</td><td>integer</td><td></td></tr> 
+<tr><td>wh12m</td><td>integer</td><td></td></tr> 
+<tr><td>wh12f</td><td>integer</td><td></td></tr> 
+<tr><td>hp12m</td><td>integer</td><td></td></tr> 
+<tr><td>hp12f</td><td>integer</td><td></td></tr> 
+<tr><td>tr12m</td><td>integer</td><td></td></tr> 
+<tr><td>tr12f</td><td>integer</td><td></td></tr> 
+<tr><td>ug</td><td>integer</td><td></td></tr> 
+<tr><td>amugm</td><td>integer</td><td></td></tr> 
+<tr><td>amugf</td><td>integer</td><td></td></tr> 
+<tr><td>asugm</td><td>integer</td><td></td></tr> 
+<tr><td>asugf</td><td>integer</td><td></td></tr> 
+<tr><td>hiugm</td><td>integer</td><td></td></tr> 
+<tr><td>hiugf</td><td>integer</td><td></td></tr> 
+<tr><td>blugm</td><td>integer</td><td></td></tr> 
+<tr><td>blugf</td><td>integer</td><td></td></tr> 
+<tr><td>whugm</td><td>integer</td><td></td></tr> 
+<tr><td>whugf</td><td>integer</td><td></td></tr> 
+<tr><td>hpugm</td><td>integer</td><td></td></tr> 
+<tr><td>hpugf</td><td>integer</td><td></td></tr> 
+<tr><td>trugm</td><td>integer</td><td></td></tr> 
+<tr><td>trugf</td><td>integer</td><td></td></tr> 
+<tr><td>member</td><td>integer</td><td>Total number of students in the district</td></tr> 
+<tr><td>am</td><td>integer</td><td></td></tr> 
+<tr><td>amalm</td><td>integer</td><td></td></tr> 
+<tr><td>amalf</td><td>integer</td><td></td></tr> 
+<tr><td>asian</td><td>integer</td><td></td></tr> 
+<tr><td>asalm</td><td>integer</td><td></td></tr> 
+<tr><td>asalf</td><td>integer</td><td></td></tr> 
+<tr><td>hisp</td><td>integer</td><td></td></tr> 
+<tr><td>hialm</td><td>integer</td><td></td></tr> 
+<tr><td>hialf</td><td>integer</td><td></td></tr> 
+<tr><td>black</td><td>integer</td><td></td></tr> 
+<tr><td>blalm</td><td>integer</td><td></td></tr> 
+<tr><td>blalf</td><td>integer</td><td></td></tr> 
+<tr><td>white</td><td>integer</td><td></td></tr> 
+<tr><td>whalm</td><td>integer</td><td></td></tr> 
+<tr><td>whalf</td><td>integer</td><td></td></tr> 
+<tr><td>pacific</td><td>integer</td><td></td></tr> 
+<tr><td>hpalm</td><td>integer</td><td></td></tr> 
+<tr><td>hpalf</td><td>integer</td><td></td></tr> 
+<tr><td>tr</td><td>integer</td><td></td></tr> 
+<tr><td>tralm</td><td>integer</td><td></td></tr> 
+<tr><td>tralf</td><td>integer</td><td></td></tr> 
+<tr><td>toteth</td><td>integer</td><td></td></tr> 
+<tr><td>chrtleastat</td><td>text</td><td></td></tr> 
+<tr><td>mzip</td><td>text</td><td></td></tr> 
+<tr><td>ccdnum</td><td>integer</td><td></td></tr> 
+<tr><td>farmrate</td><td>number</td><td>Percentage of students eligible for free or reduced price school meals</td></tr> </table></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+    

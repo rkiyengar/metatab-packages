@@ -1,0 +1,90 @@
+"Declare","metatab-latest",,,
+"Title","Salaries for Los Angeles County 2011 to 2015",,,
+"Description","Salaries for Los Angeles County employees from 2011 to 2015",,,
+"Identifier","b56f2f8f-df0c-4527-9286-8d9a47123a35",,,
+"Name","transparentcalifornia.com-los_angeles_salaries-2011_2015-lac-1",,,
+"Modified","2017-04-07T22:56:56",,,
+"Created","2017-04-07T22:33:39",,,
+"Dataset","los_angeles_salaries",,,
+"Origin","transparentcalifornia.com",,,
+"Space","lac",,,
+"Time","2011-2015",,,
+"Version",1,,,
+,,,,
+"Section","Resources","Name","Description",
+"Datafile","http://transparentcalifornia.com/export/los-angeles-county-2011.csv","salaries-2011","Los Angeles County employee salaries 2011",
+"Datafile","http://transparentcalifornia.com/export/los-angeles-county-2012.csv","salaries-2012","Los Angeles County employee salaries 2012",
+"Datafile","http://transparentcalifornia.com/export/los-angeles-county-2013.csv","salaries-2013","Los Angeles County employee salaries 2013",
+"Datafile","http://transparentcalifornia.com/export/los-angeles-county-2014.csv","salaries-2014","Los Angeles County employee salaries 2014",
+"Datafile","http://transparentcalifornia.com/export/los-angeles-county-2015.csv","salaries-2015","Los Angeles County employee salaries 2015",
+,,,,
+"Section","Documentation","Title","Description",
+"Homepage","http://transparentcalifornia.com/salaries/los-angeles-county/","2011–2015 salaries for Los Angeles County","Web-based table search for all salary records",
+,,,,
+"Section","Contacts","Email","Organization","Url"
+"Origin",,,"Los Angeles County",
+"Wrangler","Eric Busboom","eric@civicknowledge.com","Civic Knowledge","http://civicknowledge.com"
+,,,,
+"Section","Schema","DataType","AltName","Transform"
+"Table","salaries-2011",,,
+"Table.Column","employee_name","text",,
+"Table.Column","job_title","text",,
+"Table.Column","base_pay","number",,
+"Table.Column","overtime_pay","number",,
+"Table.Column","other_pay","number",,
+"Table.Column","total_benefits","number",,
+"Table.Column","total_pay","number",,
+"Table.Column","total_pay_benefits","number",,
+"Table.Column","year","integer",,
+"Table.Column","notes","text",,
+"Table.Column","jurisdiction_name","text",,
+"Table","salaries-2012",,,
+"Table.Column","employee_name","text",,
+"Table.Column","job_title","text",,
+"Table.Column","base_pay","number",,
+"Table.Column","overtime_pay","number",,
+"Table.Column","other_pay","number",,
+"Table.Column","total_benefits","number",,
+"Table.Column","total_pay","number",,
+"Table.Column","total_pay_benefits","number",,
+"Table.Column","year","integer",,
+"Table.Column","notes","text",,
+"Table.Column","jurisdiction_name","text",,
+"Table","salaries-2013",,,
+"Table.Column","employee_name","text",,
+"Table.Column","job_title","text",,
+"Table.Column","base_pay","integer",,"^robust_int"
+"Table.Column","overtime_pay","integer",,"^robust_int"
+"Table.Column","other_pay","integer",,"^robust_int"
+"Table.Column","total_benefits","integer",,"^robust_int"
+"Table.Column","total_pay","integer",,"^robust_int"
+"Table.Column","total_pay_benefits","integer",,"^robust_int"
+"Table.Column","year","integer",,
+"Table.Column","notes","text",,
+"Table.Column","jurisdiction_name","text",,
+"Table","salaries-2014",,,
+"Table.Column","Employee Name","text","employee_name",
+"Table.Column","Job Title","text","job_title",
+"Table.Column","Base Pay","integer","base_pay","^robust_int|!ignore"
+"Table.Column","Overtime Pay","integer","overtime_pay","^robust_int|!ignore"
+"Table.Column","Other Pay","integer","other_pay","^robust_int|!ignore"
+"Table.Column","Benefits","integer","benefits","^robust_int|!ignore"
+"Table.Column","Total Pay","integer","total_pay","^robust_int|!ignore"
+"Table.Column","Total Pay & Benefits","integer","total_pay_benefits","^robust_int|!ignore"
+"Table.Column","Year","integer","year",
+"Table.Column","Notes","text","notes",
+"Table.Column","Agency","text","agency",
+"Table.Column","Status","text","status",
+"Table","salaries-2015",,,
+"Table.Column","Employee Name","text","employee_name",
+"Table.Column","Job Title","text","job_title",
+"Table.Column","Base Pay","number","base_pay","^robust_int"
+"Table.Column","Overtime Pay","number","overtime_pay","^robust_int|!ignore"
+"Table.Column","Other Pay","number","other_pay","^robust_int"
+"Table.Column","Benefits","number","benefits","^robust_int"
+"Table.Column","Total Pay","number","total_pay","^robust_int"
+"Table.Column","Total Pay & Benefits","number","total_pay_benefits","^robust_int"
+"Table.Column","Year","integer","year",
+"Table.Column","Notes","text","notes",
+"Table.Column","Agency","text","agency",
+"Table.Column","Status","text","status",

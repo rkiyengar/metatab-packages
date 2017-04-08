@@ -2,3 +2,4 @@ _packages
 .DS_Store
 *.zip
 *.xlsx
+*.s3
