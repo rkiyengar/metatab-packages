@@ -1,0 +1,73 @@
+Declare,metatab-latest
+Title,San Diego Elder Dementia
+Description,Current (2012) ADOD and General population data along with projections for 2020 and 2030 for San Diego county
+Identifier,2c67064b-e9a5-418b-a511-d88c0c649b01
+Name,sandiegocounty.gov-adod-2012-sra-3
+Name.Dataset,adod
+Name.Grain,SRA
+Name.Origin,sandiegocounty.gov
+Name.Version,3
+Name.Time,2012
+Tag,age-friendly-communities
+Modified,2017-04-03T19:56:39
+Issued,2017-04-03T19:50:53
+Distribution,http://s3.amazonaws.com/library.metatab.org/sandiegocounty.gov-adod-2012-sra-3.xlsx
+Distribution,http://s3.amazonaws.com/library.metatab.org/sandiegocounty.gov-adod-2012-sra-3.zip
+Distribution,http://s3.amazonaws.com/library.metatab.org/sandiegocounty.gov-adod-2012-sra-3/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/sandiegocounty.gov-adod-2012-sra-3.csv
+Distribution,http://data.sandiegodata.org/dataset/sandiegocounty-gov-adod-2012-sra-3
+Ckanid,fbf56b16-b016-489b-8bb7-02e35b40d905
+Group,health
+
+Section,Resources,Name,StartLine,HeaderLines,Encoding,Description
+Datafile,data/SD_County_ADOD_Pop_Data_001.xlsx#table1,adod-prevalence,3,2,ascii,"Table 1. Estimates of Prevalence of Alzheimer's Disease and Other Dementias by Subregional Area, 55 Years and Over, San Diego County, 2012 - 2030"
+Datafile,data/SD_County_ADOD_Pop_Data_001.xlsx#table2,hospital-discharge,3,2,ascii,"Table 2. Number of Emergency Department or Hospital Discharged Patients with Any Mention of Alzheimer's Disease and Other Dementias by Subregional Area, 55 Years and Over, San Diego County, 2012 - 2030"
+Datafile,data/SD_County_ADOD_Pop_Data_001.xlsx#table3,elder-population-2012,3,2,ascii,"Table 3. 2012 Population by Age Group and Subregional Area, 55 Years and Over, San Diego County"
+Datafile,data/SD_County_ADOD_Pop_Data_001.xlsx#table4,elder-population-2020,3,2,ascii,"Table 4. 2020 Population Projections by Age Group and Subregional Area, 55 Years and Over, San Diego County"
+Datafile,data/SD_County_ADOD_Pop_Data_001.xlsx#table5,elder-population-2030,3,2,ascii,"Table 5. 2030 Population Projections by Age Group and Subregional Area, 55 Years and Over, San Diego County"
+
+Section,Documentation,Title,Description,,,
+Homepage,http://www.sandiegocounty.gov/content/sdc/hhsa/programs/phs/community_health_statistics/reports.html,SD County HHSA Reports,,,,
+Documentation,http://www.sandiegocounty.gov/content/dam/sdc/hhsa/programs/phs/CHS/ADOD%20Packet_UPDATED.pdf,SD County HHSA ADOD Packet Upates,Updates to the SD HHSA ADOD profiles in the county. All data is extracted from this document,,,
+
+Section,Contacts,email,Organization,Url,,
+Origin,sdcounty.ca.gov,,County of San Diego Health and Human Services Agency,http://www.sandiegocounty.gov/hhsa/,,
+Creator,Lesie Ray,Leslie.Ray@sdcounty.ca.gov.,County of San Diego Health and Human Services Agency,,,
+Wrangler,Rashmi Keshava Iyengar,rashmi.k.iyengar@gmail.com,San Diego Regional Data Library,http://www.sandiegodata.org,,
+Wrangler,Eric Busboom,eric@sandiegodata.org,Civic Knowledge,http://www.civicknowledge.com,,
+
+Section,Notes,,,,,
+Note,,,,,,
+
+Section,Schema,DataType,AltName,Description,,
+Table,adod-prevalence,,,,,
+Table.Column,,text,region,,,
+Table.Column,2012,integer,adod_prevelance_2012,,,
+Table.Column,2020,integer,adod_prevelance_2020,,,
+Table.Column,2030,integer,adod_prevelance_2030,,,
+Table,hospital-discharge,,,,,
+Table.Column,,text,region,,,
+Table.Column,2012,integer,adod_discharges_2012,,,
+Table.Column,2020,integer,adod_discharges_2020,,,
+Table.Column,2030,integer,adod_discharges_2030,,,
+Table,elder-population-2012,,,,,
+Table.Column,,text,region,,,
+Table.Column,55-64,integer,elder_pop_2012_55_64,,,
+Table.Column,65-74,integer,elder_pop_2012_65_74,,,
+Table.Column,75-84,integer,elder_pop_2012_75_84,,,
+Table.Column,85 and Over,integer,elder_pop_2012_85_and_over,,,
+Table.Column,55 and Over,integer,elder_pop_2012_55_and_over,,,
+Table,elder-population-2020,,,,,
+Table.Column,,text,region,,,
+Table.Column,55-64,integer,elder_pop_2020_55_64,,,
+Table.Column,65-74,integer,elder_pop_2020_65_74,,,
+Table.Column,75-84,integer,elder_pop_2020_75_84,,,
+Table.Column,85 and Over,integer,elder_pop_2020_85_and_over,,,
+Table.Column,55 and Over,integer,elder_pop_2020_55_and_over,,,
+Table,elder-population-2030,,,,,
+Table.Column,,text,region,,,
+Table.Column,55-64,integer,elder_pop_2030_55_64,,,
+Table.Column,65-74,integer,elder_pop_2030_65_74,,,
+Table.Column,75-84,integer,elder_pop_2030_75_84,,,
+Table.Column,85 and Over,integer,elder_pop_2030_85_and_over,,,
+Table.Column,55 and Over,integer,elder_pop_2030_55_and_over,,,
