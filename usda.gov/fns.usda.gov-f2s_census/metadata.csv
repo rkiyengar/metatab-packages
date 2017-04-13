@@ -3,16 +3,18 @@ Title,Farm To School Census
 Description,"This file contains the raw data for all public school districts, private schools, and charter schools (SFAs) that completed the 2015 USDA Farm to School Census. Results can also be found online at https://farmtoschoolcensus.fns.usda.gov."
 Identifier,7167e453-f1bd-43f5-ba2e-3abff46db737
 Name,fns.usda.gov-f2s_census-2015-2
+Name.Space,
 Name.Origin,fns.usda.gov
 Name.Version,2
 Name.Time,2015
 Name.Grain,
-Name.Space,
 Name.Dataset,f2s_census
+Modified,2017-04-08T05:16:23
+Issued,2017-04-08T05:16:23
 Distribution,http://s3.amazonaws.com/library.metatab.org/fns.usda.gov-f2s_census-2015-2.xlsx
 Distribution,http://s3.amazonaws.com/library.metatab.org/fns.usda.gov-f2s_census-2015-2.zip
 Distribution,http://s3.amazonaws.com/library.metatab.org/fns.usda.gov-f2s_census-2015-2/metadata.csv
-Distribution,http://s3.amazonaws.com/library.metatab.org/fns.usda.gov-f2s_census-2015-2.csv/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/fns.usda.gov-f2s_census-2015-2.csv
 
 Section,Resources,Name,StartLine,HeaderLines,Encoding,Description,,,
 Datafile,https://farmtoschoolcensus.fns.usda.gov/sites/default/files/asset/document/2015%20F2S%20Census%20State-National%20Data_1.11.17_web.xlsx#2015+F2S+Census_State,state_census,1,0,ascii,"This file contains state, territory, and national level summary statistics for those public school districts, private schools, and charter schools (SFAs) that completed the 2015 USDA Farm to School Census.",,,

@@ -12,7 +12,7 @@ S3_BUCKET= $(subst s3://,,$(METAKAN_S3_URL))
 METAKAN_CKAN_URL ?=  http://data.sandiegodata.org/ 
 PACK_NAME=$(shell metapack -n)
 
-dest= $(PACK_NAME).zip 
+dest= $(PACK_NAME).s3 
 
 all: $(dest)
 
@@ -20,4 +20,6 @@ all: $(dest)
 %.zip: metadata.csv
 	metakan --s3url $(METAKAN_S3_URL) --ckanurl $(METAKAN_CKAN_URL)   -z -e -s3
     
-    
+%.s3: metadata.csv
+	metasync -S s3://$(S3_BUCKET) $<
+	touch $@
