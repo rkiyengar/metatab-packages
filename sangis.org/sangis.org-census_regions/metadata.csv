@@ -1,0 +1,69 @@
+Declare,metatab-latest
+Title,SANGIS Census Regions
+Description,"San Diego county Tracts, MSAs and SRAs, based on 2010 Census boundaries, as extracted by SANGIS."
+Identifier,d4beb5d6-0f97-403f-91a8-aa7aa54bf4a6
+Name,sangis.org-census_regions-2010-sandiego-5
+Name.Version,5
+Name.Dataset,census-regions
+Name.Origin,sangis.org
+Name.Time,2010
+Name.Space,sandiego
+Group,built_environment
+Tag,age-friendly-communities
+Modified,2017-04-14T00:20:13
+Issued,2017-04-14T00:20:13
+Distribution,http://data.sandiegodata.org/dataset/sangis-org-census_regions-2010-sandiego-4
+Distribution,http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-5.xlsx
+Distribution,http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-5.zip
+Distribution,http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-5/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-5.csv
+Ckanid,ba6238e7-3f52-4be7-9364-6efc2fb19461
+Created,2017-04-02T21:51:21
+
+Section,Resources,Name,Description,,
+Datafile,shape+http://s3.amazonaws.com/public.source.civicknowledge.com/sangis.org/CENSUS_TRACTS_2010.zip,tracts,2010 Census Tract boundaries,,
+Datafile,shape+http://s3.amazonaws.com/public.source.civicknowledge.com/sangis.org/Major_Statistical_Area_2010.zip,msa,2010 Metro Statistical Area boundaries,,
+Datafile,shape+http://s3.amazonaws.com/public.source.civicknowledge.com/sangis.org/Subregional_Areas_2010.zip,sra,San Diego County Sub-Regional Areas boundaries,,
+Datafile,shape+http://s3.amazonaws.com/public.source.civicknowledge.com/sangis.org/Zip_Codes.zip,zip,ZIP Code boundaries,,
+Datafile,data/tract-msa-sra.csv,tract-sra-msa-xwalk,"Crosswalk  between crosswalks, tracts, zip codes and SRAs.",,
+
+Section,Documentation,Title,Description,,
+Documentation,https://redmine.sandiegodata.org/projects/agefrnd/wiki/Tracts_Subdivisions_and_Sub-Regional_Areas,"Tracts, SRAs and MSAa",Overview of how SRAs are composed of tracts and related to MSAs.,,
+
+Section,Contacts,Email,Organization,Url,
+Origin,,,SANGIS,sangis.org,
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com,
+
+Section,Schema,DataType,AltName,transform,Description
+Table,tracts,,,,
+Table.Column,id,integer,,,
+Table.Column,TRACT,number,tract,,
+Table.Column,SHAPE_AREA,number,shape_area,,
+Table.Column,SHAPE_LEN,number,shape_len,,
+Table.Column,geometry,geometry,,,
+Table,msa,,,,
+Table.Column,id,integer,,,
+Table.Column,MSA,integer,msa,,
+Table.Column,NAME,text,name,,
+Table.Column,geometry,geometry,,,
+Table,sra,,,,
+Table.Column,id,integer,,,
+Table.Column,SRA,integer,sra,,
+Table.Column,NAME,text,name,,
+Table.Column,geometry,geometry,,,
+Table,zip,,,,
+Table.Column,id,integer,,,
+Table.Column,ZIP,integer,zip,,
+Table.Column,COMMUNITY,text,community,,
+Table.Column,SHAPE_AREA,number,shape_area,,
+Table.Column,SHAPE_LEN,number,shape_len,,
+Table.Column,geometry,geometry,,,
+Table,tract-sra-msa-xwalk,,,,
+Table.Column,tract,text,,,
+Table.Column,tract_geoid,text,,,
+Table.Column,sra,integer,,,
+Table.Column,sra_name,text,,,
+Table.Column,msa,integer,,,
+Table.Column,msa_name,text,,,
+Table.Column,lon,number,,,
+Table.Column,lat,number,,,

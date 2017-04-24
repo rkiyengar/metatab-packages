@@ -1,0 +1,540 @@
+{
+    "release": {
+        "id": "acs2015_5yr",
+        "name": "ACS 2015 5-year",
+        "years": "2011-2015"
+    },
+    "tables": {
+        "B17024": {
+            "title": "Age by Ratio of Income to Poverty Level in the Past 12 Months",
+            "universe": "Population for Whom Poverty Status Is Determined",
+            "denominator_column_id": "B17024001",
+            "columns": {
+                "B17024001": {
+                    "name": "Total:",
+                    "indent": 0
+                },
+                "B17024002": {
+                    "name": "Under 6 years:",
+                    "indent": 1
+                },
+                "B17024003": {
+                    "name": "Under .50",
+                    "indent": 2
+                },
+                "B17024004": {
+                    "name": ".50 to .74",
+                    "indent": 2
+                },
+                "B17024005": {
+                    "name": ".75 to .99",
+                    "indent": 2
+                },
+                "B17024006": {
+                    "name": "1.00 to 1.24",
+                    "indent": 2
+                },
+                "B17024007": {
+                    "name": "1.25 to 1.49",
+                    "indent": 2
+                },
+                "B17024008": {
+                    "name": "1.50 to 1.74",
+                    "indent": 2
+                },
+                "B17024009": {
+                    "name": "1.75 to 1.84",
+                    "indent": 2
+                },
+                "B17024010": {
+                    "name": "1.85 to 1.99",
+                    "indent": 2
+                },
+                "B17024011": {
+                    "name": "2.00 to 2.99",
+                    "indent": 2
+                },
+                "B17024012": {
+                    "name": "3.00 to 3.99",
+                    "indent": 2
+                },
+                "B17024013": {
+                    "name": "4.00 to 4.99",
+                    "indent": 2
+                },
+                "B17024014": {
+                    "name": "5.00 and over",
+                    "indent": 2
+                },
+                "B17024015": {
+                    "name": "6 to 11 years:",
+                    "indent": 1
+                },
+                "B17024016": {
+                    "name": "Under .50",
+                    "indent": 2
+                },
+                "B17024017": {
+                    "name": ".50 to .74",
+                    "indent": 2
+                },
+                "B17024018": {
+                    "name": ".75 to .99",
+                    "indent": 2
+                },
+                "B17024019": {
+                    "name": "1.00 to 1.24",
+                    "indent": 2
+                },
+                "B17024020": {
+                    "name": "1.25 to 1.49",
+                    "indent": 2
+                },
+                "B17024021": {
+                    "name": "1.50 to 1.74",
+                    "indent": 2
+                },
+                "B17024022": {
+                    "name": "1.75 to 1.84",
+                    "indent": 2
+                },
+                "B17024023": {
+                    "name": "1.85 to 1.99",
+                    "indent": 2
+                },
+                "B17024024": {
+                    "name": "2.00 to 2.99",
+                    "indent": 2
+                },
+                "B17024025": {
+                    "name": "3.00 to 3.99",
+                    "indent": 2
+                },
+                "B17024026": {
+                    "name": "4.00 to 4.99",
+                    "indent": 2
+                },
+                "B17024027": {
+                    "name": "5.00 and over",
+                    "indent": 2
+                },
+                "B17024028": {
+                    "name": "12 to 17 years:",
+                    "indent": 1
+                },
+                "B17024029": {
+                    "name": "Under .50",
+                    "indent": 2
+                },
+                "B17024030": {
+                    "name": ".50 to .74",
+                    "indent": 2
+                },
+                "B17024031": {
+                    "name": ".75 to .99",
+                    "indent": 2
+                },
+                "B17024032": {
+                    "name": "1.00 to 1.24",
+                    "indent": 2
+                },
+                "B17024033": {
+                    "name": "1.25 to 1.49",
+                    "indent": 2
+                },
+                "B17024034": {
+                    "name": "1.50 to 1.74",
+                    "indent": 2
+                },
+                "B17024035": {
+                    "name": "1.75 to 1.84",
+                    "indent": 2
+                },
+                "B17024036": {
+                    "name": "1.85 to 1.99",
+                    "indent": 2
+                },
+                "B17024037": {
+                    "name": "2.00 to 2.99",
+                    "indent": 2
+                },
+                "B17024038": {
+                    "name": "3.00 to 3.99",
+                    "indent": 2
+                },
+                "B17024039": {
+                    "name": "4.00 to 4.99",
+                    "indent": 2
+                },
+                "B17024040": {
+                    "name": "5.00 and over",
+                    "indent": 2
+                },
+                "B17024041": {
+                    "name": "18 to 24 years:",
+                    "indent": 1
+                },
+                "B17024042": {
+                    "name": "Under .50",
+                    "indent": 2
+                },
+                "B17024043": {
+                    "name": ".50 to .74",
+                    "indent": 2
+                },
+                "B17024044": {
+                    "name": ".75 to .99",
+                    "indent": 2
+                },
+                "B17024045": {
+                    "name": "1.00 to 1.24",
+                    "indent": 2
+                },
+                "B17024046": {
+                    "name": "1.25 to 1.49",
+                    "indent": 2
+                },
+                "B17024047": {
+                    "name": "1.50 to 1.74",
+                    "indent": 2
+                },
+                "B17024048": {
+                    "name": "1.75 to 1.84",
+                    "indent": 2
+                },
+                "B17024049": {
+                    "name": "1.85 to 1.99",
+                    "indent": 2
+                },
+                "B17024050": {
+                    "name": "2.00 to 2.99",
+                    "indent": 2
+                },
+                "B17024051": {
+                    "name": "3.00 to 3.99",
+                    "indent": 2
+                },
+                "B17024052": {
+                    "name": "4.00 to 4.99",
+                    "indent": 2
+                },
+                "B17024053": {
+                    "name": "5.00 and over",
+                    "indent": 2
+                },
+                "B17024054": {
+                    "name": "25 to 34 years:",
+                    "indent": 1
+                },
+                "B17024055": {
+                    "name": "Under .50",
+                    "indent": 2
+                },
+                "B17024056": {
+                    "name": ".50 to .74",
+                    "indent": 2
+                },
+                "B17024057": {
+                    "name": ".75 to .99",
+                    "indent": 2
+                },
+                "B17024058": {
+                    "name": "1.00 to 1.24",
+                    "indent": 2
+                },
+                "B17024059": {
+                    "name": "1.25 to 1.49",
+                    "indent": 2
+                },
+                "B17024060": {
+                    "name": "1.50 to 1.74",
+                    "indent": 2
+                },
+                "B17024061": {
+                    "name": "1.75 to 1.84",
+                    "indent": 2
+                },
+                "B17024062": {
+                    "name": "1.85 to 1.99",
+                    "indent": 2
+                },
+                "B17024063": {
+                    "name": "2.00 to 2.99",
+                    "indent": 2
+                },
+                "B17024064": {
+                    "name": "3.00 to 3.99",
+                    "indent": 2
+                },
+                "B17024065": {
+                    "name": "4.00 to 4.99",
+                    "indent": 2
+                },
+                "B17024066": {
+                    "name": "5.00 and over",
+                    "indent": 2
+                },
+                "B17024067": {
+                    "name": "35 to 44 years:",
+                    "indent": 1
+                },
+                "B17024068": {
+                    "name": "Under .50",
+                    "indent": 2
+                },
+                "B17024069": {
+                    "name": ".50 to .74",
+                    "indent": 2
+                },
+                "B17024070": {
+                    "name": ".75 to .99",
+                    "indent": 2
+                },
+                "B17024071": {
+                    "name": "1.00 to 1.24",
+                    "indent": 2
+                },
+                "B17024072": {
+                    "name": "1.25 to 1.49",
+                    "indent": 2
+                },
+                "B17024073": {
+                    "name": "1.50 to 1.74",
+                    "indent": 2
+                },
+                "B17024074": {
+                    "name": "1.75 to 1.84",
+                    "indent": 2
+                },
+                "B17024075": {
+                    "name": "1.85 to 1.99",
+                    "indent": 2
+                },
+                "B17024076": {
+                    "name": "2.00 to 2.99",
+                    "indent": 2
+                },
+                "B17024077": {
+                    "name": "3.00 to 3.99",
+                    "indent": 2
+                },
+                "B17024078": {
+                    "name": "4.00 to 4.99",
+                    "indent": 2
+                },
+                "B17024079": {
+                    "name": "5.00 and over",
+                    "indent": 2
+                },
+                "B17024080": {
+                    "name": "45 to 54 years:",
+                    "indent": 1
+                },
+                "B17024081": {
+                    "name": "Under .50",
+                    "indent": 2
+                },
+                "B17024082": {
+                    "name": ".50 to .74",
+                    "indent": 2
+                },
+                "B17024083": {
+                    "name": ".75 to .99",
+                    "indent": 2
+                },
+                "B17024084": {
+                    "name": "1.00 to 1.24",
+                    "indent": 2
+                },
+                "B17024085": {
+                    "name": "1.25 to 1.49",
+                    "indent": 2
+                },
+                "B17024086": {
+                    "name": "1.50 to 1.74",
+                    "indent": 2
+                },
+                "B17024087": {
+                    "name": "1.75 to 1.84",
+                    "indent": 2
+                },
+                "B17024088": {
+                    "name": "1.85 to 1.99",
+                    "indent": 2
+                },
+                "B17024089": {
+                    "name": "2.00 to 2.99",
+                    "indent": 2
+                },
+                "B17024090": {
+                    "name": "3.00 to 3.99",
+                    "indent": 2
+                },
+                "B17024091": {
+                    "name": "4.00 to 4.99",
+                    "indent": 2
+                },
+                "B17024092": {
+                    "name": "5.00 and over",
+                    "indent": 2
+                },
+                "B17024093": {
+                    "name": "55 to 64 years:",
+                    "indent": 1
+                },
+                "B17024094": {
+                    "name": "Under .50",
+                    "indent": 2
+                },
+                "B17024095": {
+                    "name": ".50 to .74",
+                    "indent": 2
+                },
+                "B17024096": {
+                    "name": ".75 to .99",
+                    "indent": 2
+                },
+                "B17024097": {
+                    "name": "1.00 to 1.24",
+                    "indent": 2
+                },
+                "B17024098": {
+                    "name": "1.25 to 1.49",
+                    "indent": 2
+                },
+                "B17024099": {
+                    "name": "1.50 to 1.74",
+                    "indent": 2
+                },
+                "B17024100": {
+                    "name": "1.75 to 1.84",
+                    "indent": 2
+                },
+                "B17024101": {
+                    "name": "1.85 to 1.99",
+                    "indent": 2
+                },
+                "B17024102": {
+                    "name": "2.00 to 2.99",
+                    "indent": 2
+                },
+                "B17024103": {
+                    "name": "3.00 to 3.99",
+                    "indent": 2
+                },
+                "B17024104": {
+                    "name": "4.00 to 4.99",
+                    "indent": 2
+                },
+                "B17024105": {
+                    "name": "5.00 and over",
+                    "indent": 2
+                },
+                "B17024106": {
+                    "name": "65 to 74 years:",
+                    "indent": 1
+                },
+                "B17024107": {
+                    "name": "Under .50",
+                    "indent": 2
+                },
+                "B17024108": {
+                    "name": ".50 to .74",
+                    "indent": 2
+                },
+                "B17024109": {
+                    "name": ".75 to .99",
+                    "indent": 2
+                },
+                "B17024110": {
+                    "name": "1.00 to 1.24",
+                    "indent": 2
+                },
+                "B17024111": {
+                    "name": "1.25 to 1.49",
+                    "indent": 2
+                },
+                "B17024112": {
+                    "name": "1.50 to 1.74",
+                    "indent": 2
+                },
+                "B17024113": {
+                    "name": "1.75 to 1.84",
+                    "indent": 2
+                },
+                "B17024114": {
+                    "name": "1.85 to 1.99",
+                    "indent": 2
+                },
+                "B17024115": {
+                    "name": "2.00 to 2.99",
+                    "indent": 2
+                },
+                "B17024116": {
+                    "name": "3.00 to 3.99",
+                    "indent": 2
+                },
+                "B17024117": {
+                    "name": "4.00 to 4.99",
+                    "indent": 2
+                },
+                "B17024118": {
+                    "name": "5.00 and over",
+                    "indent": 2
+                },
+                "B17024119": {
+                    "name": "75 years and over:",
+                    "indent": 1
+                },
+                "B17024120": {
+                    "name": "Under .50",
+                    "indent": 2
+                },
+                "B17024121": {
+                    "name": ".50 to .74",
+                    "indent": 2
+                },
+                "B17024122": {
+                    "name": ".75 to .99",
+                    "indent": 2
+                },
+                "B17024123": {
+                    "name": "1.00 to 1.24",
+                    "indent": 2
+                },
+                "B17024124": {
+                    "name": "1.25 to 1.49",
+                    "indent": 2
+                },
+                "B17024125": {
+                    "name": "1.50 to 1.74",
+                    "indent": 2
+                },
+                "B17024126": {
+                    "name": "1.75 to 1.84",
+                    "indent": 2
+                },
+                "B17024127": {
+                    "name": "1.85 to 1.99",
+                    "indent": 2
+                },
+                "B17024128": {
+                    "name": "2.00 to 2.99",
+                    "indent": 2
+                },
+                "B17024129": {
+                    "name": "3.00 to 3.99",
+                    "indent": 2
+                },
+                "B17024130": {
+                    "name": "4.00 to 4.99",
+                    "indent": 2
+                },
+                "B17024131": {
+                    "name": "5.00 and over",
+                    "indent": 2
+                }
+            }
+        }
+    }
+}

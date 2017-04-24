@@ -1,0 +1,168 @@
+{
+    "resources": [
+        {
+            "schema": {
+                "fields": [
+                    {
+                        "type": "string",
+                        "name": "Facility Type"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Facility Number"
+                    },
+                    {
+                        "type": "string",
+                        "name": "Facility Name"
+                    },
+                    {
+                        "type": "string",
+                        "name": "Licensee"
+                    },
+                    {
+                        "type": "string",
+                        "name": "Facility Administrator"
+                    },
+                    {
+                        "type": "string",
+                        "name": "Facility Telephone Number"
+                    },
+                    {
+                        "type": "string",
+                        "name": "Facility Address"
+                    },
+                    {
+                        "type": "string",
+                        "name": "Facility City"
+                    },
+                    {
+                        "type": "string",
+                        "name": "Facility State"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Facility Zip"
+                    },
+                    {
+                        "type": "string",
+                        "name": "County Name"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Regional Office"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Facility Capacity"
+                    },
+                    {
+                        "type": "string",
+                        "name": "Facility Status"
+                    },
+                    {
+                        "type": "string",
+                        "name": "License First Date"
+                    },
+                    {
+                        "type": "string",
+                        "name": "Closed Date"
+                    },
+                    {
+                        "type": "string",
+                        "name": "Last Visit Date"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Inspection Visits"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Complaint Visits"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Other Visits"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Total Visits"
+                    },
+                    {
+                        "type": "string",
+                        "name": "Citation Numbers"
+                    },
+                    {
+                        "type": "string",
+                        "name": "POC Dates"
+                    },
+                    {
+                        "type": "string",
+                        "name": "All Visit Dates"
+                    },
+                    {
+                        "type": "string",
+                        "name": "Inspection Visit Dates"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Inspect TypeA"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Inspect TypeB"
+                    },
+                    {
+                        "type": "string",
+                        "name": "Other Visit Dates"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Other TypeA"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Other TypeB"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Complaint Type A"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Complaint Type B"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Total Allegations"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Inconclusive Allegations"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Substantiated Allegations"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "Unfounded Allegations"
+                    },
+                    {
+                        "type": "string"
+                    }
+                ]
+            },
+            "name": "facilities",
+            "path": "data/RCFE02052017.csv"
+        }
+    ],
+    "name": "18a22824-1f07-425d-8651-4d4d1975271f",
+    "description": "A list of licensed Residential Elder Care Facilities (RCFEs) from the California Department of Social Services.",
+    "title": "California Residential Elder Care Facilities",
+    "identifier": "residential-care-facilities",
+    "declare": "metatab-latest",
+    "spatial": "California",
+    "version": "1",
+    "time": null,
+    "spatialgrain": null
+}

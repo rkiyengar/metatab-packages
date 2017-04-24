@@ -1,0 +1,48 @@
+Declare,metatab-latest
+Title,ZIP-Tract Crosswalk
+Description,Data files linking ZIP codes to 2010 Census tracts.
+Identifier,6f36fc63-f697-474f-8acf-c7afeab3c98b
+Name,huduser.gov-zip_tract-2016-2
+Name.Time,2016
+Name.Dataset,zip-tract
+Name.Origin,huduser.gov
+Name.Version,2
+Tag,age-friendly-communities
+Modified,2017-04-03T19:58:57
+Issued,2017-04-03T19:58:57
+Distribution,http://s3.amazonaws.com/library.metatab.org/huduser.gov-zip_tract-2016-2.xlsx
+Distribution,http://s3.amazonaws.com/library.metatab.org/huduser.gov-zip_tract-2016-2.zip
+Distribution,http://s3.amazonaws.com/library.metatab.org/huduser.gov-zip_tract-2016-2/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/huduser.gov-zip_tract-2016-2.csv
+Ckanid,8e17c865-7ff8-400f-9d69-388105675bf9
+Distribution,http://data.sandiegodata.org/dataset/huduser-gov-zip_tract-2016-2
+
+Section,Resources,Name,Description,
+Datafile,https://www.huduser.gov/portal/datasets/usps/ZIP_TRACT_122016.xlsx,zip-tract,ZIP to Tract crosswalk,
+Datafile,https://www.huduser.gov/portal/datasets/usps/TRACT_ZIP_122016.xlsx,tract-zip,Tract to ZIP crosswalk,
+
+Section,Documentation,Title,Description,
+Homepage,https://www.huduser.gov/portal/datasets/usps_crosswalk.html,Homepage,,
+Documentation,https://www.huduser.gov/portal/datasets/usps_crosswalk.html#codebook,Codebook,,
+Note,,,,
+
+Section,Contacts,Email,Organization,Url
+Origin,,,U.S. Department of Housing and Urban Development,https://www.huduser.gov
+Creator,Robert Renner,Robert.N.Renner@hud.gov,U.S. Department of Housing and Urban Development,https://www.huduser.gov
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
+
+Section,Schema,DataType,AltName,Description
+Table,zip-tract,,,
+Table.Column,ZIP,integer,zip,5 digit USPS ZIP code
+Table.Column,TRACT,integer,tract,11 digit unique 2000 or 2010 Census tract GEOID consisting of state FIPS + county FIPS + tract code. The decimal is implied and leading and trailing zeros have been preserved.
+Table.Column,RES_RATIO,number,res_ratio,"The ratio of residential addresses in the ZIP – Tract, County, or CBSA part to the total number of residential addresses in the entire ZIP."
+Table.Column,BUS_RATIO,number,bus_ratio,"The ratio of business addresses in the ZIP – Tract, County, or CBSA part to the total number of business addresses in the entire ZIP."
+Table.Column,OTH_RATIO,number,oth_ratio,"The ratio of other addresses in the ZIP – Tract, County, or CBSA part to the total number of other addresses in the entire ZIP."
+Table.Column,TOT_RATIO,number,tot_ratio,"The ratio of all addresses in the ZIP – Tract, County, or CBSA part to the total number of all types of addresses in the entire ZIP."
+Table,tract-zip,,,
+Table.Column,TRACT,integer,tract,
+Table.Column,ZIP,integer,zip,5 digit USPS ZIP code
+Table.Column,RES_RATIO,number,res_ratio,"The ratio of residential addresses in the ZIP – Tract, County, or CBSA part to the total number of residential addresses in the entire ZIP."
+Table.Column,BUS_RATIO,number,bus_ratio,"The ratio of business addresses in the ZIP – Tract, County, or CBSA part to the total number of business addresses in the entire ZIP."
+Table.Column,OTH_RATIO,number,oth_ratio,"The ratio of other addresses in the ZIP – Tract, County, or CBSA part to the total number of other addresses in the entire ZIP."
+Table.Column,TOT_RATIO,number,tot_ratio,"The ratio of all addresses in the ZIP – Tract, County, or CBSA part to the total number of all types of addresses in the entire ZIP."
