@@ -2,22 +2,17 @@ Declare,metatab-latest
 Title,California Residential Elder Care Facilities
 Description,A list of licensed Residential Elder Care Facilities (RCFEs) from the California Department of Social Services.
 Identifier,18a22824-1f07-425d-8651-4d4d1975271f
-Name,cdss.ca.gov-residential_care_facilities-2017-ca-6
+Name,cdss.ca.gov-residential_care_facilities-2017-ca-7
 Group,health
 Tag,age-friendly-communities
-Modified,2017-04-26T20:26:38
+Modified,2017-05-01T21:02:12
 Issued,2017-04-26T20:19:45
-Distribution,http://s3.amazonaws.com/library.metatab.org/cdss.ca.gov-residential_care_facilities-2017-ca-6.xlsx
-Distribution,http://s3.amazonaws.com/library.metatab.org/cdss.ca.gov-residential_care_facilities-2017-ca-6.zip
-Distribution,http://s3.amazonaws.com/library.metatab.org/cdss.ca.gov-residential_care_facilities-2017-ca-6/metadata.csv
-Distribution,http://s3.amazonaws.com/library.metatab.org/cdss.ca.gov-residential_care_facilities-2017-ca-6.csv
-Distribution,http://data.sandiegodata.org/dataset/cdss-ca-gov-residential_care_facilities-2017-ca-6
 Ckanid,86f9f8fd-4af6-49ff-a80f-5427e39545a8
 Dataset,residential-care-facilities
 Origin,cdss.ca.gov
 Space,CA
 Time,2017
-Version,6
+Version,7
 
 Section,Resources,Name,Description,Source,format
 Reference,https://secure.dss.ca.gov/CareFacilitySearch/home/getstatedata/ResidentialElderCareFacility,raw_facilities,Unprocessed list of RCFE,,csv
@@ -36,6 +31,8 @@ Includedocumentation,docs/documentation.md,Local documentation,Notes about the d
 Section,Notes,,,,
 Note,"The `facilities` file, as downloaded, is severly malformed, with a variable number of columns per row. The extra colums seem to represent a variable number of complain records.  The copy of the file in this package has colums after AK removed.",,,,
 Note,"The two geocoded files were geocoded using sandiego.csv as input, from the Census geocoder lined to https://www.census.gov/geo/maps-data/data/geocoder.html",,,,
+Note,Version 6. Updates the geocoder to reuse geocodes from the previous version. This assumes that the facilities don't move locations.,,,,
+Note,Version 7. Updates the geocoder to use the new zip-to-tract procedure for assigning tracts to facilities that failed to geocode.,,,,
 
 Section,Schema,DataType,AltName,Description,
 Table,facilities,,,,

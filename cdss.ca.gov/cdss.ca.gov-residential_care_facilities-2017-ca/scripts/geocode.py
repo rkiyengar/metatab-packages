@@ -17,6 +17,13 @@ from metatab import MetatabError
 
 doc = mt.MetatabDoc(environ['METATAB_DOC'])
 
+## Need to have the facility number -> zip seperately. 
+
+fac_zip = {}
+
+for row in doc.resource('facilities').iterdict:
+    fac_zip[row['facility_number']] = row['facility_zip']
+
 ##
 ## Load old geocodes, to save time and remote resources
 ## 
@@ -46,6 +53,54 @@ out_header = 'unique_id input_address match quality match_address lat lon tiger_
 w = csv.DictWriter(sys.stdout, out_header)
  
 w.writeheader()
+
+def make_zip_map():
+    """Create a map from zip to track that uses the HUD zip-tract cross walk as a probablilty
+    map, with the facility it used as the probability. Using the facility ID makes the mapping stable. """
+    zip_xwalk_doc = mt.open_package('http://library.metatab.org/huduser.gov-zip_tract-2016-2.csv')
+    zip_xwalk = zip_xwalk_doc.resource('zip-tract')
+    zip_xwalk_df = zip_xwalk.dataframe()
+    zx_groups = zip_xwalk_df.sort_values('res_ratio').groupby('zip')
+    
+    def make_single_zip_map_f(groups, zip):
+        """Function to create a closure for mapping for a single zip, from an id value to 
+         tract"""
+        import numpy as np
+        import pandas as pd
+
+        # Use the resigential ratios, the portion of the homes in the zip that are in each tract. 
+        res_ratios = list(zx_groups.get_group(zip).cumsum().res_ratio)
+        tracts = list(zx_groups.get_group(zip).tract)
+        
+        assert len(res_ratios) == len(tracts)
+
+        def _f(id):
+            # Use the end of the ID value to ensure repeadability
+            n = float(id%100) / 100.0
+            index = np.argmax(pd.Series(res_ratios) > n)
+
+            return tracts[index]
+
+        return _f
+    
+    f_map = {}
+    
+    # dict that returns, for each zip, the function to get a tract for the id number. 
+    for zp in zx_groups.groups.keys():
+        f_map[zp] = make_single_zip_map_f(zx_groups, zp)
+        
+    # Finally, put it all together in a single closure. 
+    def lookup(zip, n):
+
+        try:
+            return str(f_map[int(zip)](int(n)%100 / 100.0))
+        except KeyError:
+            return None
+
+    return lookup
+        
+zip_to_tract = make_zip_map() 
+
 
 def chunk(it, size):
     it = iter(it)
@@ -177,9 +232,18 @@ def chunked_geocode(doc):
         row_n += 1
             
      
+from geoid.census import Tract
+     
 for row_n, was_geocoded, row in chunked_geocode(doc):
+
+    if not row.get('tract_geoid'):
+        row['tract_geoid'] = zip_to_tract(fac_zip[int(row['unique_id'])], int(row['unique_id']))
+        
+        if row['tract_geoid']:
+            t = Tract.parse(row['tract_geoid'].zfill(11))
+            row['state_fips'] = t.state
+            row['county_fips'] = t.county
+            row['tract_fips'] = t.tract
+        
     
     w.writerow(row)
-
-
-

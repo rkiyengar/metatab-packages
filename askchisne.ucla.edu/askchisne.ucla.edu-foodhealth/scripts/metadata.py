@@ -4,6 +4,7 @@
 import http.client, urllib.request, urllib.parse, urllib.error, base64
 from urllib.parse import urlencode, quote_plus
 import json
+from json.decoder import JSONDecodeError
 
 from string import ascii_uppercase
 import sys
@@ -38,7 +39,12 @@ conn.request("GET", "/api/metadata?{}".format(params), "{body}", headers)
 response = conn.getresponse()
 data = response.read()
 
-d = json.loads(data.decode('utf8'))
+try:
+    d = json.loads(data.decode('utf8'))
+except JSONDecodeError:
+    print("ERROR: ", data, file=sys.stderr)
+    sys.exit(1)
+    
 conn.close()
 
 for e in d:

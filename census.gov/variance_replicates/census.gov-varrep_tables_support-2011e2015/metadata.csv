@@ -1,0 +1,46 @@
+Declare,metatab-latest
+Title,Variance Replicate Estimates Support Data 2011-2015
+Description,"Variance replicate estimate tables include estimates, margins of error, and 80 variance replicates for selected American Community Survey 5-year Detailed Tables. The tables are intended for advanced users who are adding ACS data within a table or between geographies. This package contains the state average weights and k values for use in some calculations."
+Identifier,06e89add-6726-4ade-bbd8-3e7b0170978a
+Name,census.gov-varrep_tables_support-2011e2015-1
+Modified,2017-04-28T00:10:50
+Issued,2017-04-28T00:10:50
+Distribution,http://s3.amazonaws.com/library.metatab.org/census.gov-varrep_tables_support-2011e2015-1.xlsx
+Distribution,http://s3.amazonaws.com/library.metatab.org/census.gov-varrep_tables_support-2011e2015-1.zip
+Distribution,http://s3.amazonaws.com/library.metatab.org/census.gov-varrep_tables_support-2011e2015-1/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/census.gov-varrep_tables_support-2011e2015-1.csv
+Created,2017-04-27T15:31:09
+Dataset,varrep-tables-support
+Origin,census.gov
+Time,2011e2015
+Version,1
+
+Section,Resources,Name,Description,HeaderLines,StartLine
+Datafile,http://www2.census.gov/programs-surveys/acs/replicate_estimates/2015/documentation/5-year/2011-2015_Appendix_A_Average_Weights_and_k-Values.xlsx#Average+Weights,ave_weights,Table APP1:  Average Weight by State for 2011-2015 ACS 5-Year Data,5,6
+Datafile,http://www2.census.gov/programs-surveys/acs/replicate_estimates/2015/documentation/5-year/2011-2015_Appendix_A_Average_Weights_and_k-Values.xlsx#k-Values,k_values,Table APP2:  Assigning k-Value Based on an Area’s Total Population,5,6
+Datafile,http://www2.census.gov/programs-surveys/acs/summary_file/2015/documentation/user_tools/ACS2015_Table_Shells.xlsx#Sheet1,table_shells,List of all tables an columns for which there are variance replicates,0,3
+
+Section,Documentation,Title,Description,,
+Homepage,https://www.census.gov/programs-surveys/acs/technical-documentation/variance-tables.html,Variance Replicate Tables Documentation,"Main documentation page, with links to support data",,
+Documentation,https://www2.census.gov/programs-surveys/acs/replicate_estimates/2015/documentation/5-year/2011_2015_Variance_Replicate_Tables_Documentation.pdf,Technical Documentation,Documentation for the 2011-2015 Variance Replicate Estimates Tables,,
+Downloadpage,https://www.census.gov/programs-surveys/acs/data/variance-tables.html,Variance Replicate Tables,Links to all data tables.,,
+
+Section,Contacts,Email,Organization,Url,
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com,
+
+Section,Schema,DataType,AltName,Transform,Description
+Table,ave_weights,,,,
+Table.Column,Geography,text,geography,,
+Table.Column,FIPS State Code,integer,fips_state_code,,
+Table.Column,Average Weight,integer,average_weight,,
+Table,k_values,,,,
+Table.Column,Total Population Range,text,total_population_range,,
+Table.Column,k-Value,integer,k_value,,
+Table.Column,_NONE_,integer,range_start,^split_range_lower(row.total_population_range),
+Table.Column,_NONE_,integer,range_end,^split_range_upper(row.total_population_range),
+Table,table_shells,,,,
+Table.Column,Table ID,text,table_id,,
+Table.Column,Line,float,line,,
+Table.Column,UniqueID,text,uniqueid,,
+Table.Column,Stub,text,stub,,
+Table.Column,Data Release,text,data_release,,
