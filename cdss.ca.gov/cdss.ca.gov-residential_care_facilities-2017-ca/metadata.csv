@@ -2,17 +2,19 @@ Declare,metatab-latest
 Title,California Residential Elder Care Facilities
 Description,A list of licensed Residential Elder Care Facilities (RCFEs) from the California Department of Social Services.
 Identifier,18a22824-1f07-425d-8651-4d4d1975271f
-Name,cdss.ca.gov-residential_care_facilities-2017-ca-7
+Name,cdss.ca.gov-residential_care_facilities-2017-ca-9
 Group,health
 Tag,age-friendly-communities
-Modified,2017-05-01T21:02:12
-Issued,2017-04-26T20:19:45
-Ckanid,86f9f8fd-4af6-49ff-a80f-5427e39545a8
+Modified,2017-05-05T05:36:07
+Issued,2017-05-05T05:36:07
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdss.ca.gov-residential_care_facilities-2017-ca-9/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdss.ca.gov-residential_care_facilities-2017-ca-9.csv
+Ckanid,67937385-352a-49dc-91da-4465759af2bf
 Dataset,residential-care-facilities
 Origin,cdss.ca.gov
 Space,CA
 Time,2017
-Version,7
+Version,9
 
 Section,Resources,Name,Description,Source,format
 Reference,https://secure.dss.ca.gov/CareFacilitySearch/home/getstatedata/ResidentialElderCareFacility,raw_facilities,Unprocessed list of RCFE,,csv
@@ -33,6 +35,7 @@ Note,"The `facilities` file, as downloaded, is severly malformed, with a variabl
 Note,"The two geocoded files were geocoded using sandiego.csv as input, from the Census geocoder lined to https://www.census.gov/geo/maps-data/data/geocoder.html",,,,
 Note,Version 6. Updates the geocoder to reuse geocodes from the previous version. This assumes that the facilities don't move locations.,,,,
 Note,Version 7. Updates the geocoder to use the new zip-to-tract procedure for assigning tracts to facilities that failed to geocode.,,,,
+Note,Version 8. Forced geocodes.county_fips to be 3 characters.,,,,
 
 Section,Schema,DataType,AltName,Description,
 Table,facilities,,,,

@@ -10,7 +10,8 @@ import sys
 import json
 import metatab as mt
 from itertools import islice
-from geoid.acs import Tract
+from geoid.census import Tract as CensusTract
+from geoid.acs import Tract as AcsTract
 from requests.exceptions import Timeout
 from rowgenerators import SourceError
 from metatab import MetatabError
@@ -93,7 +94,11 @@ def make_zip_map():
     def lookup(zip, n):
 
         try:
-            return str(f_map[int(zip)](int(n)%100 / 100.0))
+            # The map will return a Census geoid, which has 11 charasters, but it is often missing
+            # the leading 0, so we have to put it back. Then it much be converted to an 
+            # ACS Tract
+            census_tract_str =  str(f_map[int(zip)](int(n)%100 / 100.0)).zfill(11)
+            return str(AcsTract.parse(census_tract_str))
         except KeyError:
             return None
 
@@ -238,12 +243,36 @@ for row_n, was_geocoded, row in chunked_geocode(doc):
 
     if not row.get('tract_geoid'):
         row['tract_geoid'] = zip_to_tract(fac_zip[int(row['unique_id'])], int(row['unique_id']))
+        row['side_of_street'] = None
+        row['tiger_id'] = None
+
+    if row['tract_geoid']:
         
-        if row['tract_geoid']:
-            t = Tract.parse(row['tract_geoid'].zfill(11))
-            row['state_fips'] = t.state
-            row['county_fips'] = t.county
-            row['tract_fips'] = t.tract
+        if len(row['tract_geoid']) != 18:
+            # It's probably still a Census Tract, so convert it to an Acs tract. 
+            row['tract_geoid'] = str(CensusTract.parse(row['tract_geoid'].zfill(11)).convert(AcsTract))
         
+        assert(len(row['tract_geoid'])) == 18, row['tract_geoid'] 
+        
+        t = AcsTract.parse(row['tract_geoid'])
+        
+        #print(str(t), file=sys.stderr)
+        
+        row['state_fips'] = t.state
+        row['county_fips'] = t.county
+        row['tract_fips'] = t.tract
+        
+
+    if row.get('state_fips'):
+        row['state_fips'] = str(row['state_fips']).zfill(2)
+        
+    if row.get('county_fips'):
+        row['county_fips'] = str(row.get('county_fips')).zfill(3)
     
-    w.writerow(row)
+    try:
+        w.writerow(row)
+    except:
+        print("ERROR ROW: ", row, e, file=sys.stderr)
+    
+        
+        
