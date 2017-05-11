@@ -2,23 +2,22 @@ Declare,metatab-latest
 Title,SANGIS Census Regions
 Description,"San Diego county Tracts, MSAs and SRAs, based on 2010 Census boundaries, as extracted by SANGIS."
 Identifier,d4beb5d6-0f97-403f-91a8-aa7aa54bf4a6
-Name,sangis.org-census_regions-2010-sandiego-5
-Name.Version,5
+Name,sangis.org-census_regions-2010-sandiego-6
+Name.Version,6
 Name.Dataset,census-regions
 Name.Origin,sangis.org
 Name.Time,2010
 Name.Space,sandiego
 Group,built_environment
 Tag,age-friendly-communities
-Modified,2017-04-14T00:20:13
-Issued,2017-04-14T00:20:13
-Distribution,http://data.sandiegodata.org/dataset/sangis-org-census_regions-2010-sandiego-4
-Distribution,http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-5.xlsx
-Distribution,http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-5.zip
-Distribution,http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-5/metadata.csv
-Distribution,http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-5.csv
-Ckanid,ba6238e7-3f52-4be7-9364-6efc2fb19461
 Created,2017-04-02T21:51:21
+Modified,2017-05-11T19:58:06
+Issued,2017-05-11T19:43:06
+Distribution,http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-6/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/sangis.org-census_regions-2010-sandiego-6.csv
+Distribution,http://data.sandiegodata.org/dataset/sangis-org-census_regions-2010-sandiego-6
+Ckanid,2dadb9f1-dcde-45e2-9466-edcd9340d360
+S3,library.metatab.org
 
 Section,Resources,Name,Description,,
 Datafile,shape+http://s3.amazonaws.com/public.source.civicknowledge.com/sangis.org/CENSUS_TRACTS_2010.zip,tracts,2010 Census Tract boundaries,,
