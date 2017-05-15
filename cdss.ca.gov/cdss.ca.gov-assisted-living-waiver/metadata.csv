@@ -1,0 +1,50 @@
+Declare,metatab-latest
+Title,Assisted Living Waiver Program Participating Facilities
+Description,List of Residential Care facilities that participate in the Assisted Living Waiver Program
+Identifier,a569718c-48f6-4a89-98de-c41b7f86fe82
+Name,cdss.ca.gov-assisted-living-waiver-1
+Dataset,Assisted Living Waiver
+Origin,cdss.ca.gov
+Version,1
+Group,health
+Tag,age-friendly-communities
+Created,2017-05-12T18:25:59
+Modified,2017-05-15T16:54:49
+Issued,2017-05-15T16:53:41
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdss.ca.gov-assisted-living-waiver-1.xlsx
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdss.ca.gov-assisted-living-waiver-1.zip
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdss.ca.gov-assisted-living-waiver-1/metadata.csv
+Distribution,http://s3.amazonaws.com/library.metatab.org/cdss.ca.gov-assisted-living-waiver-1.csv
+Distribution,http://data.sandiegodata.org/dataset/cdss-ca-gov-assisted-living-waiver-1
+Ckanid,427f1b02-f293-4451-b33e-a21d183d42df
+Giturl,https://github.com/CivicKnowledge/metatab-packages.git
+S3,library.metatab.org
+
+Section,Resources,Name,Description,
+Sourcefile,metatab+http://s3.amazonaws.com/library.metatab.org/cdss.ca.gov-residential_care_facilities-2017-ca-7.csv#facilities,facilities,,
+Sourcefile,http://www.dhcs.ca.gov/services/ltc/Documents/ListofRCFEfacilities.pdf,,Source PDF from which data was extracted,
+Datafile,data/alwp.csv,alwp-list,List of ALWP waviers,
+Datafile,program:scripts/facilitymap.py,alwp-name-numbers,Maps facility names to facility ids,
+
+Section,Documentation,Title,Description,
+Homepage,http://www.dhcs.ca.gov/services/ltc/Pages/AssistedLivingWaiver.aspx,Program Homepage,,
+Documentation,http://www.dhcs.ca.gov/services/ltc/Documents/ProgramdescriptandElig2017.pdf,Program Fact Sheet,A short PDF document that describes the program,
+Includedocumentation,file:documentation.md,,,
+
+Section,Contacts,Email,Organization,Url
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
+
+Section,Schema,DataType,AltName,Description
+Table,alwp-list,,,
+Table.Column,Facility Name,string,facility_name,
+Table.Column,,integer,capacity,
+Table.Column,Address,text,address,
+Table.Column,City,text,city,
+Table.Column,County,text,county,
+Table.Column,Zip,integer,zip,
+Table.Column,Telephone,text,telephone,
+Table,alwp-name-numbers,,,
+Table.Column,alwp_facility_name,text,,"Facility name, from the ALWP file"
+Table.Column,rcfe_facility_name,text,,"Facility name, from the RCFE file"
+Table.Column,facility_number,integer,,"Facility number, from the RCFE file"
+Table.Column,facility_address,text,,Facility address from the RCFE file
